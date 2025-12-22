@@ -28,11 +28,11 @@ export default function HeroSection() {
   return (
     <section
       ref={containerRef}
-      className="relative h-[110vh] flex flex-col items-center justify-center overflow-hidden bg-light-bg dark:bg-deep-void pt-20 transition-colors duration-300"
+      className="relative h-[110vh] flex flex-col items-center justify-center overflow-hidden bg-transparent pt-20 transition-colors duration-300"
     >
       {/* Background Gradient Mesh */}
       <div className="absolute inset-0 pointer-events-none opacity-20">
-        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,_#14b8a6_0%,_transparent_50%)] dark:bg-[radial-gradient(circle_at_50%_50%,_#1f2833_0%,_transparent_50%)]" />
+        {/* <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,_#14b8a6_0%,_transparent_50%)] dark:bg-[radial-gradient(circle_at_50%_50%,_#1f2833_0%,_transparent_50%)]" /> */}
       </div>
 
       <div className="z-10 flex flex-col items-center px-6 text-center max-w-5xl mx-auto">

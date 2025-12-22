@@ -50,11 +50,11 @@ export default function Navbar() {
         <div className="flex items-center gap-2 relative z-50">
           <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
             <Image
-              src="/pwaLogo.svg"
+              src="logos/logoMini.svg"
               alt={navbar.logoAlt}
               width={220}
               height={45}
-              className="w-[180px] md:w-[220px] h-auto object-contain transition-opacity hover:opacity-80 dark:invert-0 invert"
+              className="w-[180px] md:w-[220px] h-auto object-contain transition-opacity hover:opacity-80 dark:invert-0 "
               priority
             />
           </Link>

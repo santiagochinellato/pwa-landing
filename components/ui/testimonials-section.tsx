@@ -19,7 +19,7 @@ export default function TestimonialsSection() {
   const testimonial = testimonialList[index];
 
   return (
-    <section className="py-20 bg-light-bg dark:bg-deep-void relative overflow-hidden border-t border-light-border dark:border-white/5 transition-colors duration-300">
+    <section className="py-20 bg-transparent relative overflow-hidden border-t border-light-border dark:border-white/5 transition-colors duration-300">
       {/* Background glow */}
       <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-light-primary/5 dark:bg-holographic/5 rounded-full blur-[100px] pointer-events-none" />
 

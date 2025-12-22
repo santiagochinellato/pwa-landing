@@ -7,7 +7,7 @@ export default function FinalCTASection() {
   return (
     <section
       id="contact"
-      className="py-32 px-6 md:px-12 relative overflow-hidden bg-light-surface dark:bg-white/5 transition-colors duration-300"
+      className="py-32 px-6 md:px-12 relative overflow-hidden bg-transparent transition-colors duration-300"
     >
       {/* Background decoration */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_#14b8a6_0%,_transparent_70%)] dark:bg-[radial-gradient(circle_at_center,_#66FCF1_0%,_transparent_70%)] opacity-5 pointer-events-none" />

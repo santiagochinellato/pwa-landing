@@ -4,6 +4,8 @@ import "./globals.css";
 import LocalBusinessSchema from "@/components/seo/local-business-schema";
 import ClientWrapper from "@/components/ui/client-wrapper";
 import { Providers } from "@/components/providers";
+import { Spotlight } from "@/components/ui/spotlight";
+import { GlassLayer } from "@/components/ui/glass-layer";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -56,9 +58,13 @@ export default function RootLayout({
     <html lang="es" suppressHydrationWarning>
       <body className={`${inter.variable} antialiased`}>
         <Providers>
+          <Spotlight />
+          <GlassLayer />
           {/* Inyectamos el SEO Local Semántico */}
           <LocalBusinessSchema />
-          <ClientWrapper>{children}</ClientWrapper>
+          <div className="relative z-10">
+            <ClientWrapper>{children}</ClientWrapper>
+          </div>
         </Providers>
       </body>
     </html>

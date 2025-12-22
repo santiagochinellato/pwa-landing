@@ -9,7 +9,7 @@ export default function DifferentialsSection() {
   const icons = [Clock, Code2, Target];
 
   return (
-    <section className="py-24 bg-light-bg dark:bg-deep-void px-6 md:px-12 relative overflow-hidden transition-colors duration-300">
+    <section className="py-24 bg-transparent px-6 md:px-12 relative overflow-hidden transition-colors duration-300">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl md:text-5xl font-bold mb-16 text-center text-light-fg dark:text-white">
           {differentials.title}{" "}

@@ -152,7 +152,7 @@ function ProcessContent({
   return (
     <section
       id="process"
-      className="bg-gradient-to-b from-light-bg to-white dark:from-deep-void dark:to-deep-void py-24 px-6 relative transition-colors duration-300"
+      className="bg-transparent py-24 px-6 relative transition-colors duration-300"
     >
       <div className="absolute inset-0 bg-light-primary/5 dark:bg-holographic/5 pointer-events-none" />
       <div className="max-w-6xl mx-auto relative z-10">
@@ -193,7 +193,7 @@ function ProcessContent({
                 <button
                   key={idx}
                   onClick={() => setActiveStep(idx)}
-                  className="flex flex-col items-center gap-3 min-w-[100px] group"
+                  className="flex flex-col items-center gap-3 min-w-[100px] group relative"
                 >
                   {/* Círculo con número */}
                   <div className="relative">
@@ -259,7 +259,7 @@ function ProcessContent({
 
                   {/* Conector de línea */}
                   {idx < steps.length - 1 && (
-                    <div className="absolute top-8 left-[calc(100%-12px)] w-full h-0.5 bg-light-border dark:bg-white/10 -z-10 hidden md:block">
+                    <div className="absolute  top-12 left-[calc(115%-12px)] w-full h-0.5 bg-light-border dark:bg-white/10 -z-10 hidden md:block">
                       <div
                         className={`h-full transition-all duration-500 ${
                           idx < activeStep ? `w-full ${stepColors.bg}` : "w-0"
