@@ -1,0 +1,330 @@
+{
+  "hero": {
+    "titleLine1": "Tu negocio necesita",
+    "titleHighlight": "una web que venda.",
+    "subtitle": "Nosotros la hacemos en 10 días.",
+    "description": "No diseñamos simples páginas web. Creamos ecosistemas digitales que posicionan tu marca, captan turistas y multiplican tus ventas.",
+    "subDescriptionStrong": "Tecnología moderna + IA + resultados garantizados.",
+    "ctaPrimary": "Consulta Gratuita",
+    "ctaSecondary": "Cómo Trabajamos ↓",
+    "whatsappLink": "https://wa.me/5492944227526"
+  },
+  "services": {
+    "heading": "NUESTROS",
+    "headingHighlight": "SERVICIOS",
+    "mainService": {
+      "title": "Desarrollo Web",
+      "description": "Tu negocio merece una web que trabaje para vos 24/7. Convertimos visitantes en clientes mientras dormís.",
+      "details": "Institucional, Ecommerce o Landing Page",
+      "durationLabel": "Entrega",
+      "durationValue": "7-12 días",
+      "cta": "Cotizar mi web",
+      "featuredBadge": "MÁS ELEGIDO"
+    },
+    "secondaryServices": [
+      {
+        "title": "Rediseño & Evolución",
+        "description": "¿Tu web quedó vieja? La renovamos en tiempo récord.",
+        "duration": "5-8 días"
+      },
+      {
+        "title": "Hosting + SEO",
+        "description": "Tu web rápida, segura y visible en Google.",
+        "duration": "Setup 1 día"
+      }
+    ],
+    "fullPackage": {
+      "title": "Paquete Completo",
+      "badge": "AHORRÁ 20%",
+      "description": "Web + Hosting + SEO + Soporte continuo",
+      "cta": "Consultar paquete"
+    },
+    "finalCta": "¿No sabés qué necesitás? Hablemos gratis"
+  },
+  "process": {
+    "badge": "[ PROCESO TRANSPARENTE ]",
+    "title": "CÓMO",
+    "titleHighlight": "TRABAJAMOS",
+    "titleSuffix": "JUNTOS",
+    "description": "De la primera charla al lanzamiento: un proceso claro, rápido y sin sorpresas.",
+    "steps": [
+      {
+        "icon": "MessageSquare",
+        "title": "Charlamos",
+        "duration": "1 día",
+        "shortDesc": "Entendemos tu visión",
+        "details": [
+          "Agendamos una videollamada o te escribimos por WhatsApp",
+          "Hablamos de tu negocio, tu público y tus objetivos",
+          "Te explicamos cómo podemos ayudarte",
+          "Primera consulta 100% gratuita"
+        ],
+        "cta": "Agendar llamada",
+        "color": "text-sky-400",
+        "glow": "bg-sky-500/20",
+        "border": "border-sky-500/30"
+      },
+      {
+        "icon": "Palette",
+        "title": "Diseñamos",
+        "duration": "2-3 días",
+        "shortDesc": "Creamos tu identidad digital",
+        "details": [
+          "Wireframes y estructura de contenido",
+          "Diseño visual personalizado",
+          "Revisiones incluidas hasta que estés conforme",
+          "Presentación interactiva del diseño"
+        ],
+        "color": "text-purple-400",
+        "glow": "bg-purple-500/20",
+        "border": "border-purple-500/30"
+      },
+      {
+        "icon": "Code2",
+        "title": "Desarrollamos",
+        "duration": "4-6 días",
+        "shortDesc": "Programamos tu web",
+        "details": [
+          "Código moderno con React y Next.js",
+          "IA para acelerar desarrollo y optimizar",
+          "Optimización de velocidad y SEO",
+          "Testing en múltiples dispositivos"
+        ],
+        "color": "text-emerald-400",
+        "glow": "bg-emerald-500/20",
+        "border": "border-emerald-500/30"
+      },
+      {
+        "icon": "CheckCircle2",
+        "title": "Revisamos",
+        "duration": "1-2 días",
+        "shortDesc": "Ajustamos hasta la perfección",
+        "details": [
+          "Ronda de ajustes y correcciones",
+          "Testing de funcionalidades",
+          "Verificación de contenido",
+          "Aprobación final antes del lanzamiento"
+        ],
+        "color": "text-orange-400",
+        "glow": "bg-orange-500/20",
+        "border": "border-orange-500/30"
+      },
+      {
+        "icon": "Rocket",
+        "title": "Lanzamos",
+        "duration": "1 día",
+        "shortDesc": "Tu web va online",
+        "details": [
+          "Configuración de hosting y dominio",
+          "Deploy y puesta en producción",
+          "Configuración de analytics",
+          "Tu web lista y funcionando"
+        ],
+        "color": "text-yellow-400",
+        "glow": "bg-yellow-500/20",
+        "border": "border-yellow-500/30"
+      },
+      {
+        "icon": "Headphones",
+        "title": "Acompañamos",
+        "duration": "Siempre",
+        "shortDesc": "Estamos para lo que necesites",
+        "details": [
+          "Soporte técnico continuo",
+          "Actualizaciones de seguridad",
+          "Mejoras y nuevas funcionalidades",
+          "Asesoramiento estratégico"
+        ],
+        "color": "text-indigo-400",
+        "glow": "bg-indigo-500/20",
+        "border": "border-indigo-500/30"
+      }
+    ]
+  },
+  "stack": {
+    "badge": "[ TECNOLOGÍA QUE IMPULSA RESULTADOS ]",
+    "title": "NO ES SOLO",
+    "titleHighlight": "CÓDIGO",
+    "description": "Es la diferencia entre una web linda y una web que te hace ganar dinero.",
+    "benefits": [
+      {
+        "icon": "Zap",
+        "title": "VELOCIDAD",
+        "tech": "Next.js + React",
+        "metric": "1.5 seg",
+        "comparison": "vs 4.8 seg promedio",
+        "percentage": 69,
+        "description": "Tu web carga 3x más rápido que la competencia. Cada segundo cuenta: Google penaliza sitios lentos y los usuarios abandonan.",
+        "color": "from-yellow-500 to-orange-500"
+      },
+      {
+        "icon": "Palette",
+        "title": "DISEÑO SIN LÍMITES",
+        "tech": "Tailwind CSS",
+        "metric": "100%",
+        "comparison": "personalizado",
+        "percentage": 100,
+        "description": "Diseño único para tu marca. Sin templates genéricos. Se adapta a cualquier dispositivo perfectamente.",
+        "color": "from-purple-500 to-pink-500"
+      },
+      {
+        "icon": "Database",
+        "title": "ACTUALIZACIONES FÁCILES",
+        "tech": "Sanity CMS",
+        "metric": "5 min",
+        "comparison": "vs días con programador",
+        "percentage": 95,
+        "description": "Actualizás textos, imágenes y contenido vos mismo. Sin llamar a un programador. Simple como usar Instagram.",
+        "color": "from-blue-500 to-cyan-500"
+      },
+      {
+        "icon": "ServerCog",
+        "title": "ESCALABILIDAD",
+        "tech": "Backend Custom",
+        "metric": "∞",
+        "comparison": "sin límite de crecimiento",
+        "percentage": 100,
+        "description": "Tu web crece con tu negocio. Agregamos funcionalidades cuando las necesites. Sin migrar a otra plataforma.",
+        "color": "from-green-500 to-emerald-500"
+      },
+      {
+        "icon": "Bot",
+        "title": "DESARROLLO 3X MÁS RÁPIDO",
+        "tech": "IA Integrada (Claude + Gemini)",
+        "metric": "7-12 días",
+        "comparison": "vs 60-90 días tradicional",
+        "percentage": 85,
+        "description": "Usamos IA para acelerar desarrollo, optimizar código, mejorar textos y detectar errores antes.",
+        "color": "from-indigo-500 to-purple-500"
+      },
+      {
+        "icon": "TrendingUp",
+        "title": "SEO OPTIMIZADO",
+        "tech": "Next.js SSR + Optimización",
+        "metric": "95/100",
+        "comparison": "vs 62/100 promedio",
+        "percentage": 95,
+        "description": "Aparecé en Google desde el día 1. Estructura optimizada, velocidad rápida, metadatos correctos.",
+        "color": "from-cyan-500 to-blue-500"
+      }
+    ]
+  },
+  "testimonials": {
+    "badge": "[ CLIENTES FELICES ]",
+    "title": "Resultados",
+    "titleHighlight": "Reales",
+    "subtitle": "Empresas y profesionales que ya escalaron su negocio con nosotros.",
+    "list": [
+      {
+        "name": "Martín Rodriguez",
+        "role": "CEO, TechSolutions",
+        "content": "La velocidad de carga de nuestra nueva web es impresionante. Pasamos de perder clientes a convertir el doble. El equipo entendió perfectamente nuestra visión.",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=faces"
+      },
+      {
+        "name": "Sofia Martinez",
+        "role": "Fundadora, EcoMarket",
+        "content": "El diseño superó mis expectativas. No solo es lindo, es funcional. Mis ventas online aumentaron un 40% desde el lanzamiento. ¡Super recomendados!",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=faces"
+      },
+      {
+        "name": "Lucas Viale",
+        "role": "Director, Viale Arquitectura",
+        "content": "Necesitábamos un portafolio que impactara y lo logramos. La integración con Sanity CMS hace que subir nuevos proyectos sea un juego de niños.",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=faces"
+      },
+      {
+        "name": "Ana Laura Gomez",
+        "role": "Marketing, Bariloche Tourism",
+        "content": "Excelente comunicación durante todo el proceso. Cumplieron con los plazos (¡10 días reales!) y el resultado final es de calidad internacional.",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=faces"
+      },
+      {
+        "name": "Roberto Sanchez",
+        "role": "Dueño, Restaurante El Sur",
+        "content": "Gracias a la nueva web y el SEO, ahora aparecemos primeros cuando buscan 'cena en Bariloche'. El sistema de reservas funciona perfecto.",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=faces"
+      },
+      {
+        "name": "Camila Ferraro",
+        "role": "Dermatóloga",
+        "content": "Profesionalismo puro. Me guiaron en todo, desde el diseño hasta cómo manejar mis turnos online. Mis pacientes aman la nueva página.",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=faces"
+      },
+      {
+        "name": "Diego Torres",
+        "role": "CTO, StartApp",
+        "content": "Como desarrollador, valoro el código limpio. Usaron las últimas tecnologías y se nota en la performance. Un placer trabajar con ellos.",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=100&h=100&fit=crop&crop=faces"
+      }
+    ]
+  },
+  "navbar": {
+    "logoAlt": "Patagonia Web Factory Logo",
+    "menu": [
+      {"name": "TRABAJO", "href": "#portfolio"},
+      {"name": "SERVICIOS", "href": "#services"},
+      {"name": "PROCESO", "href": "#process"},
+      {"name": "CONTACTO", "href": "#contact"}
+    ],
+    "cta": "CONSULTA GRATIS",
+    "whatsappLink": "https://wa.me/5492944227526"
+  },
+  "differentials": {
+    "title": "POR QUÉ",
+    "titleHighlight": "PATAGONIA WEB FACTORY",
+    "items": [
+      {
+        "title": "Entrega en 7-12 días",
+        "copy": "Tu web lista y online en menos de dos semanas. Sin demoras. Sin excusas."
+      },
+      {
+        "title": "Stack moderno y escalable",
+        "copy": "React, Next.js, Tailwind, IA integrada. Tu web crece con tu negocio. Sin límites técnicos."
+      },
+      {
+        "title": "Diseño que convierte",
+        "copy": "Optimizado para captar clientes, posicionarse en Google y funcionar rápido en cualquier dispositivo."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Tu web lista en",
+    "titleHighlight": "10 días.",
+    "subtitle": "Hablemos de tu proyecto. Primera consulta gratuita. Sin compromiso.",
+    "whatsappButton": "Enviar consulta por WhatsApp",
+    "videoButton": "Agendar videollamada",
+    "footerText": "⚡ Respuesta en menos de 24hs • 📍 Bariloche, Argentina",
+    "whatsappLink": "https://wa.me/5492944227526",
+    "emailLink": "mailto:hola@patagoniaweb.ar"
+  },
+  "footer": {
+    "title": "¿Hablamos de",
+    "titleHighlight": "tu proyecto?",
+    "email": "hola@patagoniaweb.ar",
+    "phone": "+54 9 294 XXX XXXX",
+    "address": "Bariloche, Río Negro, Argentina",
+    "menuTitle": "MENU",
+    "socialTitle": "SOCIAL",
+    "menuLinks": [
+      {"name": "Trabajo", "href": "#portfolio"},
+      {"name": "Servicios", "href": "#services"},
+      {"name": "Proceso", "href": "#process"},
+      {"name": "Contacto", "href": "#contact"}
+    ],
+    "copyright": "© {year} PATAGONIA WEB FACTORY. ALL RIGHTS RESERVED.",
+    "hours": "LUN - VIE: 9:00 - 18:00 ART",
+    "madeWith": "MADE WITH ♥ IN PATAGONIA"
+  },
+  "projectCard": {
+    "hoverHint": "Hover para ver imagen",
+    "viewCase": "Ver caso de estudio"
+  }
+}

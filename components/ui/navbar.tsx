@@ -1,13 +1,21 @@
 "use client";
+
 import Image from "next/image";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { useState } from "react";
 import Link from "next/link";
 import { clsx } from "clsx";
+import siteContent from "@/data/site-content.json";
+import NavbarDesktop from "./navbar-desktop";
+import NavbarMobileToggle from "./navbar-mobile-toggle";
+import NavbarMobileMenu from "./navbar-mobile-menu";
 
 export default function Navbar() {
   const { scrollY } = useScroll();
   const [hidden, setHidden] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const { navbar } = siteContent;
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     const previous = scrollY.getPrevious() || 0;
@@ -16,52 +24,56 @@ export default function Navbar() {
     } else {
       setHidden(false);
     }
+    if (latest > 50) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
   });
 
   return (
-    <motion.nav
-      variants={{
-        visible: { y: 0 },
-        hidden: { y: "-100%" },
-      }}
-      animate={hidden ? "hidden" : "visible"}
-      transition={{ duration: 0.35, ease: [0.76, 0, 0.24, 1] }}
-      className={clsx(
-        "fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 md:px-12",
-        "backdrop-blur-xl bg-deep-void/10 border-b border-white/5",
-        "supports-[backdrop-filter]:bg-deep-void/10"
-      )}
-    >
-      <div className="flex items-center gap-2">
-        <Image
-          src="/pwaLogo.svg"
-          alt="Patagonia Web Factory Logo"
-          width={300}
-          height={60}
-          className="w-[300px] h-auto object-contain"
-        />
-      </div>
-
-      <div className="hidden md:flex items-center gap-8 text-sm font-medium text-white/70">
-        {["WORK", "SERVICES", "ABOUT", "CONTACT"].map((item) => (
-          <Link
-            key={item}
-            href="/"
-            className="relative overflow-hidden group hover:text-white transition-colors"
-          >
-            <span className="inline-block transition-transform duration-300 group-hover:-translate-y-full">
-              {item}
-            </span>
-            <span className="absolute left-0 top-0 translate-y-full transition-transform duration-300 group-hover:translate-y-0 text-holographic">
-              {item}
-            </span>
+    <>
+      <motion.nav
+        variants={{
+          visible: { y: 0 },
+          hidden: { y: "-100%" },
+        }}
+        animate={hidden && !isMobileMenuOpen ? "hidden" : "visible"}
+        transition={{ duration: 0.35, ease: [0.76, 0, 0.24, 1] }}
+        className={clsx(
+          "fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 md:px-12 transition-all duration-300",
+          scrolled || isMobileMenuOpen
+            ? "backdrop-blur-xl bg-deep-void/90 border-b border-white/5 shadow-2xl shadow-deep-void/50"
+            : "bg-transparent border-transparent"
+        )}
+      >
+        <div className="flex items-center gap-2 relative z-50">
+          <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
+            <Image
+              src="/pwaLogo.svg"
+              alt={navbar.logoAlt}
+              width={220}
+              height={45}
+              className="w-[180px] md:w-[220px] h-auto object-contain transition-opacity hover:opacity-80"
+              priority
+            />
           </Link>
-        ))}
-      </div>
+        </div>
 
-      <button className="hidden md:block px-6 py-2.5 text-xs font-bold tracking-widest text-deep-void bg-holographic rounded-full hover:bg-white transition-colors uppercase">
-        INICIAR PROYECTO
-      </button>
-    </motion.nav>
+        {/* Desktop Menu */}
+        <NavbarDesktop />
+
+        {/* Mobile Toggle */}
+        <NavbarMobileToggle
+          isOpen={isMobileMenuOpen}
+          setIsOpen={setIsMobileMenuOpen}
+        />
+      </motion.nav>
+
+      <NavbarMobileMenu
+        isOpen={isMobileMenuOpen}
+        setIsOpen={setIsMobileMenuOpen}
+      />
+    </>
   );
 }

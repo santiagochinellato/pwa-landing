@@ -1,64 +1,51 @@
 "use client";
-import Image from "next/image";
-import { useRef } from "react";
+import siteContent from "@/data/site-content.json";
+import FooterLinks from "./footer-links";
+import FooterSocials from "./footer-socials";
 
 export default function Footer() {
-  const container = useRef(null);
+  const { footer } = siteContent;
+  const currentYear = new Date().getFullYear();
 
   return (
-    <footer
-      ref={container}
-      className="relative min-h-screen bg-deep-void flex flex-col justify-between p-6 md:p-12 overflow-hidden border-t border-white/5"
-    >
-      <div className="absolute inset-0 bg-gradient-to-b from-deep-void via-transparent to-holographic/5 pointer-events-none" />
+    <footer className="bg-deep-void py-12 md:py-24 border-t border-white/5">
+      <div className="max-w-7xl mx-auto px-6 md:px-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 mb-16">
+          <div className="space-y-8">
+            <h2 className="text-4xl md:text-6xl font-bold tracking-tighter text-white">
+              {footer.title.split("\n")[0]} <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-holographic to-white">
+                {footer.titleHighlight}
+              </span>
+            </h2>
+            <div className="space-y-4">
+              <a
+                href={`mailto:${footer.email}`}
+                className="block text-xl md:text-2xl text-white hover:text-holographic transition-colors"
+              >
+                {footer.email}
+              </a>
+              <p className="text-white/60">{footer.phone}</p>
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+                <p className="text-white/60">{footer.address}</p>
+              </div>
+            </div>
+          </div>
 
-      <div className="flex flex-col md:flex-row justify-between items-start z-10 gap-8">
-        <div className="text-sm font-mono text-white/40 max-w-xs space-y-4">
-          <Image
-            src="/pwaLogo.svg"
-            alt="Patagonia Web Factory Logo"
-            width={60}
-            height={60}
-            className="w-16 h-16 object-contain mb-4"
-          />
-          <p>PATAGONIA WEB FACTORY</p>
-          <p>
-            WE ORCHESTRATE DIGITAL REALITIES THROUGH NEXT-GEN ENGINEERING AND
-            ORCHESTRATION.
-          </p>
+          <div className="flex gap-12 md:gap-24">
+            <FooterLinks />
+            <FooterSocials />
+          </div>
         </div>
-        <div className="text-right text-sm font-mono text-white/40 space-y-2">
-          <p>[ TERMINALS ]</p>
-          <ul className="flex flex-col gap-1">
-            <li className="hover:text-holographic cursor-pointer transition-colors">
-              TWITTER
-            </li>
-            <li className="hover:text-holographic cursor-pointer transition-colors">
-              GITHUB
-            </li>
-            <li className="hover:text-holographic cursor-pointer transition-colors">
-              LINKEDIN
-            </li>
-          </ul>
-        </div>
-      </div>
 
-      <div className="z-10 flex flex-col items-center justify-center flex-grow py-20">
-        <div className="group relative cursor-pointer">
-          <div className="absolute -inset-8 bg-holographic/20 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-full" />
-          <h2 className="relative text-6xl md:text-[8vw] font-bold text-center leading-[0.9] tracking-tighter text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-b group-hover:from-white group-hover:to-holographic transition-all duration-500">
-            START THE
-            <br />
-            FABRICATION
-          </h2>
-        </div>
-      </div>
-
-      <div className="z-10 flex justify-between items-end border-t border-white/10 pt-8 w-full">
-        <span className="text-xs text-white/20">© 2025 PATAGONIA SYSTEMS</span>
-        <div className="flex items-center gap-2">
-          <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-          <span className="text-xs text-white/20">SYSTEM ONLINE</span>
+        <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/5 text-xs text-white/30 font-mono">
+          <p>{footer.copyright.replace("{year}", currentYear.toString())}</p>
+          <div className="flex items-center gap-4 mt-4 md:mt-0">
+            <span>{footer.hours}</span>
+            <span>•</span>
+            <span>{footer.madeWith}</span>
+          </div>
         </div>
       </div>
     </footer>
