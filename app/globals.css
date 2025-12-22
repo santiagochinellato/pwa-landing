@@ -1,15 +1,56 @@
 @import "tailwindcss";
+@config "../tailwind.config.ts";
 
 @theme {
-  --color-deep-void: #030305; /* Rich black/blue void */
-  --color-holographic: #66FCF1; /* Cyan neon */
-  --color-holographic-dim: #1F2833; /* Darker variant */
+  /* Brand colors */
+  --color-deep-void: #030305;
+  --color-holographic: #66FCF1;
+  --color-holographic-dim: #1F2833;
+  
+  /* Light mode colors */
+  --color-light-bg: #f8fafc;
+  --color-light-fg: #0f172a;
+  --color-light-primary: #14b8a6;
+  --color-light-muted: #64748b;
+  --color-light-surface: #ffffff;
+  --color-light-border: #e2e8f0;
+
+  /* Additional Palette Colors */
+  --color-primary-dim: #0d9488;
+  --color-accent: #06b6d4;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  
+  /* Font */
   --font-inter: var(--font-inter);
 }
 
 :root {
-  --background: var(--color-deep-void);
+  /* Light Mode */
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --primary: #14b8a6;
+  --primary-dim: #0d9488;
+  --surface: #ffffff;
+  --border: #e2e8f0;
+  --muted: #64748b;
+  --accent: #06b6d4;
+  --success: #10b981;
+  --warning: #f59e0b;
+}
+
+.dark {
+  /* Dark Mode */
+  --background: #030305;
   --foreground: #ffffff;
+  --primary: #66FCF1;
+  --primary-dim: #45A29E;
+  --surface: rgba(255, 255, 255, 0.05);
+  --border: rgba(255, 255, 255, 0.1);
+  --muted: rgba(255, 255, 255, 0.6);
+  --accent: #66FCF1;
+  --success: #10b981;
+  --warning: #f59e0b;
 }
 
 body {
@@ -17,11 +58,44 @@ body {
   color: var(--foreground);
   font-family: var(--font-inter), sans-serif;
   overflow-x: hidden;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
 }
 
-/* Custom Utilities if needed */
+/* Global Transitions */
+* {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+/* Exceptions */
+[data-framer-motion],
+.no-theme-transition {
+  transition-property: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Custom Utilities */
 .text-gradient {
-  background: linear-gradient(135deg, #66FCF1 0%, #ffffff 100%);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--foreground) 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* Selection colors */
+::selection {
+  background: var(--primary);
+  color: var(--background);
 }

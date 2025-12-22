@@ -6,15 +6,15 @@ export default function FooterLinks() {
 
   return (
     <div className="space-y-4">
-      <h3 className="text-white font-bold mb-6 tracking-widest text-sm">
+      <h3 className="text-light-fg dark:text-white font-bold mb-6 tracking-widest text-sm">
         {footer.menuTitle}
       </h3>
-      <div className="flex flex-col gap-3 text-white/90">
+      <div className="flex flex-col gap-3 text-light-muted dark:text-white/90">
         {footer.menuLinks.map((link, idx) => (
           <Link
             key={idx}
             href={link.href}
-            className="hover:text-holographic transition-colors py-2 block"
+            className="hover:text-light-primary dark:hover:text-holographic transition-colors py-2 block"
           >
             {link.name}
           </Link>

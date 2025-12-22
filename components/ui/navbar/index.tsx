@@ -43,7 +43,7 @@ export default function Navbar() {
         className={clsx(
           "fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 md:px-12 transition-all duration-300",
           scrolled || isMobileMenuOpen
-            ? "backdrop-blur-xl bg-deep-void/90 border-b border-white/5 shadow-2xl shadow-deep-void/50"
+            ? "backdrop-blur-xl bg-light-surface/90 dark:bg-deep-void/90 border-b border-light-border dark:border-white/5 shadow-2xl shadow-light-bg/50 dark:shadow-deep-void/50"
             : "bg-transparent border-transparent"
         )}
       >
@@ -54,7 +54,7 @@ export default function Navbar() {
               alt={navbar.logoAlt}
               width={220}
               height={45}
-              className="w-[180px] md:w-[220px] h-auto object-contain transition-opacity hover:opacity-80"
+              className="w-[180px] md:w-[220px] h-auto object-contain transition-opacity hover:opacity-80 dark:invert-0 invert"
               priority
             />
           </Link>

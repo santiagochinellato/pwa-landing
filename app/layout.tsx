@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import LocalBusinessSchema from "@/components/seo/local-business-schema";
 import ClientWrapper from "@/components/ui/client-wrapper";
+import { Providers } from "@/components/providers";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -52,11 +53,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
+    <html lang="es" suppressHydrationWarning>
       <body className={`${inter.variable} antialiased`}>
-        {/* Inyectamos el SEO Local Semántico */}
-        <LocalBusinessSchema />
-        <ClientWrapper>{children}</ClientWrapper>
+        <Providers>
+          {/* Inyectamos el SEO Local Semántico */}
+          <LocalBusinessSchema />
+          <ClientWrapper>{children}</ClientWrapper>
+        </Providers>
       </body>
     </html>
   );

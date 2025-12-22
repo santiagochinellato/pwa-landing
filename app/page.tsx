@@ -12,7 +12,7 @@ import FinalCTASection from "@/components/ui/final-cta-section";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-deep-void text-white selection:bg-holographic selection:text-deep-void">
+    <main className="min-h-screen bg-light-bg dark:bg-deep-void text-light-fg dark:text-white selection:bg-light-primary dark:selection:bg-holographic selection:text-white dark:selection:text-deep-void transition-colors duration-300">
       <Navbar />
       <HeroSection />
       <DifferentialsSection />
@@ -21,11 +21,14 @@ export default function Home() {
       <InteractiveProcessSection />
       <section
         id="portfolio"
-        className="px-6 py-24 md:px-12 bg-deep-void border-t border-white/5"
+        className="px-6 py-24 md:px-12 bg-light-bg dark:bg-deep-void border-t border-light-border dark:border-white/5"
       >
         <div className="max-w-7xl mx-auto space-y-12">
-          <h2 className="text-3xl md:text-5xl font-bold mb-12 text-center text-white">
-            TRABAJOS <span className="text-holographic">REALIZADOS</span>
+          <h2 className="text-3xl md:text-5xl font-bold mb-12 text-center text-light-fg dark:text-white">
+            TRABAJOS{" "}
+            <span className="text-light-primary dark:text-holographic">
+              REALIZADOS
+            </span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <ProjectCard
