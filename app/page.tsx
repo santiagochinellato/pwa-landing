@@ -16,7 +16,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <DifferentialsSection />
-      <InfiniteMarquee />
+      {/* <InfiniteMarquee /> */}
       <ServicesSection />
       <InteractiveProcessSection />
       <section

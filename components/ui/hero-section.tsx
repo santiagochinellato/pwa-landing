@@ -45,7 +45,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-4xl md:text-7xl lg:text-8xl font-bold leading-[1.1] tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-white to-white/60 mb-6"
+          className="text-3xl md:text-5xl lg:text-7xl font-bold leading-[1.1] tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-white to-white/60 mb-6"
         >
           {hero.titleLine1} <br />
           <span className="text-white">{hero.titleHighlight}</span> <br />

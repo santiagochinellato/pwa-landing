@@ -1,5 +1,8 @@
+"use client";
+
 import { Clock, Code2, Target } from "lucide-react";
 import siteContent from "@/data/site-content.json";
+import { motion } from "framer-motion";
 
 export default function DifferentialsSection() {
   const { differentials } = siteContent;
@@ -15,24 +18,39 @@ export default function DifferentialsSection() {
           </span>
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols- md:grid-cols-3 gap-6">
           {differentials.items.map((item, index) => {
             const Icon = icons[index];
+
             return (
-              <div
+              <motion.div
                 key={index}
-                className="p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-holographic/50 transition-all duration-300 group"
+                whileHover={{ y: -5 }}
+                className="p-8 rounded-2xl bg-deep-void border border-white/10 hover:border-holographic transition-all relative group overflow-hidden"
               >
-                <div className="w-16 h-16 mb-6 rounded-full bg-holographic/10 flex items-center justify-center text-holographic group-hover:scale-110 transition-transform">
-                  <Icon size={32} />
-                </div>
-                <h3 className="text-xl font-bold text-white mb-4">
+                <div className="absolute top-0 left-0 w-full h-1 bg-holographic origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
+
+                <Icon
+                  className="text-holographic mb-6 group-hover:rotate-12 transition-transform"
+                  size={40}
+                />
+                <h3 className="text-xl font-bold text-white max-w-[80%] mb-4">
                   {item.title}
                 </h3>
-                <p className="text-white/70 font-light leading-relaxed">
+                <p className="text-white/60 text-sm leading-relaxed mb-6">
                   {item.copy}
                 </p>
-              </div>
+
+                {/* Metric Reveal */}
+                <div className="mt-auto pt-4 border-t border-white/5 flex items-baseline gap-2">
+                  <span className="text-4xl font-black text-white group-hover:text-holographic transition-colors">
+                    {item.metric}
+                  </span>
+                  <span className="text-xs text-white/40 uppercase tracking-widest">
+                    {item.metricLabel}
+                  </span>
+                </div>
+              </motion.div>
             );
           })}
         </div>
