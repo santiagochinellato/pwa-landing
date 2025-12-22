@@ -5,12 +5,12 @@ export default function NavbarDesktop() {
   const { navbar } = siteContent;
 
   return (
-    <div className="hidden md:flex items-center gap-10 text-sm font-medium text-white/70">
+    <div className="hidden md:flex items-center gap-10 text-sm font-medium text-white/90">
       {navbar.menu.map((item) => (
         <Link
           key={item.name}
           href={item.href}
-          className="relative overflow-hidden group hover:text-white transition-colors py-1"
+          className="relative overflow-hidden group hover:text-white transition-colors py-2"
         >
           <span className="relative z-10">{item.name}</span>
           <span className="absolute bottom-0 left-0 w-full h-px bg-holographic origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out" />

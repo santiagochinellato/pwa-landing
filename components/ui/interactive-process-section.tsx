@@ -51,7 +51,7 @@ export default function InteractiveProcessSection() {
             <span className="text-holographic">{process.titleHighlight}</span>{" "}
             {process.titleSuffix}
           </h2>
-          <p className="text-lg text-white/60 max-w-2xl mx-auto">
+          <p className="text-lg text-white/90 max-w-2xl mx-auto">
             {process.description}
           </p>
         </div>
@@ -73,7 +73,7 @@ export default function InteractiveProcessSection() {
                   className={`w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center border transition-all duration-300 ${
                     idx === activeStep
                       ? `border-current ${step.color} bg-white/5`
-                      : "border-white/20 bg-transparent text-white"
+                      : "border-white/40 bg-transparent text-white"
                   }`}
                 >
                   <step.icon size={20} className="transition-colors" />
@@ -144,7 +144,7 @@ export default function InteractiveProcessSection() {
                         className={`w-2 h-2 rounded-full ${currentStep.color.replace("text-", "bg-")}`}
                       />
                     </div>
-                    <p className="text-base md:text-lg text-white/80 font-light group-hover:text-white transition-colors leading-relaxed">
+                    <p className="text-base md:text-lg text-white/90 font-light group-hover:text-white transition-colors leading-relaxed">
                       {detail}
                     </p>
                   </div>
@@ -171,13 +171,13 @@ export default function InteractiveProcessSection() {
               <button
                 onClick={() => setActiveStep(Math.max(0, activeStep - 1))}
                 disabled={activeStep === 0}
-                className="flex items-center gap-2 text-white/40 hover:text-white disabled:opacity-20 disabled:cursor-not-allowed transition-colors text-sm font-medium"
+                className="flex items-center gap-2 text-white/90 hover:text-white disabled:opacity-20 disabled:cursor-not-allowed transition-colors text-sm font-medium"
               >
                 <ArrowRight size={16} className="rotate-180" />
                 ANTERIOR
               </button>
 
-              <span className="text-xs text-white/20 font-mono tracking-widest">
+              <span className="text-xs text-white/90 font-mono tracking-widest">
                 {activeStep + 1} / {steps.length}
               </span>
 
@@ -186,7 +186,7 @@ export default function InteractiveProcessSection() {
                   setActiveStep(Math.min(steps.length - 1, activeStep + 1))
                 }
                 disabled={activeStep === steps.length - 1}
-                className="flex items-center gap-2 text-white/40 hover:text-white disabled:opacity-20 disabled:cursor-not-allowed transition-colors text-sm font-medium"
+                className="flex items-center gap-2 text-white/90 hover:text-white disabled:opacity-20 disabled:cursor-not-allowed transition-colors text-sm font-medium"
               >
                 SIGUIENTE
                 <ArrowRight size={16} />
@@ -205,9 +205,9 @@ export default function InteractiveProcessSection() {
               </h4>
               <div className="text-6xl md:text-7xl font-bold mb-3 text-white tracking-tighter relative z-10">
                 7-12{" "}
-                <span className="text-3xl text-white/40 font-light">días</span>
+                <span className="text-3xl text-white/90 font-light">días</span>
               </div>
-              <p className="text-base text-white/60 font-light relative z-10 max-w-sm">
+              <p className="text-base text-white/90 font-light relative z-10 max-w-sm">
                 Desde la primera reunión hasta el lanzamiento oficial de tu
                 sitio.
               </p>
@@ -215,7 +215,7 @@ export default function InteractiveProcessSection() {
 
             {/* Quick Navigation */}
             <div className="rounded-2xl border border-white/5 bg-white/5 p-6 flex-1 flex flex-col">
-              <h4 className="text-xs font-mono text-white/40 mb-6 uppercase tracking-widest">
+              <h4 className="text-xs font-mono text-white/90 mb-6 uppercase tracking-widest">
                 ETAPAS DEL PROYECTO
               </h4>
               <div className="space-y-2 flex-1 flex flex-col justify-center">
@@ -231,20 +231,20 @@ export default function InteractiveProcessSection() {
                   >
                     <div className="flex items-center gap-4">
                       <div
-                        className={`w-2 h-2 rounded-full transition-all duration-300 ${idx === activeStep ? step.color.replace("text-", "bg-") + " scale-125 shadow-[0_0_10px_currentColor]" : "bg-white/20"}`}
+                        className={`w-2 h-2 rounded-full transition-all duration-300 ${idx === activeStep ? step.color.replace("text-", "bg-") + " scale-125 shadow-[0_0_10px_currentColor]" : "bg-white/40"}`}
                       />
                       <span
                         className={`text-base font-medium transition-colors ${
                           idx === activeStep
                             ? "text-white"
-                            : "text-white/40 group-hover:text-white/60"
+                            : "text-white/90 group-hover:text-white/70"
                         }`}
                       >
                         {step.title}
                       </span>
                     </div>
                     {idx === activeStep && (
-                      <ArrowRight size={18} className="text-white/40" />
+                      <ArrowRight size={18} className="text-white/90" />
                     )}
                   </button>
                 ))}
@@ -256,7 +256,7 @@ export default function InteractiveProcessSection() {
         {/* CTA */}
         <div className="mt-12 rounded-2xl border border-holographic/20 bg-holographic/5 p-8 text-center relative overflow-hidden group">
           <div className="absolute inset-0 bg-holographic/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity" />
-          <p className="text-sm text-white/70 mb-4 relative z-10">
+          <p className="text-sm text-white/90 mb-4 relative z-10">
             ¿Querés ver este proceso en acción con tu proyecto?
           </p>
           <a

@@ -23,7 +23,7 @@ export default function NavbarMobileMenu({
           exit={{ opacity: 0, y: -20 }}
           className="fixed inset-0 top-[76px] z-40 bg-deep-void/95 backdrop-blur-xl md:hidden flex flex-col p-6"
         >
-          <div className="flex flex-col gap-6 text-xl font-bold text-white/80">
+          <div className="flex flex-col gap-6 text-xl font-bold text-white">
             {navbar.menu.map((item, idx) => (
               <motion.div
                 key={item.name}

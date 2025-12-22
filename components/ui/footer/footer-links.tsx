@@ -9,12 +9,12 @@ export default function FooterLinks() {
       <h3 className="text-white font-bold mb-6 tracking-widest text-sm">
         {footer.menuTitle}
       </h3>
-      <div className="flex flex-col gap-3 text-white/50">
+      <div className="flex flex-col gap-3 text-white/90">
         {footer.menuLinks.map((link, idx) => (
           <Link
             key={idx}
             href={link.href}
-            className="hover:text-holographic transition-colors"
+            className="hover:text-holographic transition-colors py-2 block"
           >
             {link.name}
           </Link>

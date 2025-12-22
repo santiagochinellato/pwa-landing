@@ -1,0 +1,440 @@
+
+> web-factory-main@0.1.0 build
+> next build
+
+   ▲ Next.js 16.0.7 (Turbopack)
+
+   Creating an optimized production build ...
+
+> Build error occurred
+Error: Turbopack build failed with 11 errors:
+./components/smooth-scroll.tsx
+Error evaluating Node.js code
+BrowserslistError: Unknown browser query `not deep`. Maybe you are using old Browserslist or made typo in query.
+    [at unknownQuery (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:4597)]
+    [at Function.select (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:21609)]
+    [at /home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:5323]
+    [at <anonymous>]
+    [at resolve (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:5160)]
+    [at browserslist (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:6726)]
+    [at resolveTargets (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:13:148340)]
+    [at resolveTargetsCached (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:13:148526)]
+    [at getTargets (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:13:149234)]
+    [at resolveTargets (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:115525)]
+    [at loadPrivatePartialConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:110234)]
+    [at <anonymous>]
+    [at loadFullConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:96551)]
+    [at <anonymous>]
+    [at loadOptionsImpl (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:106199)]
+    [at <anonymous>]
+    [at evaluateSync (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at sync (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at stopHiding - secret - don't use this - v1 (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:133315)]
+    [at loadOptionsSync (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:106438)]
+    [at loadOptions (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:106627)]
+    [at getFreshConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/get-config.js:367:49)]
+    [at getConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/get-config.js:424:31)]
+    [at async transform (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/transform.js:74:25)]
+    [at async (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/index.js:36:108)]
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16]
+    [at async nextBabelLoader (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/index.js:36:63)]
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16]
+
+
+./components/ui/client-wrapper.tsx
+Error evaluating Node.js code
+BrowserslistError: Unknown browser query `not deep`. Maybe you are using old Browserslist or made typo in query.
+    [at unknownQuery (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:4597)]
+    [at Function.select (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:21609)]
+    [at /home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:5323]
+    [at <anonymous>]
+    [at resolve (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:5160)]
+    [at browserslist (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:6726)]
+    [at resolveTargets (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:13:148340)]
+    [at resolveTargetsCached (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:13:148526)]
+    [at getTargets (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:13:149234)]
+    [at resolveTargets (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:115525)]
+    [at loadPrivatePartialConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:110234)]
+    [at <anonymous>]
+    [at loadFullConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:96551)]
+    [at <anonymous>]
+    [at loadOptionsImpl (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:106199)]
+    [at <anonymous>]
+    [at evaluateSync (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at sync (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at stopHiding - secret - don't use this - v1 (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:133315)]
+    [at loadOptionsSync (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:106438)]
+    [at loadOptions (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:106627)]
+    [at getFreshConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/get-config.js:367:49)]
+    [at getConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/get-config.js:424:31)]
+    [at async transform (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/transform.js:74:25)]
+    [at async (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/index.js:36:108)]
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16]
+    [at async nextBabelLoader (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/index.js:36:63)]
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16]
+
+Import trace:
+  Server Component:
+    ./components/ui/client-wrapper.tsx
+    ./app/layout.tsx
+
+
+./components/ui/differentials-section.tsx
+Error evaluating Node.js code
+BrowserslistError: Unknown browser query `not deep`. Maybe you are using old Browserslist or made typo in query.
+    [at unknownQuery (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:4597)]
+    [at Function.select (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:21609)]
+    [at /home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:5323]
+    [at <anonymous>]
+    [at resolve (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:5160)]
+    [at browserslist (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:6726)]
+    [at resolveTargets (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:13:148340)]
+    [at resolveTargetsCached (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:13:148526)]
+    [at getTargets (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:13:149234)]
+    [at resolveTargets (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:115525)]
+    [at loadPrivatePartialConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:110234)]
+    [at <anonymous>]
+    [at loadFullConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:96551)]
+    [at <anonymous>]
+    [at loadOptionsImpl (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:106199)]
+    [at <anonymous>]
+    [at evaluateSync (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at sync (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at stopHiding - secret - don't use this - v1 (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:133315)]
+    [at loadOptionsSync (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:106438)]
+    [at loadOptions (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:106627)]
+    [at getFreshConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/get-config.js:367:49)]
+    [at getConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/get-config.js:424:31)]
+    [at async transform (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/transform.js:74:25)]
+    [at async (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/index.js:36:108)]
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16]
+    [at async nextBabelLoader (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/index.js:36:63)]
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16]
+
+Import trace:
+  Server Component:
+    ./components/ui/differentials-section.tsx
+    ./app/page.tsx
+
+
+./components/ui/footer/index.tsx
+Error evaluating Node.js code
+BrowserslistError: Unknown browser query `not deep`. Maybe you are using old Browserslist or made typo in query.
+    [at unknownQuery (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:4597)]
+    [at Function.select (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:21609)]
+    [at /home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:5323]
+    [at <anonymous>]
+    [at resolve (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:5160)]
+    [at browserslist (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:6726)]
+    [at resolveTargets (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:13:148340)]
+    [at resolveTargetsCached (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:13:148526)]
+    [at getTargets (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:13:149234)]
+    [at resolveTargets (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:115525)]
+    [at loadPrivatePartialConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:110234)]
+    [at <anonymous>]
+    [at loadFullConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:96551)]
+    [at <anonymous>]
+    [at loadOptionsImpl (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:106199)]
+    [at <anonymous>]
+    [at evaluateSync (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at sync (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at stopHiding - secret - don't use this - v1 (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:133315)]
+    [at loadOptionsSync (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:106438)]
+    [at loadOptions (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:106627)]
+    [at getFreshConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/get-config.js:367:49)]
+    [at getConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/get-config.js:424:31)]
+    [at async transform (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/transform.js:74:25)]
+    [at async (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/index.js:36:108)]
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16]
+    [at async nextBabelLoader (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/index.js:36:63)]
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16]
+
+Import trace:
+  Server Component:
+    ./components/ui/footer/index.tsx
+    ./app/page.tsx
+
+
+./components/ui/hero-section.tsx
+Error evaluating Node.js code
+BrowserslistError: Unknown browser query `not deep`. Maybe you are using old Browserslist or made typo in query.
+    [at unknownQuery (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:4597)]
+    [at Function.select (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:21609)]
+    [at /home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:5323]
+    [at <anonymous>]
+    [at resolve (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:5160)]
+    [at browserslist (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:6726)]
+    [at resolveTargets (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:13:148340)]
+    [at resolveTargetsCached (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:13:148526)]
+    [at getTargets (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:13:149234)]
+    [at resolveTargets (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:115525)]
+    [at loadPrivatePartialConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:110234)]
+    [at <anonymous>]
+    [at loadFullConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:96551)]
+    [at <anonymous>]
+    [at loadOptionsImpl (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:106199)]
+    [at <anonymous>]
+    [at evaluateSync (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at sync (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at stopHiding - secret - don't use this - v1 (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:133315)]
+    [at loadOptionsSync (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:106438)]
+    [at loadOptions (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:106627)]
+    [at getFreshConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/get-config.js:367:49)]
+    [at getConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/get-config.js:424:31)]
+    [at async transform (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/transform.js:74:25)]
+    [at async (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/index.js:36:108)]
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16]
+    [at async nextBabelLoader (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/index.js:36:63)]
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16]
+
+Import trace:
+  Server Component:
+    ./components/ui/hero-section.tsx
+    ./app/page.tsx
+
+
+./components/ui/interactive-process-section.tsx
+Error evaluating Node.js code
+BrowserslistError: Unknown browser query `not deep`. Maybe you are using old Browserslist or made typo in query.
+    [at unknownQuery (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:4597)]
+    [at Function.select (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:21609)]
+    [at /home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:5323]
+    [at <anonymous>]
+    [at resolve (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:5160)]
+    [at browserslist (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:6726)]
+    [at resolveTargets (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:13:148340)]
+    [at resolveTargetsCached (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:13:148526)]
+    [at getTargets (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:13:149234)]
+    [at resolveTargets (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:115525)]
+    [at loadPrivatePartialConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:110234)]
+    [at <anonymous>]
+    [at loadFullConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:96551)]
+    [at <anonymous>]
+    [at loadOptionsImpl (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:106199)]
+    [at <anonymous>]
+    [at evaluateSync (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at sync (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at stopHiding - secret - don't use this - v1 (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:133315)]
+    [at loadOptionsSync (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:106438)]
+    [at loadOptions (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:106627)]
+    [at getFreshConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/get-config.js:367:49)]
+    [at getConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/get-config.js:424:31)]
+    [at async transform (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/transform.js:74:25)]
+    [at async (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/index.js:36:108)]
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16]
+    [at async nextBabelLoader (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/index.js:36:63)]
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16]
+
+Import trace:
+  Server Component:
+    ./components/ui/interactive-process-section.tsx
+    ./app/page.tsx
+
+
+./components/ui/magnetic-cursor.tsx
+Error evaluating Node.js code
+BrowserslistError: Unknown browser query `not deep`. Maybe you are using old Browserslist or made typo in query.
+    [at unknownQuery (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:4597)]
+    [at Function.select (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:21609)]
+    [at /home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:5323]
+    [at <anonymous>]
+    [at resolve (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:5160)]
+    [at browserslist (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:6726)]
+    [at resolveTargets (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:13:148340)]
+    [at resolveTargetsCached (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:13:148526)]
+    [at getTargets (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:13:149234)]
+    [at resolveTargets (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:115525)]
+    [at loadPrivatePartialConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:110234)]
+    [at <anonymous>]
+    [at loadFullConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:96551)]
+    [at <anonymous>]
+    [at loadOptionsImpl (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:106199)]
+    [at <anonymous>]
+    [at evaluateSync (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at sync (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at stopHiding - secret - don't use this - v1 (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:133315)]
+    [at loadOptionsSync (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:106438)]
+    [at loadOptions (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:106627)]
+    [at getFreshConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/get-config.js:367:49)]
+    [at getConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/get-config.js:424:31)]
+    [at async transform (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/transform.js:74:25)]
+    [at async (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/index.js:36:108)]
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16]
+    [at async nextBabelLoader (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/index.js:36:63)]
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16]
+
+
+./components/ui/navbar/index.tsx
+Error evaluating Node.js code
+BrowserslistError: Unknown browser query `not deep`. Maybe you are using old Browserslist or made typo in query.
+    [at unknownQuery (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:4597)]
+    [at Function.select (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:21609)]
+    [at /home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:5323]
+    [at <anonymous>]
+    [at resolve (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:5160)]
+    [at browserslist (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:6726)]
+    [at resolveTargets (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:13:148340)]
+    [at resolveTargetsCached (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:13:148526)]
+    [at getTargets (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:13:149234)]
+    [at resolveTargets (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:115525)]
+    [at loadPrivatePartialConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:110234)]
+    [at <anonymous>]
+    [at loadFullConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:96551)]
+    [at <anonymous>]
+    [at loadOptionsImpl (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:106199)]
+    [at <anonymous>]
+    [at evaluateSync (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at sync (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at stopHiding - secret - don't use this - v1 (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:133315)]
+    [at loadOptionsSync (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:106438)]
+    [at loadOptions (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:106627)]
+    [at getFreshConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/get-config.js:367:49)]
+    [at getConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/get-config.js:424:31)]
+    [at async transform (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/transform.js:74:25)]
+    [at async (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/index.js:36:108)]
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16]
+    [at async nextBabelLoader (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/index.js:36:63)]
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16]
+
+Import trace:
+  Server Component:
+    ./components/ui/navbar/index.tsx
+    ./app/page.tsx
+
+
+./components/ui/project-card.tsx
+Error evaluating Node.js code
+BrowserslistError: Unknown browser query `not deep`. Maybe you are using old Browserslist or made typo in query.
+    [at unknownQuery (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:4597)]
+    [at Function.select (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:21609)]
+    [at /home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:5323]
+    [at <anonymous>]
+    [at resolve (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:5160)]
+    [at browserslist (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:6726)]
+    [at resolveTargets (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:13:148340)]
+    [at resolveTargetsCached (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:13:148526)]
+    [at getTargets (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:13:149234)]
+    [at resolveTargets (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:115525)]
+    [at loadPrivatePartialConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:110234)]
+    [at <anonymous>]
+    [at loadFullConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:96551)]
+    [at <anonymous>]
+    [at loadOptionsImpl (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:106199)]
+    [at <anonymous>]
+    [at evaluateSync (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at sync (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at stopHiding - secret - don't use this - v1 (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:133315)]
+    [at loadOptionsSync (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:106438)]
+    [at loadOptions (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:106627)]
+    [at getFreshConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/get-config.js:367:49)]
+    [at getConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/get-config.js:424:31)]
+    [at async transform (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/transform.js:74:25)]
+    [at async (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/index.js:36:108)]
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16]
+    [at async nextBabelLoader (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/index.js:36:63)]
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16]
+
+Import trace:
+  Server Component:
+    ./components/ui/project-card.tsx
+    ./app/page.tsx
+
+
+./components/ui/stack-section.tsx
+Error evaluating Node.js code
+BrowserslistError: Unknown browser query `not deep`. Maybe you are using old Browserslist or made typo in query.
+    [at unknownQuery (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:4597)]
+    [at Function.select (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:21609)]
+    [at /home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:5323]
+    [at <anonymous>]
+    [at resolve (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:5160)]
+    [at browserslist (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:6726)]
+    [at resolveTargets (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:13:148340)]
+    [at resolveTargetsCached (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:13:148526)]
+    [at getTargets (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:13:149234)]
+    [at resolveTargets (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:115525)]
+    [at loadPrivatePartialConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:110234)]
+    [at <anonymous>]
+    [at loadFullConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:96551)]
+    [at <anonymous>]
+    [at loadOptionsImpl (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:106199)]
+    [at <anonymous>]
+    [at evaluateSync (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at sync (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at stopHiding - secret - don't use this - v1 (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:133315)]
+    [at loadOptionsSync (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:106438)]
+    [at loadOptions (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:106627)]
+    [at getFreshConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/get-config.js:367:49)]
+    [at getConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/get-config.js:424:31)]
+    [at async transform (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/transform.js:74:25)]
+    [at async (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/index.js:36:108)]
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16]
+    [at async nextBabelLoader (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/index.js:36:63)]
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16]
+
+Import trace:
+  Server Component:
+    ./components/ui/stack-section.tsx
+    ./app/page.tsx
+
+
+./components/ui/testimonials-section.tsx
+Error evaluating Node.js code
+BrowserslistError: Unknown browser query `not deep`. Maybe you are using old Browserslist or made typo in query.
+    [at unknownQuery (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:4597)]
+    [at Function.select (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:21609)]
+    [at /home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:5323]
+    [at <anonymous>]
+    [at resolve (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:5160)]
+    [at browserslist (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/browserslist/index.js:1:6726)]
+    [at resolveTargets (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:13:148340)]
+    [at resolveTargetsCached (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:13:148526)]
+    [at getTargets (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:13:149234)]
+    [at resolveTargets (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:115525)]
+    [at loadPrivatePartialConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:110234)]
+    [at <anonymous>]
+    [at loadFullConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:96551)]
+    [at <anonymous>]
+    [at loadOptionsImpl (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:106199)]
+    [at <anonymous>]
+    [at evaluateSync (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at sync (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at stopHiding - secret - don't use this - v1 (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:133315)]
+    [at loadOptionsSync (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:106438)]
+    [at loadOptions (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/compiled/babel/bundle.js:1:106627)]
+    [at getFreshConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/get-config.js:367:49)]
+    [at getConfig (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/get-config.js:424:31)]
+    [at async transform (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/transform.js:74:25)]
+    [at async (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/index.js:36:108)]
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16]
+    [at async nextBabelLoader (/home/santi/patagonia-web-factory/apps/web-factory-main/node_modules/next/dist/build/babel/loader/index.js:36:63)]
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16]
+
+Import trace:
+  Server Component:
+    ./components/ui/testimonials-section.tsx
+    ./app/page.tsx
+
+
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16])
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16])
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16])
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16])
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16])
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16])
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16])
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16])
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16])
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16])
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16])
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16])
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16])
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16])
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16])
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16])
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16])
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16])
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16])
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16])
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16])
+    at async DummySpan.traceAsyncFn (turbopack:///[turbopack-node]/transforms/webpack-loaders.ts:115:12) [/home/santi/patagonia-web-factory/apps/web-factory-main/.next/build/chunks/[root-of-the-server]__6e020478._.js:126:16])

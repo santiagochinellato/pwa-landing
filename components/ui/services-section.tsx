@@ -51,7 +51,7 @@ export default function ServicesSection() {
               <div className="mt-auto pt-6 border-t border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                 <div className="flex items-center gap-6">
                   <div>
-                    <div className="text-sm text-white/60 mb-1">
+                    <div className="text-sm text-white/90 mb-1">
                       {services.mainService.durationLabel}
                     </div>
                     <div className="text-lg font-semibold text-white">
@@ -91,12 +91,12 @@ export default function ServicesSection() {
                     {service.title}
                   </h3>
 
-                  <p className="text-white/70 text-sm font-light leading-relaxed mb-4 relative z-10">
+                  <p className="text-white/90 text-sm font-light leading-relaxed mb-4 relative z-10">
                     {service.description}
                   </p>
 
                   <div className="flex items-center justify-between text-sm relative z-10">
-                    <span className="text-white/40 font-mono text-xs">
+                    <span className="text-white/90 font-mono text-xs">
                       {service.duration}
                     </span>
                   </div>
@@ -124,17 +124,17 @@ export default function ServicesSection() {
                     {services.fullPackage.badge}
                   </span>
                 </div>
-                <p className="text-white/60 text-sm">
+                <p className="text-white/90 text-sm">
                   {services.fullPackage.description}
                 </p>
               </div>
             </div>
             <div className="flex items-center gap-4">
               {/* <div className="text-right">
-                <div className="text-sm text-white/60">Desde</div>
+                <div className="text-sm text-white/90">Desde</div>
                 <div className="text-2xl font-bold text-holographic">
                   $3200{" "}
-                  <span className="text-base text-white/60">+ $200/mes</span>
+                  <span className="text-base text-white/90">+ $200/mes</span>
                 </div>
               </div> */}
               <a

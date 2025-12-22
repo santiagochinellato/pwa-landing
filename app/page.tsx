@@ -1,6 +1,6 @@
 import HeroSection from "@/components/ui/hero-section";
 import Navbar from "@/components/ui/navbar";
-import InfiniteMarquee from "@/components/ui/infinite-marquee";
+import InfiniteMarquee from "@/components/ui/dynamic-marquee";
 import ProjectCard from "@/components/ui/project-card";
 import Footer from "@/components/ui/footer";
 import DifferentialsSection from "@/components/ui/differentials-section";

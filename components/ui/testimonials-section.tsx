@@ -75,6 +75,7 @@ export default function TestimonialsSection() {
                   prev === 0 ? testimonialList.length - 1 : prev - 1
                 )
               }
+              aria-label="Previous testimonial"
               className="p-3 rounded-full bg-white/5 border border-white/10 hover:bg-holographic/20 hover:text-holographic hover:border-holographic/50 transition-all active:scale-95"
             >
               <ChevronLeft size={20} />
@@ -83,6 +84,7 @@ export default function TestimonialsSection() {
               onClick={() =>
                 setIndex((prev) => (prev + 1) % testimonialList.length)
               }
+              aria-label="Next testimonial"
               className="p-3 rounded-full bg-white/5 border border-white/10 hover:bg-holographic/20 hover:text-holographic hover:border-holographic/50 transition-all active:scale-95"
             >
               <ChevronRight size={20} />
@@ -129,7 +131,7 @@ export default function TestimonialsSection() {
                       />
                     </div>
 
-                    <p className="text-white/80 font-light leading-relaxed mb-6 flex-1 text-sm md:text-base italic">
+                    <p className="text-white/90 font-light leading-relaxed mb-6 flex-1 text-sm md:text-base italic">
                       &ldquo;{testimonial.content}&rdquo;
                     </p>
 
@@ -143,10 +145,10 @@ export default function TestimonialsSection() {
                         />
                       </div>
                       <div>
-                        <h4 className="font-bold text-white text-sm">
+                        <div className="font-bold text-white text-sm">
                           {testimonial.name}
-                        </h4>
-                        <p className="text-[10px] md:text-xs text-white/40 font-mono uppercase tracking-wider">
+                        </div>
+                        <p className="text-[10px] md:text-xs text-white/90 font-mono uppercase tracking-wider">
                           {testimonial.role}
                         </p>
                       </div>
@@ -164,6 +166,7 @@ export default function TestimonialsSection() {
             <button
               key={idx}
               onClick={() => setIndex(idx)}
+              aria-label={`Go to testimonial slide ${idx + 1}`}
               className={`h-1.5 rounded-full transition-all duration-300 ${
                 idx === index
                   ? "w-8 bg-holographic"

@@ -37,7 +37,7 @@ export default function DifferentialsSection() {
                 <h3 className="text-xl font-bold text-white max-w-[80%] mb-4">
                   {item.title}
                 </h3>
-                <p className="text-white/60 text-sm leading-relaxed mb-6">
+                <p className="text-white/90 text-sm leading-relaxed mb-6">
                   {item.copy}
                 </p>
 
@@ -46,7 +46,7 @@ export default function DifferentialsSection() {
                   <span className="text-4xl font-black text-white group-hover:text-holographic transition-colors">
                     {item.metric}
                   </span>
-                  <span className="text-xs text-white/40 uppercase tracking-widest">
+                  <span className="text-xs text-white/90 uppercase tracking-widest">
                     {item.metricLabel}
                   </span>
                 </div>

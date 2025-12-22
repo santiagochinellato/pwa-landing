@@ -47,7 +47,7 @@ export default function StackSection() {
             {stack.title}{" "}
             <span className="text-holographic">{stack.titleHighlight}</span>
           </h1>
-          <p className="text-lg text-white/60 max-w-2xl mx-auto font-light">
+          <p className="text-lg text-white/90 max-w-2xl mx-auto font-light">
             {stack.description}
           </p>
         </div>
@@ -79,21 +79,21 @@ export default function StackSection() {
                         className={
                           idx === activeTab
                             ? "text-holographic"
-                            : "text-white/40"
+                            : "text-white/90"
                         }
                       />
                     </div>
                     <div className="flex-1 min-w-0">
-                      <h3
+                      <div
                         className={`font-bold mb-1 ${
                           idx === activeTab
                             ? "text-holographic"
-                            : "text-white/70"
+                            : "text-white/90"
                         }`}
                       >
                         {benefit.title}
-                      </h3>
-                      <p className="text-xs text-white/40 font-mono">
+                      </div>
+                      <p className="text-xs text-white/90 font-mono">
                         {benefit.tech}
                       </p>
                     </div>
@@ -122,7 +122,7 @@ export default function StackSection() {
                   <h3 className="text-2xl font-bold text-holographic">
                     {current.title}
                   </h3>
-                  <p className="text-sm text-white/60 font-mono">
+                  <p className="text-sm text-white/90 font-mono">
                     {current.tech}
                   </p>
                 </div>
@@ -135,7 +135,7 @@ export default function StackSection() {
                     <div className="text-5xl font-bold text-white mb-1">
                       {current.metric}
                     </div>
-                    <div className="text-sm text-white/60">
+                    <div className="text-sm text-white/90">
                       {current.comparison}
                     </div>
                   </div>
@@ -143,7 +143,7 @@ export default function StackSection() {
                     <div className="text-3xl font-bold text-holographic">
                       {current.percentage}%
                     </div>
-                    <div className="text-xs text-white/40">optimización</div>
+                    <div className="text-xs text-white/90">optimización</div>
                   </div>
                 </div>
 
@@ -157,13 +157,13 @@ export default function StackSection() {
               </div>
 
               {/* Description */}
-              <p className="text-white/70 leading-relaxed mb-6 font-light">
+              <p className="text-white/90 leading-relaxed mb-6 font-light">
                 {current.description}
               </p>
 
               {/* Visual Comparison */}
               <div className="rounded-xl bg-white/5 p-6 border border-white/10">
-                <div className="text-xs font-mono text-white/40 mb-4">
+                <div className="text-xs font-mono text-white/90 mb-4">
                   COMPARACIÓN:
                 </div>
                 <div className="space-y-4">
@@ -185,10 +185,10 @@ export default function StackSection() {
                   </div>
                   <div>
                     <div className="flex justify-between text-sm mb-2">
-                      <span className="text-white/40">
+                      <span className="text-white/90">
                         Promedio del mercado
                       </span>
-                      <span className="font-bold text-white/40">
+                      <span className="font-bold text-white/90">
                         {current.comparison}
                       </span>
                     </div>
@@ -205,7 +205,7 @@ export default function StackSection() {
 
             {/* CTA */}
             <div className="mt-6 rounded-xl bg-holographic/10 border border-holographic/30 p-6 text-center">
-              <p className="text-sm text-white/80 mb-3">
+              <p className="text-sm text-white/90 mb-3">
                 ¿Querés una web con estas ventajas?
               </p>
               <a
@@ -249,19 +249,19 @@ export default function StackSection() {
                       <BenefitIcon
                         size={24}
                         className={
-                          isOpen ? "text-holographic" : "text-white/40"
+                          isOpen ? "text-holographic" : "text-white/90"
                         }
                       />
                     </div>
                     <div className="text-left">
-                      <h3
+                      <div
                         className={`font-bold text-sm mb-1 ${
-                          isOpen ? "text-holographic" : "text-white/70"
+                          isOpen ? "text-holographic" : "text-white/90"
                         }`}
                       >
                         {benefit.title}
-                      </h3>
-                      <p className="text-xs text-white/40 font-mono">
+                      </div>
+                      <p className="text-xs text-white/90 font-mono">
                         {benefit.tech}
                       </p>
                     </div>
@@ -283,7 +283,7 @@ export default function StackSection() {
                         <div className="text-4xl font-bold text-white mb-1">
                           {benefit.metric}
                         </div>
-                        <div className="text-xs text-white/60">
+                        <div className="text-xs text-white/90">
                           {benefit.comparison}
                         </div>
                       </div>
@@ -291,7 +291,7 @@ export default function StackSection() {
                         <div className="text-2xl font-bold text-holographic">
                           {benefit.percentage}%
                         </div>
-                        <div className="text-[10px] text-white/40">
+                        <div className="text-[10px] text-white/90">
                           optimización
                         </div>
                       </div>
@@ -306,13 +306,13 @@ export default function StackSection() {
                     </div>
 
                     {/* Description */}
-                    <p className="text-white/70 text-sm leading-relaxed font-light">
+                    <p className="text-white/90 text-sm leading-relaxed font-light">
                       {benefit.description}
                     </p>
 
                     {/* Comparison */}
                     <div className="rounded-lg bg-white/5 p-4 border border-white/10">
-                      <div className="text-[10px] font-mono text-white/40 mb-3">
+                      <div className="text-[10px] font-mono text-white/90 mb-3">
                         COMPARACIÓN:
                       </div>
                       <div className="space-y-3">
@@ -334,8 +334,8 @@ export default function StackSection() {
                         </div>
                         <div>
                           <div className="flex justify-between text-xs mb-1">
-                            <span className="text-white/40">Promedio</span>
-                            <span className="font-bold text-white/40">
+                            <span className="text-white/90">Promedio</span>
+                            <span className="font-bold text-white/90">
                               {benefit.comparison}
                             </span>
                           </div>
@@ -356,7 +356,7 @@ export default function StackSection() {
 
           {/* Mobile CTA */}
           <div className="mt-6 rounded-xl bg-holographic/10 border border-holographic/30 p-6 text-center">
-            <p className="text-sm text-white/80 mb-3">
+            <p className="text-sm text-white/90 mb-3">
               ¿Querés una web con estas ventajas?
             </p>
             <a
@@ -385,7 +385,7 @@ export default function StackSection() {
               <div className="text-2xl md:text-3xl font-bold text-holographic mb-2">
                 {stat.value}
               </div>
-              <div className="text-xs md:text-sm text-white/60">
+              <div className="text-xs md:text-sm text-white/90">
                 {stat.label}
               </div>
             </div>

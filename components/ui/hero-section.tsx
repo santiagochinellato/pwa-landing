@@ -19,10 +19,6 @@ export default function HeroSection() {
     restDelta: 0.001,
   });
 
-  // Text Orchestration - simplified
-  const textY = useTransform(smoothProgress, [0, 0.5], [0, -50]);
-  const textOpacity = useTransform(smoothProgress, [0, 0.5], [1, 0]);
-
   // Sphere Reveal
   const sphereScale = useTransform(smoothProgress, [0, 1], [0.8, 1.2]);
   const sphereOpacity = useTransform(smoothProgress, [0, 0.5], [0.4, 0]);
@@ -40,39 +36,21 @@ export default function HeroSection() {
       </div>
 
       <div className="z-10 flex flex-col items-center px-6 text-center max-w-5xl mx-auto">
-        <motion.h1
-          style={{ y: textY, opacity: textOpacity }}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-3xl md:text-5xl lg:text-7xl font-bold leading-[1.1] tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-white to-white/60 mb-6"
-        >
+        <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold leading-[1.1] tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-white to-white/60 mb-6">
           {hero.titleLine1} <br />
           <span className="text-white">{hero.titleHighlight}</span> <br />
           <span className="text-holographic">{hero.subtitle}</span>
-        </motion.h1>
+        </h1>
 
-        <motion.p
-          style={{ y: textY, opacity: textOpacity }}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="text-lg md:text-xl text-white/70 max-w-2xl font-light mb-10 leading-relaxed flex flex-col gap-4"
-        >
+        <p className="text-lg md:text-xl text-white/90 max-w-2xl font-light mb-10 leading-relaxed flex flex-col gap-4">
           {hero.description}
           <br className="hidden md:block" />
           <span className="text-white font-medium ">
             {hero.subDescriptionStrong}
           </span>
-        </motion.p>
+        </p>
 
-        <motion.div
-          style={{ y: textY, opacity: textOpacity }}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-          className="flex flex-col md:flex-row gap-4 items-center"
-        >
+        <div className="flex flex-col md:flex-row gap-4 items-center">
           <a
             href={hero.whatsappLink}
             target="_blank"
@@ -92,7 +70,7 @@ export default function HeroSection() {
           >
             {hero.ctaSecondary}
           </Link>
-        </motion.div>
+        </div>
       </div>
 
       {/* The "Sphere" Background Element */}

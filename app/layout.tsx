@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import SmoothScroll from "@/components/smooth-scroll";
-import MagneticCursor from "@/components/ui/magnetic-cursor";
 import LocalBusinessSchema from "@/components/seo/local-business-schema";
+import ClientWrapper from "@/components/ui/client-wrapper";
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -56,10 +56,7 @@ export default function RootLayout({
       <body className={`${inter.variable} antialiased`}>
         {/* Inyectamos el SEO Local Semántico */}
         <LocalBusinessSchema />
-        <SmoothScroll>
-          <MagneticCursor />
-          {children}
-        </SmoothScroll>
+        <ClientWrapper>{children}</ClientWrapper>
       </body>
     </html>
   );

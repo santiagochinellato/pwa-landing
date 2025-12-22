@@ -61,10 +61,10 @@ export default function ProjectCard({
 
             <div className="relative p-8 flex flex-col h-full">
               <div className="flex justify-between items-start mb-6">
-                <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center text-white/50 group-hover:text-holographic transition-colors">
+                <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center text-white group-hover:text-holographic transition-colors">
                   <Icon size={24} />
                 </div>
-                <span className="text-xs font-mono tracking-widest px-3 py-1 rounded-full border border-white/10 bg-white/5 text-white/60">
+                <span className="text-xs font-mono tracking-widest px-3 py-1 rounded-full border border-white/10 bg-white/5 text-white">
                   {category}
                 </span>
               </div>
@@ -78,7 +78,7 @@ export default function ProjectCard({
                   {metrics.map((metric, i) => (
                     <li
                       key={i}
-                      className="flex items-start gap-3 text-white/70 text-sm md:text-base font-light"
+                      className="flex items-start gap-3 text-white text-sm md:text-base font-light"
                     >
                       <CheckCircle2 className="w-5 h-5 text-holographic/70 shrink-0 mt-0.5" />
                       <span>{metric}</span>
@@ -88,7 +88,7 @@ export default function ProjectCard({
               </div>
 
               <div className="mt-auto pt-6 border-t border-white/5 flex justify-between items-center text-sm font-medium">
-                <span className="text-white/40 flex items-center gap-2">
+                <span className="text-white flex items-center gap-2">
                   {imageUrl && <Eye size={16} className="text-holographic" />}
                   {imageUrl ? projectCard.hoverHint : projectCard.viewCase}
                 </span>
@@ -113,10 +113,10 @@ export default function ProjectCard({
 
               {/* Info overlay on image */}
               <div className="absolute bottom-0 left-0 right-0 p-8">
-                <h3 className="text-2xl font-bold text-white mb-2 drop-shadow-lg">
+                <div className="text-2xl font-bold text-white mb-2 drop-shadow-lg">
                   {title}
-                </h3>
-                <p className="text-sm text-white/80 mb-4">{category}</p>
+                </div>
+                <p className="text-sm text-white mb-4">{category}</p>
                 <button className="flex items-center gap-2 text-sm font-medium text-holographic hover:text-white transition-colors">
                   {projectCard.viewCase}
                   <ArrowUpRight size={16} />
@@ -156,7 +156,7 @@ export default function ProjectCard({
 
             {/* Icon Badge Floating */}
             <div className="absolute top-4 left-4">
-              <div className="w-12 h-12 rounded-xl bg-deep-void/80 backdrop-blur-sm border border-white/10 flex items-center justify-center text-white/70 group-hover:text-holographic group-hover:border-holographic/30 transition-all">
+              <div className="w-12 h-12 rounded-xl bg-deep-void/80 backdrop-blur-sm border border-white/10 flex items-center justify-center text-white group-hover:text-holographic group-hover:border-holographic/30 transition-all">
                 <Icon size={24} />
               </div>
             </div>
@@ -167,12 +167,10 @@ export default function ProjectCard({
             {/* Header */}
             <div>
               <div className="flex items-start justify-between mb-4">
-                <h3 className="text-xl font-bold text-white group-hover:text-holographic transition-colors pr-4">
+                <div className="text-xl font-bold text-white group-hover:text-holographic transition-colors pr-4">
                   {title}
-                </h3>
-                <span className="text-[10px] font-mono tracking-widest px-2 py-1 rounded-full border border-white/10 bg-white/5 text-white/60 whitespace-nowrap">
-                  {category}
-                </span>
+                </div>
+                <span className="text-sm text-white mb-4">{category}</span>
               </div>
 
               {/* Metrics */}
@@ -180,7 +178,7 @@ export default function ProjectCard({
                 {metrics.map((metric, i) => (
                   <li
                     key={i}
-                    className="flex items-start gap-2.5 text-white/70 text-sm font-light"
+                    className="flex items-start gap-2.5 text-white text-sm font-light"
                   >
                     <CheckCircle2 className="w-4 h-4 text-holographic/70 shrink-0 mt-0.5" />
                     <span>{metric}</span>
@@ -191,7 +189,7 @@ export default function ProjectCard({
 
             {/* Footer CTA */}
             <div className="pt-4 mt-6 border-t border-white/5 flex justify-between items-center">
-              <span className="text-sm font-medium text-white/40 group-hover:text-white transition-colors">
+              <span className="text-sm font-medium text-white group-hover:text-white transition-colors">
                 {projectCard.viewCase}
               </span>
               <div className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white group-hover:bg-holographic group-hover:text-deep-void transition-all group-hover:scale-110">

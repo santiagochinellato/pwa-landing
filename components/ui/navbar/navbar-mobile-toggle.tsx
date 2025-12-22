@@ -12,7 +12,8 @@ export default function NavbarMobileToggle({
   return (
     <button
       onClick={() => setIsOpen(!isOpen)}
-      className="relative z-50 md:hidden text-white w-10 h-10 flex items-center justify-center rounded-full bg-white/5 border border-white/10 active:scale-95 transition-all"
+      aria-label="Toggle mobile menu"
+      className="relative z-50 md:hidden text-white w-12 h-12 flex items-center justify-center rounded-full bg-white/5 border border-white/10 active:scale-95 transition-all"
     >
       {isOpen ? <X size={20} /> : <Menu size={20} />}
     </button>

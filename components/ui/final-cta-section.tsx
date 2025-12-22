@@ -20,7 +20,7 @@ export default function FinalCTASection() {
           </span>
         </h2>
 
-        <p className="text-xl text-white/70 font-light mb-12 max-w-2xl mx-auto">
+        <p className="text-xl text-white/90 font-light mb-12 max-w-2xl mx-auto">
           {finalCta.subtitle}
         </p>
 
@@ -42,7 +42,7 @@ export default function FinalCTASection() {
           </a>
         </div>
 
-        <p className="text-xs text-white/40 font-mono tracking-wide">
+        <p className="text-xs text-white/90 font-mono tracking-wide">
           {finalCta.footerText}
         </p>
       </div>
