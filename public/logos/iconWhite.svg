@@ -63,7 +63,7 @@
         <!-- Título principal con sombra -->
         <text x="300" y="130" font-family="'Inter', 'Arial', sans-serif" font-size="42" font-weight="800"
             fill="url(#lightPrimaryGrad)" letter-spacing="3" filter="url(#lightShadow)">
-            PATAGONIA DEVS
+            DIGITAL PATAGONIA
         </text>
 
         <!-- Subtítulo -->

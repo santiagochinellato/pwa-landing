@@ -16,27 +16,29 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://patagoniawebfactory.com.ar"),
   title: {
-    default: "Patagonia Web Factory | Desarrollo Web y SEO desde la Patagonia",
-    template: "%s | Patagonia Web Factory",
+    default: "Digital Patagonia | Desarrollo Web y SEO desde la Patagonia",
+    template: "%s | Digital Patagonia",
   },
   description:
-    "Infraestructura digital de alto rendimiento desde la Patagonia para toda Argentina. Diseño web, SEO estratégico y software a medida.",
+    "Agencia de desarrollo web y marketing digital en Bariloche. Creamos sitios web de alto rendimiento, tiendas online y estrategias SEO para potenciar tu negocio.",
   keywords: [
-    "Desarrollo web Argentina",
-    "Diseño web Patagonia",
-    "Agencia SEO Argentina",
-    "Software a medida",
-    "Next.js Argentina",
-    "Infraestructura digital",
-    "Diseño web Bariloche",
+    "Desarrollo Web Bariloche",
+    "Diseño Web Patagonia",
+    "Agencia SEO Bariloche",
+    "Marketing Digital Argentina",
+    "Diseño UX/UI",
+    "Tiendas Online",
+    "Ecommerce",
   ],
-  authors: [{ name: "Patagonia Web Factory" }],
+  authors: [{ name: "Digital Patagonia" }],
+  creator: "Digital Patagonia",
   openGraph: {
-    title: "Patagonia Web Factory - Infraestructura Digital desde la Patagonia",
-    description:
-      "Convertimos tu negocio en un líder digital. Desarrollo web de alto impacto desde la Patagonia para todo el país.",
     type: "website",
     locale: "es_AR",
+    url: "https://digitalpatagonia.com",
+    title: "Digital Patagonia - Infraestructura Digital desde la Patagonia",
+    description:
+      "Convertimos tu negocio en un líder digital. Desarrollo web de alto impacto desde la Patagonia para todo el país.",
     images: ["/og-image-bariloche.jpg"],
   },
   icons: {

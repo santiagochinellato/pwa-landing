@@ -302,10 +302,10 @@
   "footer": {
     "title": "¿Hablamos de",
     "titleHighlight": "tu proyecto?",
-    "email": "hola@patagoniaweb.ar",
-    "phone": "+54 9 294 422 7526",
+    "email": "hola@digitalpatagonia.com",
+    "phone": "+54 9 294 4...",
     "address": "San Carlos de Bariloche, Río Negro",
-    "menuTitle": "NAVEGACIÓN",
+    "menuTitle": "Navegación",
     "socialTitle": "SEGUINOS",
     "menuLinks": [
       {"name": "Trabajo", "href": "#portfolio"},
@@ -313,12 +313,12 @@
       {"name": "Metodología", "href": "#process"},
       {"name": "Contacto", "href": "#contact"}
     ],
-    "copyright": "© 2025 PATAGONIA WEB FACTORY. TODOS LOS DERECHOS RESERVADOS.",
+    "copyright": "© 2025 DIGITAL PATAGONIA. TODOS LOS DERECHOS RESERVADOS.",
     "hours": "LUN - VIE: 9:00 - 18:00 ART",
     "socialLinks": {
-      "linkedin": "https://linkedin.com",
-      "instagram": "https://instagram.com",
-      "github": "https://github.com"
+      "linkedin": "https://linkedin.com/company/digitalpatagonia",
+      "instagram": "https://instagram.com/digitalpatagonia",
+      "github": "https://github.com/digitalpatagonia"
     },
     "madeWith": "DESDE LA PATAGONIA AL MUNDO"
   },
@@ -327,33 +327,55 @@
     "viewCase": "Ver detalles"
   },
   "projects": [
+
+  {
+    "title": "InterPracsys",
+    "category": "SOFTWARE A MEDIDA / DASHBOARD",
+    "type": "corporate",
+    "metrics": ["posicionamiento de marca profesional", "interfaz amigable para el usuario final", "fidelización de clientes"],
+    "link": "https://patagonia-web-factory-interpracsys.vercel.app/",
+    "imageUrl": "/projects/interpracsys.webp"
+  },
     {
-      "title": "Hotel Boutique Bariloche",
-      "category": "WEB INSTITUCIONAL",
-      "type": "hotel",
-      "metrics": ["40% más consultas directo web", "Carga ultra-rápida (1.2s)", "Diseño 100% responsive"],
-      "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800"
-    },
-    {
-      "title": "Estudio Contable NQN",
-      "category": "CORPORATIVO",
-      "type": "corporate",
-      "metrics": ["65% menos consultas repetitivas", "Panel de gestión propio", "Blog con 20+ artículos SEO"],
-      "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800"
-    },
-    {
-      "title": "Ecommerce Regional",
-      "category": "TIENDA ONLINE",
-      "type": "ecommerce",
-      "metrics": ["200+ productos gestionados", "Checkout optimizado (85% conv.)", "Integración Mercado Pago"],
-      "imageUrl": "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=800"
-    },
-    {
-      "title": "Consultora Tech BUE",
-      "category": "LANDING B2B",
-      "type": "landing",
-      "metrics": ["12% tasa de conversión leads", "Validación de formularios IA", "Conexión directa a CRM"],
-      "imageUrl": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800"
-    }
-  ]
+    "title": "Baritrekking",
+    "category": "COMUNIDAD",
+    "type": "community",
+    "metrics": ["Alto impacto visual para fomentar la comunidad", "Diseño enfocado en dar valor a la experiencia", "interfaz amigable para el usuario final"],
+    "link": "https://baritrekking.vercel.app/",
+    "imageUrl": "/projects/baritrekking.webp"
+  },
+  {
+    "title": "Estudio Contable CILS",
+    "category": "WEB INSTITUCIONAL",
+    "type": "corporate",
+    "metrics": ["Blog de noticias autogestionable", "Posicionamiento de marca profesional", "informacion clave para clientes"],
+    "link": "https://estudiocils.com.ar/es/",
+    "imageUrl": "/projects/estudiosCils.webp"
+  },
+  {
+    "title": "Laboratorios Dibio",
+    "category": "SECTOR SALUD / BIOQUÍMICA",
+    "type": "corporate",
+    "metrics": ["presentacion de sucursales", "informacion institucional", "accesibilidad para personas con discapacidad"],
+    "link": "https://www.dibio.com.ar/es/",
+    "imageUrl": "/projects/dibio.webp"
+      },
+  {
+    "title": "Laboratorios Katz",
+    "category": "SECTOR SALUD / BIOQUÍMICA",
+    "type": "corporate",
+    "metrics": ["Navegación intuitiva para adultos mayores", "Optimización de velocidad de carga", "posicionamiento de sucursales"],
+    "link": "https://www.laboratorioskatz.com/es/",
+    "imageUrl": "/projects/katz.webp"
+  },
+  {
+    "title": "Consultorios de Espacialidades Médicas Morales",
+    "category": "CENTRO MÉDICO",
+    "type": "corporate",
+    "metrics": ["Presentación profesional del Staff Médico", "Reducción de consultas administrativas simples", "información clave para pacientes"],
+    "link": "https://www.consultoriosmorales.com.ar/es/",
+    "imageUrl": "/projects/morales.webp"
+  }
+
+]
 }

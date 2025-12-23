@@ -48,7 +48,12 @@ export default function ProjectCard({
       {/* Mobile Version (Simple Card) */}
       <div className="md:hidden rounded-2xl bg-light-surface dark:bg-white/5 border border-light-border dark:border-white/10 overflow-hidden">
         <div className="relative h-48 w-full">
-          <Image src={imageUrl} alt={title} fill className="object-cover" />
+          <Image
+            src={imageUrl}
+            alt={title}
+            fill
+            className="object-contain bg-zinc-900"
+          />
           <div className="absolute inset-0 bg-gradient-to-t from-deep-void/80 to-transparent" />
           <div className="absolute bottom-4 left-4">
             <span className="text-xs font-mono tracking-widest text-holographic mb-1 block">
@@ -89,12 +94,12 @@ export default function ProjectCard({
               src={imageUrl}
               alt={title}
               fill
-              className="object-cover transition-all duration-700 hover:scale-105"
+              className="object-contain transition-all duration-700 hover:scale-105 bg-deep-void"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-deep-void/90 via-deep-void/20 to-transparent" />
 
             <div className="absolute bottom-0 left-0 w-full p-8">
-              <span className="text-holographic font-mono text-xs tracking-widest mb-2 block uppercase bg-holographic/10 w-fit px-2 py-1 rounded">
+              <span className="text-holographic font-mono text-xs tracking-widest mb-2 block uppercase bg-deep-void/60 backdrop-blur-md border border-holographic/20 w-fit px-3 py-1 rounded-full shadow-lg">
                 {category}
               </span>
               <h3 className="text-3xl font-bold text-white mb-2">{title}</h3>
