@@ -19,7 +19,6 @@ export default function NavbarDesktop() {
       ))}
 
       {/* Theme Toggle */}
-      <ThemeToggle />
 
       <a
         href={navbar.whatsappLink}
@@ -29,6 +28,7 @@ export default function NavbarDesktop() {
       >
         {navbar.cta}
       </a>
+      <ThemeToggle />
     </div>
   );
 }

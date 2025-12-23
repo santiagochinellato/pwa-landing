@@ -231,25 +231,32 @@
       { "label": "Satisfacción", "value": "100%" }
     ]
   },
-  "testimonials": {
+"testimonials": {
     "badge": "[ COMPROMISO CON LA REGIÓN ]",
     "title": "Resultados",
     "titleHighlight": "Reales",
-    "subtitle": "Negocios y profesionales que ya confiaron en nosotros para dar el salto digital.",
+    "subtitle": "Negocios locales que transformaron su presencia digital con nosotros.",
     "list": [
       {
-        "name": "Complejo de Cabañas",
-        "role": "Bariloche",
-        "content": "Excelente trabajo. Nuestra web ahora carga perfecto en el celular y eso nos ayudó a cerrar muchas más reservas directas.",
+        "name": "Estudio Cils",
+        "role": "Socios Gerentes",
+        "content": "Modernizar un estudio contable con años de trayectoria no era fácil. Logramos una web que transmite seriedad y nos permite centralizar consultas. Nuestros clientes notaron el cambio de calidad.",
         "rating": 5,
-        "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=faces"
+        "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop&crop=faces"
       },
       {
-        "name": "Comercio Local",
-        "role": "San Martín de los Andes",
-        "content": "Santiago entendió el esfuerzo que ponemos en nuestro local. La web quedó increíble y nos dio la presencia profesional que buscábamos.",
+        "name": "Baritrekking",
+        "role": "Guías de Turismo",
+        "content": "No queríamos una web estática, queríamos transmitir la adrenalina de la montaña. El diseño captó perfecto nuestra identidad; ahora los turistas entienden la experiencia antes de contratar.",
         "rating": 5,
-        "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=faces"
+        "image": "https://images.unsplash.com/photo-1552058544-f2b08422138a?w=100&h=100&fit=crop&crop=faces"
+      },
+      {
+        "name": "InterPracsys",
+        "role": "Dirección Comercial",
+        "content": "Necesitábamos escalar nuestra imagen para competir a nivel nacional. El desarrollo superó la expectativa: tenemos una plataforma robusta que valida nuestra propuesta ante grandes clientes.",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop&crop=faces"
       }
     ]
   },
@@ -257,13 +264,19 @@
     "logoAlt": "Patagonia Web Factory Logo",
     "menu": [
       {"name": "PROYECTOS", "href": "#portfolio"},
-      {"name": "SOLUCIONES", "href": "#services"},
+      {"name": "SERVICIOS", "href": "#services"},
       {"name": "PROCESO", "href": "#process"},
+      {"name": "TECNOLOGÍA", "href": "#stack"},
+      {"name": "CLIENTES", "href": "#testimonials"},
       {"name": "CONTACTO", "href": "#contact"}
     ],
     "cta": "HABLEMOS",
     "themeLabel": "Tema",
-    "whatsappLink": "https://wa.me/5492944227526"
+    "whatsappLink": "https://wa.me/5492944227526",
+    "logoSize": {
+      "mobile": "230px",
+      "desktop": "290px"
+    }
   },
   "differentials": {
     "title": "POR QUÉ",
@@ -308,9 +321,11 @@
     "menuTitle": "Navegación",
     "socialTitle": "SEGUINOS",
     "menuLinks": [
-      {"name": "Trabajo", "href": "#portfolio"},
+      {"name": "Proyectos", "href": "#portfolio"},
       {"name": "Servicios", "href": "#services"},
       {"name": "Metodología", "href": "#process"},
+      {"name": "Tecnología", "href": "#stack"},
+      {"name": "Clientes", "href": "#testimonials"},
       {"name": "Contacto", "href": "#contact"}
     ],
     "copyright": "© 2025 DIGITAL PATAGONIA. TODOS LOS DERECHOS RESERVADOS.",

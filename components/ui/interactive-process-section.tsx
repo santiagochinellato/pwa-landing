@@ -164,13 +164,13 @@ function ProcessContent({
             </h2>
           </div>
 
-          <h2 className="text-4xl md:text-6xl font-bold mb-4 text-light-fg dark:text-white">
+          <h2 className="text-3xl md:text-6xl font-bold mb-4 text-light-fg dark:text-white text-balance leading-normal lg:leading-tight">
             {process.title}{" "}
             <span className="relative inline-block">
               <span className="text-light-primary dark:text-holographic">
                 {process.titleHighlight}
               </span>
-              <span className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-light-primary to-cyan-500 dark:from-holographic dark:to-cyan-400 rounded-full" />
+              <span className="absolute -bottom-1 md:-bottom-2 left-0 w-full h-1 bg-gradient-to-r from-light-primary to-cyan-500 dark:from-holographic dark:to-cyan-400 rounded-full" />
             </span>{" "}
             {process.titleSuffix}
           </h2>

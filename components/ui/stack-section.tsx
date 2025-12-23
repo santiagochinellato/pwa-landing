@@ -34,7 +34,10 @@ export default function StackSection() {
   };
 
   return (
-    <section className="py-24 bg-transparent px-6 md:px-12 relative border-t border-light-border dark:border-white/5 transition-colors duration-300">
+    <section
+      id="stack"
+      className="py-24 bg-transparent px-6 md:px-12 relative border-t border-light-border dark:border-white/5 transition-colors duration-300"
+    >
       <div className="absolute inset-0 bg-light-primary/5 dark:bg-holographic/5 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto relative z-10">

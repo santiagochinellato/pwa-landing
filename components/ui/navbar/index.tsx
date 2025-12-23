@@ -12,12 +12,24 @@ import NavbarMobileMenu from "./navbar-mobile-menu";
 import { useTheme } from "next-themes";
 import { useEffect } from "react";
 
+interface NavbarConfig {
+  logoAlt: string;
+  menu: { name: string; href: string }[];
+  cta: string;
+  themeLabel: string;
+  whatsappLink: string;
+  logoSize: {
+    mobile: string;
+    desktop: string;
+  };
+}
+
 export default function Navbar() {
   const { scrollY } = useScroll();
   const [hidden, setHidden] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const { navbar } = siteContent;
+  const { navbar } = siteContent as { navbar: NavbarConfig };
   const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
@@ -67,7 +79,13 @@ export default function Navbar() {
               alt={navbar.logoAlt}
               width={950}
               height={200}
-              className="w-[200px] md:w-[260px] h-auto object-contain transition-opacity hover:opacity-80 dark:invert-0 "
+              className="w-[var(--logo-w-mobile)] md:w-[var(--logo-w-desktop)] h-auto object-contain transition-opacity hover:opacity-80 dark:invert-0"
+              style={
+                {
+                  "--logo-w-mobile": navbar.logoSize?.mobile || "250px",
+                  "--logo-w-desktop": navbar.logoSize?.desktop || "350px",
+                } as React.CSSProperties
+              }
               priority
             />
           </Link>

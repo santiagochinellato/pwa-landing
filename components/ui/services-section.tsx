@@ -22,7 +22,7 @@ export default function ServicesSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
           {/* Main Service - Featured - Updated Design */}
-          <div className="lg:col-span-2 p-10 rounded-2xl bg-gradient-to-br from-light-primary/10 via-light-surface to-light-surface dark:from-holographic/10 dark:via-white/5 dark:to-white/5 border-2 border-light-primary/50 dark:border-holographic/50 hover:border-light-primary dark:hover:border-holographic transition-all duration-300 group relative overflow-hidden shadow-xl dark:shadow-[0_0_40px_rgba(102,252,241,0.15)] bg-white dark:bg-transparent">
+          <div className="lg:col-span-2 p-6 md:p-10 rounded-2xl bg-gradient-to-br from-light-primary/10 via-light-surface to-light-surface dark:from-holographic/10 dark:via-white/5 dark:to-white/5 border-2 border-light-primary/50 dark:border-holographic/50 hover:border-light-primary dark:hover:border-holographic transition-all duration-300 group relative overflow-hidden shadow-xl dark:shadow-[0_0_40px_rgba(102,252,241,0.15)] bg-white dark:bg-transparent">
             {/* Badge */}
             <div className="absolute top-4 right-4 flex items-center gap-1 px-3 py-1 bg-light-primary/20 dark:bg-holographic/20 border border-light-primary/50 dark:border-holographic/50 rounded-full">
               <Star
@@ -35,12 +35,12 @@ export default function ServicesSection() {
             </div>
 
             <div className="flex flex-col h-full">
-              <div className="flex items-start gap-6 mb-6">
-                <div className="w-20 h-20 rounded-2xl bg-light-primary/20 dark:bg-holographic/20 border-2 border-light-primary/30 dark:border-holographic/30 flex items-center justify-center text-light-primary dark:text-holographic group-hover:scale-110 transition-transform bg-white dark:bg-transparent">
-                  <Globe size={40} />
+              <div className="flex flex-col md:flex-row items-start gap-4 md:gap-6 mb-6">
+                <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-light-primary/20 dark:bg-holographic/20 border-2 border-light-primary/30 dark:border-holographic/30 flex items-center justify-center text-light-primary dark:text-holographic group-hover:scale-110 transition-transform bg-white dark:bg-transparent shrink-0">
+                  <Globe className="w-8 h-8 md:w-10 md:h-10" />
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-3xl font-bold text-light-fg dark:text-white mb-2 group-hover:text-light-primary dark:group-hover:text-holographic transition-colors">
+                <div className="flex-1 w-full">
+                  <h3 className="text-2xl md:text-3xl font-bold text-light-fg dark:text-white mb-2 group-hover:text-light-primary dark:group-hover:text-holographic transition-colors relative z-10 pr-20 md:pr-0">
                     {services.mainService.title}
                   </h3>
                   <p className="text-sm text-light-primary/80 dark:text-holographic/80 font-mono">
@@ -49,11 +49,11 @@ export default function ServicesSection() {
                 </div>
               </div>
 
-              <p className="text-light-muted dark:text-white/90 font-light leading-relaxed mb-6 text-lg">
+              <p className="text-light-muted dark:text-white/90 font-light leading-relaxed mb-6 text-base md:text-lg">
                 {services.mainService.description}
               </p>
 
-              <div className="mt-auto pt-6 border-t border-light-border dark:border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div className="mt-auto pt-6 border-t border-light-border dark:border-white/10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 md:gap-4">
                 <div className="flex items-center gap-6">
                   <div>
                     <div className="text-sm text-light-muted dark:text-white/90 mb-1">
@@ -68,7 +68,7 @@ export default function ServicesSection() {
                   href="https://wa.me/5492944227526"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group/btn flex items-center gap-2 px-6 py-3 bg-light-primary dark:bg-holographic text-white dark:text-deep-void font-bold rounded-lg hover:opacity-90 transition-all hover:shadow-[0_0_20px_rgba(20,184,166,0.4)] dark:hover:shadow-[0_0_20px_rgba(102,252,241,0.4)]"
+                  className="group/btn w-full md:w-auto flex items-center justify-center gap-2 px-6 py-3 bg-light-primary dark:bg-holographic text-white dark:text-deep-void font-bold rounded-lg hover:opacity-90 transition-all hover:shadow-[0_0_20px_rgba(20,184,166,0.4)] dark:hover:shadow-[0_0_20px_rgba(102,252,241,0.4)]"
                 >
                   {services.mainService.cta}
                   <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
@@ -112,37 +112,37 @@ export default function ServicesSection() {
         </div>
 
         {/* Paquete Completo */}
-        <div className="p-8 rounded-2xl bg-light-surface dark:bg-white/5 shadow-2xl bg-gradient-to-r from-purple-500/10 via-light-primary/10 dark:via-holographic/10 to-blue-500/10 border border-light-primary/30 dark:border-holographic/30 hover:border-light-primary/60 dark:hover:border-holographic/60 transition-all duration-300 group relative overflow-hidden mb-8 bg-white dark:bg-transparent">
+        <div className="p-6 md:p-8 rounded-2xl bg-light-surface dark:bg-white/5 shadow-2xl bg-gradient-to-r from-purple-500/10 via-light-primary/10 dark:via-holographic/10 to-blue-500/10 border border-light-primary/30 dark:border-holographic/30 hover:border-light-primary/60 dark:hover:border-holographic/60 transition-all duration-300 group relative overflow-hidden mb-8 bg-white dark:bg-transparent">
           <div className="absolute inset-0 bg-gradient-to-r from-purple-500/5 via-light-primary/5 dark:via-holographic/5 to-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity" />
 
           <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-6">
-            <div className="flex items-center gap-6">
-              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-500/20 to-light-primary/20 dark:to-holographic/20 flex items-center justify-center border-2 border-light-primary/30 dark:border-holographic/30 bg-white/50 dark:bg-transparent">
+            <div className="flex flex-row items-center gap-4 md:gap-6 text-center md:text-left">
+              <div className="w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-gradient-to-br from-purple-500/20 to-light-primary/20 dark:to-holographic/20 flex items-center justify-center border-2 border-light-primary/30 dark:border-holographic/30 bg-white/50 dark:bg-transparent shrink-0 md:shrink-0 self-start">
                 <Package
                   size={32}
                   className="text-light-primary dark:text-holographic"
                 />
               </div>
-              <div>
-                <div className="flex items-center gap-2 mb-2">
-                  <h3 className="text-2xl font-bold text-light-fg dark:text-white">
+              <div className="text-left">
+                <div className="flex flex-col md:flex-row md:items-center gap-1 md:gap-2 mb-2">
+                  <h3 className="text-xl md:text-2xl font-bold text-light-fg dark:text-white leading-tight">
                     {services.fullPackage.title}
                   </h3>
-                  <span className="px-2 py-0.5 bg-light-primary/20 dark:bg-holographic/20 border border-light-primary/40 dark:border-holographic/40 rounded text-[10px] font-bold text-light-primary dark:text-holographic">
+                  <span className="w-fit px-2 py-0.5 bg-light-primary/20 dark:bg-holographic/20 border border-light-primary/40 dark:border-holographic/40 rounded text-[10px] font-bold text-light-primary dark:text-holographic whitespace-nowrap">
                     {services.fullPackage.badge}
                   </span>
                 </div>
-                <p className="text-light-muted dark:text-white/90 text-sm">
+                <p className="text-light-muted dark:text-white/90 text-sm leading-relaxed">
                   {services.fullPackage.description}
                 </p>
               </div>
             </div>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 w-full lg:w-auto">
               <a
                 href="https://wa.me/5492944227526"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group/btn flex items-center gap-2 px-6 py-3 bg-transparent border-2 border-light-primary dark:border-holographic text-light-primary dark:text-holographic font-bold rounded-lg hover:bg-light-primary dark:hover:bg-holographic hover:text-white dark:hover:text-deep-void transition-all whitespace-nowrap bg-white/50 dark:bg-transparent"
+                className="group/btn w-full lg:w-auto flex items-center justify-center gap-2 px-6 py-3 bg-transparent border-2 border-light-primary dark:border-holographic text-light-primary dark:text-holographic font-bold rounded-lg hover:bg-light-primary dark:hover:bg-holographic hover:text-white dark:hover:text-deep-void transition-all whitespace-nowrap bg-white/50 dark:bg-transparent"
               >
                 {services.fullPackage.cta}
                 <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />

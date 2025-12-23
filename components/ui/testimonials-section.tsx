@@ -19,7 +19,10 @@ export default function TestimonialsSection() {
   const testimonial = testimonialList[index];
 
   return (
-    <section className="py-20 bg-transparent relative overflow-hidden border-t border-light-border dark:border-white/5 transition-colors duration-300">
+    <section
+      id="testimonials"
+      className="py-20 bg-transparent relative overflow-hidden border-t border-light-border dark:border-white/5 transition-colors duration-300"
+    >
       {/* Background glow */}
       <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-light-primary/5 dark:bg-holographic/5 rounded-full blur-[100px] pointer-events-none" />
 
@@ -95,14 +98,14 @@ export default function TestimonialsSection() {
 
             {/* Author */}
             <div className="flex items-center gap-4 border-t border-light-border dark:border-white/5 pt-6 mt-auto">
-              <div className="relative w-12 h-12 rounded-full overflow-hidden border border-light-border dark:border-white/10 group-hover:border-light-primary dark:group-hover:border-holographic/50 transition-colors shrink-0">
+              {/* <div className="relative w-12 h-12 rounded-full overflow-hidden border border-light-border dark:border-white/10 group-hover:border-light-primary dark:group-hover:border-holographic/50 transition-colors shrink-0">
                 <Image
                   src={testimonial.image}
                   alt={testimonial.name}
                   fill
                   className="object-cover"
                 />
-              </div>
+              </div> */}
               <div>
                 <h4 className="font-bold text-light-fg dark:text-white text-base">
                   {testimonial.name}
