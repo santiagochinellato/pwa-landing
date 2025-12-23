@@ -17,9 +17,9 @@ export default function MagneticCursor() {
       mouseY.set(e.clientY - 16);
       if (!isVisible) setIsVisible(true);
     };
-    
+
     // Optional: Add logic to detect hover on links and scale up
-    
+
     window.addEventListener("mousemove", moveCursor);
     return () => window.removeEventListener("mousemove", moveCursor);
   }, [isVisible, mouseX, mouseY]);
@@ -28,24 +28,24 @@ export default function MagneticCursor() {
 
   return (
     <>
-        {/* Main Ring */}
-        <motion.div
-        className="fixed top-0 left-0 w-8 h-8 border border-holographic rounded-full pointer-events-none z-[9999] mix-blend-difference"
+      {/* Main Ring */}
+      <motion.div
+        className="fixed top-0 left-0 w-8 h-8 border border-holographic rounded-full pointer-events-none z-[9999]"
         style={{
-            x: cursorX,
-            y: cursorY,
+          x: cursorX,
+          y: cursorY,
         }}
-        />
-        {/* Inner Dot */}
-        <div 
-            className="fixed top-0 left-0 w-2 h-2 bg-holographic rounded-full pointer-events-none z-[9999] mix-blend-difference"
-            // We can attach this to raw mouse pos or smoothed
-            style={{
-                left: -100, // Hide initially or manage via state
-                // This part needs real-time update or another motion value. 
-                // For simplicity, let's just keep the ring for now.
-            }}
-        />
+      />
+      {/* Inner Dot */}
+      <div
+        className="fixed top-0 left-0 w-2 h-2 bg-holographic rounded-full pointer-events-none z-[9999] mix-blend-difference"
+        // We can attach this to raw mouse pos or smoothed
+        style={{
+          left: -100, // Hide initially or manage via state
+          // This part needs real-time update or another motion value.
+          // For simplicity, let's just keep the ring for now.
+        }}
+      />
     </>
   );
 }

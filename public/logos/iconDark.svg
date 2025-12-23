@@ -63,7 +63,7 @@
         <!-- Título principal -->
         <text x="300" y="130" font-family="'Inter', 'Arial', sans-serif" font-size="42" font-weight="800"
             fill="url(#holographicGrad)" letter-spacing="3" filter="url(#softGlow)">
-            PATAGONIA DEVS
+            DIGITAL PATAGONIA
         </text>
 
         <!-- Subtítulo con tracking amplio -->

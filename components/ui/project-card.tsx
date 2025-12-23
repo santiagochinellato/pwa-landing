@@ -83,8 +83,32 @@ export default function ProjectCard({
           animate={{ rotateY: isFlipped ? 180 : 0 }}
           transition={{ duration: 0.6, ease: [0.23, 1, 0.32, 1] }}
         >
-          {/* Front Face */}
-          <div className="absolute inset-0 [backface-visibility:hidden] rounded-2xl overflow-hidden bg-light-surface dark:bg-white/5 border border-light-border dark:border-white/10 hover:border-light-primary dark:hover:border-holographic/30 transition-all duration-300 shadow-md dark:shadow-none bg-white dark:bg-deep-void">
+          {/* Front Face (Image) */}
+          <div className="absolute inset-0 [backface-visibility:hidden] rounded-2xl overflow-hidden bg-deep-void border border-white/10">
+            <Image
+              src={imageUrl}
+              alt={title}
+              fill
+              className="object-cover transition-all duration-700 hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-deep-void/90 via-deep-void/20 to-transparent" />
+
+            <div className="absolute bottom-0 left-0 w-full p-8">
+              <span className="text-holographic font-mono text-xs tracking-widest mb-2 block uppercase bg-holographic/10 w-fit px-2 py-1 rounded">
+                {category}
+              </span>
+              <h3 className="text-3xl font-bold text-white mb-2">{title}</h3>
+              <div className="flex items-center gap-2 text-white/80 text-sm">
+                <span className="text-xs uppercase tracking-wider">
+                  Ver detalles
+                </span>
+                <ArrowUpRight size={16} className="text-holographic" />
+              </div>
+            </div>
+          </div>
+
+          {/* Back Face (Info Reveal) */}
+          <div className="absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)] rounded-2xl overflow-hidden bg-light-surface dark:bg-deep-void border border-light-border dark:border-white/10 shadow-md dark:shadow-none">
             {/* Gradient overlay */}
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-light-bg/50 dark:to-deep-void/50 pointer-events-none" />
 
@@ -93,12 +117,12 @@ export default function ProjectCard({
                 <div className="w-12 h-12 rounded-xl bg-light-primary/10 dark:bg-white/5 flex items-center justify-center text-light-primary dark:text-white/50 group-hover:text-light-primary dark:group-hover:text-holographic transition-colors">
                   <Icon size={24} />
                 </div>
-                <span className="text-xs font-mono tracking-widest px-3 py-1 rounded-full border border-light-border dark:border-white/10 bg-light-surface dark:bg-white/5 text-light-muted dark:text-white/60">
-                  {category}
-                </span>
+                <div className="w-8 h-8 rounded-full bg-light-primary/10 dark:bg-white/10 flex items-center justify-center text-light-primary dark:text-white transition-all">
+                  <ArrowUpRight size={16} />
+                </div>
               </div>
 
-              <h3 className="text-2xl md:text-3xl font-bold text-light-fg dark:text-white mb-6">
+              <h3 className="text-2xl font-bold text-light-fg dark:text-white mb-6">
                 {title}
               </h3>
 
@@ -123,31 +147,6 @@ export default function ProjectCard({
                   />
                   {hoverHint}
                 </span>
-                <div className="w-8 h-8 rounded-full bg-light-primary/10 dark:bg-white/10 flex items-center justify-center text-light-primary dark:text-white group-hover:bg-light-primary group-hover:text-white dark:group-hover:bg-holographic dark:group-hover:text-deep-void transition-all">
-                  <ArrowUpRight size={16} />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Back Face (Image Reveal) */}
-          <div className="absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)] rounded-2xl overflow-hidden bg-deep-void border border-white/10">
-            <Image
-              src={imageUrl}
-              alt={title}
-              fill
-              className="object-cover opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-deep-void via-deep-void/50 to-transparent" />
-
-            <div className="absolute bottom-0 left-0 w-full p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-              <span className="text-holographic font-mono text-sm tracking-widest mb-2 block">
-                {category}
-              </span>
-              <h3 className="text-3xl font-bold text-white mb-4">{title}</h3>
-              <div className="flex items-center gap-2 text-white/80 text-sm">
-                <span>{projectCard.viewCase}</span>
-                <ArrowUpRight size={16} className="text-holographic" />
               </div>
             </div>
           </div>
