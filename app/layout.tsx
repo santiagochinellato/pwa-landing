@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     images: ["/og-image-bariloche.jpg"],
   },
   icons: {
-    icon: "/logos/favaicon.svg",
+    icon: "/logos/favicon.svg",
   },
   robots: {
     index: true,
