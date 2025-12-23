@@ -45,7 +45,9 @@ export default function NavbarMobileMenu({
 
           {/* Theme Toggle in Mobile Menu */}
           <div className="mt-8 flex items-center justify-between py-4 border-b border-light-border dark:border-white/10">
-            <span className="text-light-muted dark:text-white/70">Tema</span>
+            <span className="text-light-muted dark:text-white/70">
+              {navbar.themeLabel}
+            </span>
             <ThemeToggle />
           </div>
 

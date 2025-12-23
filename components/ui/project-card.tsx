@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import Image from "next/image";
+import siteContent from "@/data/site-content.json";
 
 interface ProjectCardProps {
   title: string;
@@ -30,22 +31,17 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   const [isFlipped, setIsFlipped] = useState(false);
 
-  const getIcon = () => {
-    switch (type) {
-      case "hotel":
-        return Building2;
-      case "ecommerce":
-        return ShoppingCart;
-      case "landing":
-        return Presentation;
-      default:
-        return Layout;
-    }
+  const iconMap = {
+    hotel: Building2,
+    ecommerce: ShoppingCart,
+    landing: Presentation,
+    corporate: Layout, // Fallback for corporate or others
   };
 
-  const Icon = getIcon();
+  const Icon = iconMap[type] || Layout;
 
-  const hoverHint = "Ver detalles"; // Simplified for this example, or import from JSON
+  const { projectCard } = siteContent;
+  const hoverHint = projectCard.hoverHint;
 
   return (
     <>
@@ -150,7 +146,7 @@ export default function ProjectCard({
               </span>
               <h3 className="text-3xl font-bold text-white mb-4">{title}</h3>
               <div className="flex items-center gap-2 text-white/80 text-sm">
-                <span>Ver caso de éxito completo</span>
+                <span>{projectCard.viewCase}</span>
                 <ArrowUpRight size={16} className="text-holographic" />
               </div>
             </div>

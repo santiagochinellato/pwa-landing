@@ -146,7 +146,7 @@ export default function StackSection() {
                       {current.percentage}%
                     </div>
                     <div className="text-xs text-light-muted dark:text-white/90">
-                      optimización
+                      {stack.labels.optimization}
                     </div>
                   </div>
                 </div>
@@ -168,13 +168,13 @@ export default function StackSection() {
               {/* Visual Comparison */}
               <div className="rounded-xl bg-light-surface dark:bg-white/5 p-6 border border-light-border dark:border-white/10">
                 <div className="text-xs font-mono text-light-muted dark:text-white/90 mb-4">
-                  COMPARACIÓN:
+                  {stack.labels.comparisonTitle}
                 </div>
                 <div className="space-y-4">
                   <div>
                     <div className="flex justify-between text-sm mb-2">
                       <span className="text-light-primary dark:text-holographic font-medium">
-                        Con nuestra tecnología
+                        {stack.labels.ourTech}
                       </span>
                       <span className="font-bold text-light-fg dark:text-white">
                         {current.metric}
@@ -190,7 +190,7 @@ export default function StackSection() {
                   <div>
                     <div className="flex justify-between text-sm mb-2">
                       <span className="text-light-muted dark:text-white/90">
-                        Promedio del mercado
+                        {stack.labels.marketAvg}
                       </span>
                       <span className="font-bold text-light-muted dark:text-white/90">
                         {current.comparison}
@@ -210,7 +210,7 @@ export default function StackSection() {
             {/* CTA */}
             <div className="mt-6 rounded-xl bg-gradient-to-r from-light-primary/10 to-cyan-50 dark:from-holographic/10 dark:to-cyan-900/10 border border-light-primary/30 dark:border-holographic/30 p-6 text-center shadow-lg dark:shadow-none">
               <p className="text-sm text-light-muted dark:text-white/90 mb-3 font-medium">
-                ¿Querés una web con estas ventajas?
+                {stack.cta.text}
               </p>
               <a
                 href="https://wa.me/5492944227526"
@@ -218,7 +218,7 @@ export default function StackSection() {
                 rel="noopener noreferrer"
                 className="block w-full bg-light-primary dark:bg-holographic text-white dark:text-deep-void px-6 py-3 rounded-lg font-bold hover:bg-light-primary/90 dark:hover:bg-white transition-all shadow-md hover:shadow-lg"
               >
-                Consulta gratuita
+                {stack.cta.button}
               </a>
             </div>
           </div>
@@ -377,12 +377,7 @@ export default function StackSection() {
 
         {/* Bottom Stats */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
-          {[
-            { label: "Velocidad promedio", value: "1.5 seg" },
-            { label: "Score SEO", value: "95/100" },
-            { label: "Tiempo de entrega", value: "7-12 días" },
-            { label: "Satisfacción", value: "100%" },
-          ].map((stat, idx) => (
+          {stack.bottomStats.map((stat, idx) => (
             <div
               key={idx}
               className="text-center p-6 rounded-xl bg-white dark:bg-white/5 border border-light-border dark:border-white/10 shadow-sm transition-transform hover:-translate-y-1"

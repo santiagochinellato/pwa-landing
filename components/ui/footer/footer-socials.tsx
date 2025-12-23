@@ -12,7 +12,7 @@ export default function FooterSocials() {
       </h3>
       <div className="flex gap-4 text-light-muted dark:text-white/90">
         <Link
-          href="https://linkedin.com"
+          href={footer.socialLinks.linkedin}
           target="_blank"
           aria-label="LinkedIn"
           className="hover:text-light-primary dark:hover:text-holographic transition-colors p-2"
@@ -20,7 +20,7 @@ export default function FooterSocials() {
           <Linkedin size={24} />
         </Link>
         <Link
-          href="https://instagram.com"
+          href={footer.socialLinks.instagram}
           target="_blank"
           aria-label="Instagram"
           className="hover:text-light-primary dark:hover:text-holographic transition-colors p-2"
@@ -28,7 +28,7 @@ export default function FooterSocials() {
           <Instagram size={24} />
         </Link>
         <Link
-          href="https://github.com"
+          href={footer.socialLinks.github}
           target="_blank"
           aria-label="GitHub"
           className="hover:text-light-primary dark:hover:text-holographic transition-colors p-2"

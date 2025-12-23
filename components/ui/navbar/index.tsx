@@ -9,6 +9,8 @@ import siteContent from "@/data/site-content.json";
 import NavbarDesktop from "./navbar-desktop";
 import NavbarMobileToggle from "./navbar-mobile-toggle";
 import NavbarMobileMenu from "./navbar-mobile-menu";
+import { useTheme } from "next-themes";
+import { useEffect } from "react";
 
 export default function Navbar() {
   const { scrollY } = useScroll();
@@ -16,6 +18,17 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { navbar } = siteContent;
+  const { resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => setMounted(true), 0);
+  }, []);
+
+  const logoSrc =
+    mounted && resolvedTheme === "dark"
+      ? "/logos/iconDark.svg"
+      : "/logos/iconWhite.svg";
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     const previous = scrollY.getPrevious() || 0;
@@ -50,11 +63,11 @@ export default function Navbar() {
         <div className="flex items-center gap-2 relative z-50">
           <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
             <Image
-              src="logos/logoMini.svg"
+              src={logoSrc}
               alt={navbar.logoAlt}
-              width={220}
-              height={45}
-              className="w-[180px] md:w-[220px] h-auto object-contain transition-opacity hover:opacity-80 dark:invert-0 "
+              width={950}
+              height={200}
+              className="w-[200px] md:w-[260px] h-auto object-contain transition-opacity hover:opacity-80 dark:invert-0 "
               priority
             />
           </Link>

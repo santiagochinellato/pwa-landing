@@ -1,6 +1,6 @@
 import HeroSection from "@/components/ui/hero-section";
+import siteContent from "@/data/site-content.json";
 import Navbar from "@/components/ui/navbar";
-import InfiniteMarquee from "@/components/ui/dynamic-marquee";
 import ProjectCard from "@/components/ui/project-card";
 import Footer from "@/components/ui/footer";
 import DifferentialsSection from "@/components/ui/differentials-section";
@@ -31,50 +31,22 @@ export default function Home() {
             </span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <ProjectCard
-              title="Hotel Boutique Bariloche"
-              category="WEB INSTITUCIONAL"
-              type="hotel"
-              metrics={[
-                "40% más consultas directo web",
-                "Carga ultra-rápida (1.2s)",
-                "Diseño 100% responsive",
-              ]}
-              imageUrl="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800"
-            />
-            <ProjectCard
-              title="Estudio Contable NQN"
-              category="CORPORATIVO"
-              type="corporate"
-              metrics={[
-                "65% menos consultas repetitivas",
-                "Panel de gestión propio",
-                "Blog con 20+ artículos SEO",
-              ]}
-              imageUrl="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800"
-            />
-            <ProjectCard
-              title="Ecommerce Regional"
-              category="TIENDA ONLINE"
-              type="ecommerce"
-              metrics={[
-                "200+ productos gestionados",
-                "Checkout optimizado (85% conv.)",
-                "Integración Mercado Pago",
-              ]}
-              imageUrl="https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=800"
-            />
-            <ProjectCard
-              title="Consultora Tech BUE"
-              category="LANDING B2B"
-              type="landing"
-              metrics={[
-                "12% tasa de conversión leads",
-                "Validación de formularios IA",
-                "Conexión directa a CRM",
-              ]}
-              imageUrl="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800"
-            />
+            {siteContent.projects.map((project, idx) => (
+              <ProjectCard
+                key={idx}
+                title={project.title}
+                category={project.category}
+                type={
+                  project.type as
+                    | "hotel"
+                    | "corporate"
+                    | "ecommerce"
+                    | "landing"
+                }
+                metrics={project.metrics}
+                imageUrl={project.imageUrl}
+              />
+            ))}
           </div>
         </div>
       </section>

@@ -212,6 +212,23 @@
         "description": "Tu web está preparada para crecer. Podés sumar funciones nuevas cuando tu negocio lo necesite, sin empezar de cero.",
         "color": "from-green-500 to-emerald-500"
       }
+    ],
+    "labels": {
+      "optimization": "optimización",
+      "comparisonTitle": "COMPARACIÓN:",
+      "ourTech": "Con nuestra tecnología",
+      "marketAvg": "Promedio del mercado",
+      "marketAvgMobile": "Promedio"
+    },
+    "cta": {
+      "text": "¿Querés una web con estas ventajas?",
+      "button": "Consulta gratuita"
+    },
+    "bottomStats": [
+      { "label": "Velocidad promedio", "value": "1.5 seg" },
+      { "label": "Score SEO", "value": "95/100" },
+      { "label": "Tiempo de entrega", "value": "7-12 días" },
+      { "label": "Satisfacción", "value": "100%" }
     ]
   },
   "testimonials": {
@@ -245,6 +262,7 @@
       {"name": "CONTACTO", "href": "#contact"}
     ],
     "cta": "HABLEMOS",
+    "themeLabel": "Tema",
     "whatsappLink": "https://wa.me/5492944227526"
   },
   "differentials": {
@@ -297,10 +315,45 @@
     ],
     "copyright": "© 2025 PATAGONIA WEB FACTORY. TODOS LOS DERECHOS RESERVADOS.",
     "hours": "LUN - VIE: 9:00 - 18:00 ART",
+    "socialLinks": {
+      "linkedin": "https://linkedin.com",
+      "instagram": "https://instagram.com",
+      "github": "https://github.com"
+    },
     "madeWith": "DESDE LA PATAGONIA AL MUNDO"
   },
   "projectCard": {
     "hoverHint": "Mirar este proyecto",
     "viewCase": "Ver detalles"
-  }
+  },
+  "projects": [
+    {
+      "title": "Hotel Boutique Bariloche",
+      "category": "WEB INSTITUCIONAL",
+      "type": "hotel",
+      "metrics": ["40% más consultas directo web", "Carga ultra-rápida (1.2s)", "Diseño 100% responsive"],
+      "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800"
+    },
+    {
+      "title": "Estudio Contable NQN",
+      "category": "CORPORATIVO",
+      "type": "corporate",
+      "metrics": ["65% menos consultas repetitivas", "Panel de gestión propio", "Blog con 20+ artículos SEO"],
+      "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800"
+    },
+    {
+      "title": "Ecommerce Regional",
+      "category": "TIENDA ONLINE",
+      "type": "ecommerce",
+      "metrics": ["200+ productos gestionados", "Checkout optimizado (85% conv.)", "Integración Mercado Pago"],
+      "imageUrl": "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=800"
+    },
+    {
+      "title": "Consultora Tech BUE",
+      "category": "LANDING B2B",
+      "type": "landing",
+      "metrics": ["12% tasa de conversión leads", "Validación de formularios IA", "Conexión directa a CRM"],
+      "imageUrl": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800"
+    }
+  ]
 }

@@ -39,6 +39,9 @@ export const metadata: Metadata = {
     locale: "es_AR",
     images: ["/og-image-bariloche.jpg"],
   },
+  icons: {
+    icon: "/logos/favaicon.svg",
+  },
   robots: {
     index: true,
     follow: true,
