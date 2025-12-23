@@ -3,7 +3,7 @@ import { motion, useMotionValue, useSpring } from "framer-motion";
 import { useEffect, useState } from "react";
 
 export default function MagneticCursor() {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isTouch, setIsTouch] = useState(true);
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
@@ -12,40 +12,35 @@ export default function MagneticCursor() {
   const cursorY = useSpring(mouseY, springConfig);
 
   useEffect(() => {
-    const moveCursor = (e: MouseEvent) => {
-      mouseX.set(e.clientX - 16); // Center the 32px cursor
-      mouseY.set(e.clientY - 16);
-      if (!isVisible) setIsVisible(true);
+    // Detección robusta de dispositivo táctil
+    const checkTouch = () => {
+      const isTouchDevice = window.matchMedia("(pointer: coarse)").matches;
+      setIsTouch(isTouchDevice);
     };
 
-    // Optional: Add logic to detect hover on links and scale up
+    checkTouch();
+
+    if (window.matchMedia("(pointer: coarse)").matches) return; // Si es táctil, no agregamos listeners
+
+    const moveCursor = (e: MouseEvent) => {
+      mouseX.set(e.clientX - 16);
+      mouseY.set(e.clientY - 16);
+    };
 
     window.addEventListener("mousemove", moveCursor);
     return () => window.removeEventListener("mousemove", moveCursor);
-  }, [isVisible, mouseX, mouseY]);
+  }, [mouseX, mouseY]);
 
-  if (!isVisible) return null;
+  // Si es táctil, no renderizamos NADA. Ahorramos nodos del DOM.
+  if (isTouch) return null;
 
   return (
     <>
-      {/* Main Ring */}
       <motion.div
         className="fixed top-0 left-0 w-8 h-8 border border-holographic rounded-full pointer-events-none z-[9999]"
-        style={{
-          x: cursorX,
-          y: cursorY,
-        }}
+        style={{ x: cursorX, y: cursorY }}
       />
-      {/* Inner Dot */}
-      <div
-        className="fixed top-0 left-0 w-2 h-2 bg-holographic rounded-full pointer-events-none z-[9999] mix-blend-difference"
-        // We can attach this to raw mouse pos or smoothed
-        style={{
-          left: -100, // Hide initially or manage via state
-          // This part needs real-time update or another motion value.
-          // For simplicity, let's just keep the ring for now.
-        }}
-      />
+      {/* Eliminé el Inner Dot que tenías comentado o sin uso para limpiar código */}
     </>
   );
 }

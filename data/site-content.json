@@ -1,10 +1,10 @@
 {
   "hero": {
-    "titleLine1": "Tu negocio merece",
-    "titleHighlight": "una presencia que rinda.",
-    "subtitle": "Calidad internacional, soporte local en Bariloche.",
-    "description": "Sabemos que tu negocio es fruto de un gran esfuerzo. Por eso, no solo diseñamos una web; construimos una herramienta de trabajo sólida que te ayuda a captar turistas, posicionar tu marca y crecer con seguridad.",
-    "subDescriptionStrong": "Tecnología moderna + Estrategia dedicada + Resultados reales.",
+    "titleLine1": "Tu marca merece",
+    "titleHighlight": "una web que la represente.",
+    "subtitle": "Diseño único. Inversión accesible. Entrega en 10 días.",
+    "description": "Creamos tu presencia digital pensando en tu identidad, tus clientes y tu presupuesto.",
+    "subDescriptionStrong": "Diseño pensado para tu identidad + Tecnología que funciona + Inversión que tiene sentido.",
     "ctaPrimary": "Hablemos de tu idea",
     "ctaSecondary": "Nuestra metodología ↓",
     "whatsappLink": "https://wa.me/5492944227526"
@@ -14,10 +14,11 @@
     "headingHighlight": "SERVICIOS",
     "mainService": {
       "title": "Desarrollo Web Profesional",
-      "description": "Tu sitio web es tu vidriera al mundo 24/7. Creamos experiencias rápidas y modernas que transforman el interés en clientes reales mientras vos te ocupás de tu negocio.",
+      "description": "Tu sitio web es la cara de tu negocio en internet. Creamos experiencias que reflejan la calidad de lo que hacés, pensadas para que tus clientes encuentren lo que buscan y confíen en tu propuesta.",
       "details": "Sitios Institucionales, Ecommerce y Landing Pages",
-      "durationLabel": "Entrega",
-      "durationValue": "7-12 días hábiles",
+      "durationLabel": "Tiempo de desarrollo",
+      "durationValue": "7-12 días",
+      "durationSubtext": "Este tiempo nos permite diseñar con cuidado, programar con calidad y revisar cada detalle. Nos tomamos el tiempo necesario para que tu inversión valga la pena.",
       "cta": "Consultar por mi proyecto",
       "featuredBadge": "SERVICIO INTEGRAL"
     },
@@ -42,11 +43,11 @@
     "finalCta": "¿Dudas sobre qué necesitás? Lo charlamos sin compromiso."
   },
   "process": {
-    "badge": "[ PROCESO CLARO Y TRANSPARENTE ]",
+    "badge": "[ TU PROYECTO, PASO A PASO ]",
     "title": "CÓMO",
     "titleHighlight": "TRABAJAMOS",
     "titleSuffix": "JUNTOS",
-    "description": "Un camino ordenado para que tu inversión se traduzca en una herramienta de calidad, sin sorpresas.",
+    "description": "Un proceso ordenado donde sabés qué está pasando en cada momento. Sin apuros, sin sorpresas, con toda la atención en los detalles que hacen la diferencia.",
     "steps": [
       {
         "icon": "MessageSquare",
@@ -68,12 +69,12 @@
         "icon": "Palette",
         "title": "Diseño",
         "duration": "2-3 días",
-        "shortDesc": "Creamos tu imagen",
+        "shortDesc": "Creamos tu identidad visual",
         "details": [
-          "Diseño visual único y personalizado",
-          "Estructura pensada para la comodidad del usuario",
-          "Revisiones conjuntas hasta estar conformes",
-          "Prototipo interactivo antes de programar"
+          "Diseño visual único que refleja tu marca",
+          "Pensamos la estructura desde la experiencia de tus clientes",
+          "Revisiones conjuntas: tu opinión es fundamental",
+          "Te mostramos cómo va a quedar antes de programar"
         ],
         "cta": "Ver ejemplos",
         "color": "text-purple-400",
@@ -84,12 +85,12 @@
         "icon": "Code2",
         "title": "Desarrollo",
         "duration": "4-6 días",
-        "shortDesc": "Ingeniería de calidad",
+        "shortDesc": "Programamos con dedicación",
         "details": [
-          "Programamos con Next.js (tecnología de élite)",
-          "Código limpio para máxima velocidad de carga",
-          "Seguridad robusta y optimización para celulares",
-          "Acompañamos el proceso con Inteligencia Artificial"
+          "Código limpio y profesional para máxima velocidad",
+          "Seguridad robusta y funcionamiento en todos los dispositivos",
+          "Tecnología moderna que te permite crecer sin límites",
+          "Cada línea se programa pensando en el largo plazo"
         ],
         "cta": "Saber más",
         "color": "text-emerald-400",
@@ -98,14 +99,14 @@
       },
       {
         "icon": "CheckCircle2",
-        "title": "Calidad",
+        "title": "Control de Calidad",
         "duration": "1-2 días",
-        "shortDesc": "Ajustamos detalles",
+        "shortDesc": "Revisamos hasta el último detalle",
         "details": [
-          "Pruebas de funcionamiento en todos los dispositivos",
-          "Optimización final de imágenes y textos",
-          "Validación de que todo funcione perfecto",
-          "Tu aprobación final es nuestra prioridad"
+          "Probamos en celulares, tablets y computadoras",
+          "Optimizamos imágenes para que carguen rápido",
+          "Verificamos que cada botón y función responda bien",
+          "No entregamos hasta estar 100% conformes"
         ],
         "cta": "Nuestros estándares",
         "color": "text-orange-400",
@@ -147,69 +148,69 @@
     ]
   },
   "stack": {
-    "badge": "[ TECNOLOGÍA QUE TRABAJA PARA VOS ]",
-    "title": "NO ES SOLO",
-    "titleHighlight": "CÓDIGO",
-    "description": "Elegimos las mejores herramientas del mundo para que tu inversión rinda y tu web sea rápida y segura.",
+    "badge": "[ TECNOLOGÍA QUE TRABAJA PARA TU NEGOCIO ]",
+    "title": "TECNOLOGÍA AL",
+    "titleHighlight": "SERVICIO DE TU MARCA",
+    "description": "Usamos herramientas profesionales de nivel internacional para que tu web sea rápida, segura y fácil de usar. La tecnología está al servicio de tu marca, no al revés.",
     "benefits": [
       {
         "icon": "Zap",
-        "title": "VELOCIDAD EXTREMA",
-        "tech": "Next.js + React",
+        "title": "CARGA INSTANTÁNEA",
+        "tech": "Optimización Avanzada",
         "metric": "1.5 seg",
-        "comparison": "Frente a 4.8 seg promedio",
+        "comparison": "Mientras otros esperan 5",
         "percentage": 100,
-        "description": "Usamos la tecnología de Netflix y Airbnb. Una web rápida evita que el cliente se canse de esperar y se vaya a la competencia.",
+        "description": "Tu web carga en un segundo y medio. Tus clientes ven tu propuesta de inmediato, sin perder tiempo esperando. Una web lenta hace que la gente se vaya antes de conocerte.",
         "color": "from-yellow-500 to-orange-500"
       },
       {
         "icon": "Database",
-        "title": "AUTOGESTIÓN TOTAL",
-        "tech": "Sanity CMS",
-        "metric": "Fácil",
+        "title": "CONTROL TOTAL",
+        "tech": "Panel de Autogestión",
+        "metric": "Simple",
         "comparison": "Sin depender de nadie",
         "percentage": 95,
-        "description": "Podrás cambiar fotos, precios y textos vos mismo de forma simple, como si usaras una red social. Tenés el control total.",
+        "description": "Podés cambiar precios, fotos y textos vos mismo, cuando quieras. El panel es simple e intuitivo: si sabés usar redes sociales, sabés usar tu web.",
         "color": "from-blue-500 to-cyan-500"
       },
       {
         "icon": "TrendingUp",
-        "title": "LISTO PARA GOOGLE",
-        "tech": "SEO Integrado",
-        "metric": "95/100",
-        "comparison": "Rendimiento óptimo",
+        "title": "VISIBLE EN GOOGLE",
+        "tech": "SEO Profesional",
+        "metric": "Optimizado",
+        "comparison": "Para que te encuentren",
         "percentage": 95,
-        "description": "Diseñamos la estructura para que Google te quiera. Mayor visibilidad significa más clientes encontrando tu negocio gratis.",
+        "description": "Diseñamos la estructura técnica para que Google entienda de qué se trata tu negocio y te muestre en las búsquedas. Más visibilidad significa más clientes potenciales.",
         "color": "from-cyan-500 to-blue-500"
       },
       {
-        "icon": "Bot",
-        "title": "INTELIGENCIA ARTIFICIAL",
-        "tech": "Desarrollo Ágil",
-        "metric": "Rápido",
-        "comparison": "Eficiencia técnica",
-        "percentage": 90,
-        "description": "Usamos IA para optimizar el código y mejorar la calidad, permitiéndonos entregarte un producto premium en tiempos récord.",
+        "icon": "Layers",
+        "title": "PREPARADA PARA CRECER",
+        "tech": "Arquitectura Escalable",
+        "metric": "Sin límites",
+        "comparison": "Evoluciona con vos",
+        "percentage": 100,
+        "description": "Tu web está lista para evolucionar. Si mañana querés agregar una tienda online, un blog o cualquier función nueva, se puede sumar sin empezar de cero.",
         "color": "from-indigo-500 to-purple-500"
       },
       {
         "icon": "Palette",
-        "title": "DISEÑO A MEDIDA",
-        "tech": "Tailwind CSS",
-        "metric": "Único",
-        "comparison": "Identidad propia",
+        "title": "IDENTIDAD VISUAL ÚNICA",
+        "tech": "Diseño Personalizado",
+        "metric": "Exclusivo",
+        "comparison": "Refleja tu marca",
         "percentage": 100,
-        "description": "Nada de plantillas repetidas. Tu sitio tendrá una identidad visual que refleje la calidad de lo que hacés.",
+        "description": "Cada elemento visual está diseñado específicamente para vos. Los colores, las formas, las imágenes: todo construye la identidad que querés transmitir.",
         "color": "from-purple-500 to-pink-500"
       },
       {
         "icon": "ServerCog",
-        "title": "ESCALABILIDAD",
-        "tech": "Arquitectura Moderna",
-        "metric": "Ilimitada",
-        "comparison": "Crecé sin límites",
-        "percentage": 100,
-        "description": "Tu web está preparada para crecer. Podés sumar funciones nuevas cuando tu negocio lo necesite, sin empezar de cero.",
+        "title": "FUNCIONA SIEMPRE",
+        "tech": "Hosting Profesional",
+        "metric": "24/7",
+        "comparison": "Estabilidad garantizada",
+        "percentage": 99,
+        "description": "Infraestructura confiable que mantiene tu web online las 24 horas. Tus clientes pueden visitarte en cualquier momento sin encontrarse con errores o caídas.",
         "color": "from-green-500 to-emerald-500"
       }
     ],
@@ -225,13 +226,13 @@
       "button": "Consulta gratuita"
     },
     "bottomStats": [
-      { "label": "Velocidad promedio", "value": "1.5 seg" },
-      { "label": "Score SEO", "value": "95/100" },
+      { "label": "Velocidad de carga", "value": "1.5 seg" },
+      { "label": "Optimización SEO", "value": "95/100" },
       { "label": "Tiempo de entrega", "value": "7-12 días" },
       { "label": "Satisfacción", "value": "100%" }
     ]
   },
-"testimonials": {
+  "testimonials": {
     "badge": "[ COMPROMISO CON LA REGIÓN ]",
     "title": "Resultados",
     "titleHighlight": "Reales",
@@ -240,21 +241,21 @@
       {
         "name": "Estudio Cils",
         "role": "Socios Gerentes",
-        "content": "Modernizar un estudio contable con años de trayectoria no era fácil. Logramos una web que transmite seriedad y nos permite centralizar consultas. Nuestros clientes notaron el cambio de calidad.",
+        "content": "Necesitábamos una web que transmitiera la seriedad y trayectoria del estudio. El resultado superó la expectativa: diseño profesional, fácil de actualizar y nuestros clientes notaron el cambio de inmediato.",
         "rating": 5,
         "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop&crop=faces"
       },
       {
         "name": "Baritrekking",
         "role": "Guías de Turismo",
-        "content": "No queríamos una web estática, queríamos transmitir la adrenalina de la montaña. El diseño captó perfecto nuestra identidad; ahora los turistas entienden la experiencia antes de contratar.",
+        "content": "Queríamos que la web transmitiera la emoción de la montaña, no solo mostrar fotos. Lograron captar nuestra esencia perfectamente: los turistas entienden la experiencia antes de contactarnos.",
         "rating": 5,
         "image": "https://images.unsplash.com/photo-1552058544-f2b08422138a?w=100&h=100&fit=crop&crop=faces"
       },
       {
         "name": "InterPracsys",
         "role": "Dirección Comercial",
-        "content": "Necesitábamos escalar nuestra imagen para competir a nivel nacional. El desarrollo superó la expectativa: tenemos una plataforma robusta que valida nuestra propuesta ante grandes clientes.",
+        "content": "Competimos a nivel nacional y necesitábamos una presencia digital que estuviera a la altura. El resultado es una plataforma sólida que valida nuestra propuesta ante clientes grandes.",
         "rating": 5,
         "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop&crop=faces"
       }
@@ -283,32 +284,41 @@
     "titleHighlight": "ELEGIRNOS",
     "items": [
       {
-        "title": "Enfoque Dedicado",
-        "copy": "No somos una agencia masiva. Tomamos pocos proyectos por mes para asegurar que cada detalle técnico y creativo sea perfecto.",
-        "metric": "Exclusivo",
-        "metricLabel": "Cupos mensuales"
+        "title": "Diseñamos tu identidad digital",
+        "copy": "No usamos moldes genéricos. Cada color, cada texto y cada imagen se piensan para que tu web transmita exactamente lo que hace especial a tu negocio. Tu marca es única, tu web también.",
+        "metric": "Único",
+        "metricLabel": "Diseño personalizado"
       },
       {
-        "title": "Ingeniería de Calidad",
-        "copy": "Construimos con bases sólidas. Tu web no solo se ve bien hoy, sino que está preparada para durar años sin problemas.",
-        "metric": "100%",
-        "metricLabel": "Código moderno"
+        "title": "Inversión inteligente",
+        "copy": "Una web profesional no tiene que costarte una fortuna. Trabajamos con tecnología de primera línea para darte calidad internacional a precios que tienen sentido para un negocio local.",
+        "metric": "Accesible",
+        "metricLabel": "Precio justo"
       },
       {
-        "title": "Presencia en la Zona",
-        "copy": "Estamos en Bariloche. Entendemos el mercado local y estamos a un mensaje de distancia para lo que necesites.",
-        "metric": "Local",
-        "metricLabel": "Soporte real"
+        "title": "Soporte local",
+        "copy": "Estamos en Bariloche, hablamos tu idioma y entendemos el mercado de la región. No sos un número de ticket: sos un negocio que queremos ayudar a crecer.",
+        "metric": "Cerca tuyo",
+        "metricLabel": "Respuesta rápida"
       }
     ]
   },
+  "investment": {
+    "badge": "[ PRECIOS TRANSPARENTES ]",
+    "title": "INVERSIÓN QUE",
+    "titleHighlight": "RINDE",
+    "description": "Sabemos que para un negocio local cada peso cuenta. Por eso trabajamos con precios accesibles sin resignar calidad profesional. Tu web se paga sola cuando empezás a captar clientes que antes no llegaban.",
+    "cta": "Consultar presupuesto personalizado",
+    "whatsappLink": "https://wa.me/5492944227526"
+  },
   "finalCta": {
-    "title": "Tu web lista en",
-    "titleHighlight": "10 días hábiles.",
-    "subtitle": "¿Charlamos sobre tu proyecto? Buscamos la mejor forma de ayudarte a crecer. Primera consulta gratuita.",
-    "whatsappButton": "Consultar por WhatsApp",
+    "title": "Tu web lista",
+    "titleHighlight": "cuando la necesitás.",
+    "subtitle": "Diseño que refleja tu marca, tecnología que funciona, inversión accesible.",
+    "description": "Agendamos una charla sin compromiso para entender qué necesitás. Te explicamos cómo podemos ayudarte y te damos un presupuesto claro. Así de simple.",
+    "whatsappButton": "Consulta gratuita por WhatsApp",
     "videoButton": "Agendar videollamada",
-    "footerText": "Respuesta en menos de 24hs • 📍 Bariloche, Argentina",
+    "footerText": "Respuesta en menos de 24hs • 📍 Bariloche, Argentina • Primera consulta sin cargo",
     "whatsappLink": "https://wa.me/5492944227526",
     "emailLink": "mailto:hola@patagoniaweb.ar"
   },
@@ -342,55 +352,53 @@
     "viewCase": "Ver detalles"
   },
   "projects": [
-
-  {
-    "title": "InterPracsys",
-    "category": "SOFTWARE A MEDIDA / DASHBOARD",
-    "type": "corporate",
-    "metrics": ["posicionamiento de marca profesional", "interfaz amigable para el usuario final", "fidelización de clientes"],
-    "link": "https://patagonia-web-factory-interpracsys.vercel.app/",
-    "imageUrl": "/projects/interpracsys.webp"
-  },
     {
-    "title": "Baritrekking",
-    "category": "COMUNIDAD",
-    "type": "community",
-    "metrics": ["Alto impacto visual para fomentar la comunidad", "Diseño enfocado en dar valor a la experiencia", "interfaz amigable para el usuario final"],
-    "link": "https://baritrekking.vercel.app/",
-    "imageUrl": "/projects/baritrekking.webp"
-  },
-  {
-    "title": "Estudio Contable CILS",
-    "category": "WEB INSTITUCIONAL",
-    "type": "corporate",
-    "metrics": ["Blog de noticias autogestionable", "Posicionamiento de marca profesional", "informacion clave para clientes"],
-    "link": "https://estudiocils.com.ar/es/",
-    "imageUrl": "/projects/estudiosCils.webp"
-  },
-  {
-    "title": "Laboratorios Dibio",
-    "category": "SECTOR SALUD / BIOQUÍMICA",
-    "type": "corporate",
-    "metrics": ["presentacion de sucursales", "informacion institucional", "accesibilidad para personas con discapacidad"],
-    "link": "https://www.dibio.com.ar/es/",
-    "imageUrl": "/projects/dibio.webp"
-      },
-  {
-    "title": "Laboratorios Katz",
-    "category": "SECTOR SALUD / BIOQUÍMICA",
-    "type": "corporate",
-    "metrics": ["Navegación intuitiva para adultos mayores", "Optimización de velocidad de carga", "posicionamiento de sucursales"],
-    "link": "https://www.laboratorioskatz.com/es/",
-    "imageUrl": "/projects/katz.webp"
-  },
-  {
-    "title": "Consultorios de Espacialidades Médicas Morales",
-    "category": "CENTRO MÉDICO",
-    "type": "corporate",
-    "metrics": ["Presentación profesional del Staff Médico", "Reducción de consultas administrativas simples", "información clave para pacientes"],
-    "link": "https://www.consultoriosmorales.com.ar/es/",
-    "imageUrl": "/projects/morales.webp"
-  }
-
-]
+      "title": "InterPracsys",
+      "category": "SOFTWARE A MEDIDA / DASHBOARD",
+      "type": "corporate",
+      "metrics": ["posicionamiento de marca profesional", "interfaz amigable para el usuario final", "fidelización de clientes"],
+      "link": "https://patagonia-web-factory-interpracsys.vercel.app/",
+      "imageUrl": "/projects/interpracsys.webp"
+    },
+    {
+      "title": "Baritrekking",
+      "category": "COMUNIDAD",
+      "type": "community",
+      "metrics": ["Alto impacto visual para fomentar la comunidad", "Diseño enfocado en dar valor a la experiencia", "interfaz amigable para el usuario final"],
+      "link": "https://baritrekking.vercel.app/",
+      "imageUrl": "/projects/baritrekking.webp"
+    },
+    {
+      "title": "Estudio Contable CILS",
+      "category": "WEB INSTITUCIONAL",
+      "type": "corporate",
+      "metrics": ["Blog de noticias autogestionable", "Posicionamiento de marca profesional", "informacion clave para clientes"],
+      "link": "https://estudiocils.com.ar/es/",
+      "imageUrl": "/projects/estudiosCils.webp"
+    },
+    {
+      "title": "Laboratorios Dibio",
+      "category": "SECTOR SALUD / BIOQUÍMICA",
+      "type": "corporate",
+      "metrics": ["presentacion de sucursales", "informacion institucional", "accesibilidad para personas con discapacidad"],
+      "link": "https://www.dibio.com.ar/es/",
+      "imageUrl": "/projects/dibio.webp"
+    },
+    {
+      "title": "Laboratorios Katz",
+      "category": "SECTOR SALUD / BIOQUÍMICA",
+      "type": "corporate",
+      "metrics": ["Navegación intuitiva para adultos mayores", "Optimización de velocidad de carga", "posicionamiento de sucursales"],
+      "link": "https://www.laboratorioskatz.com/es/",
+      "imageUrl": "/projects/katz.webp"
+    },
+    {
+      "title": "Consultorios de Espacialidades Médicas Morales",
+      "category": "CENTRO MÉDICO",
+      "type": "corporate",
+      "metrics": ["Presentación profesional del Staff Médico", "Reducción de consultas administrativas simples", "información clave para pacientes"],
+      "link": "https://www.consultoriosmorales.com.ar/es/",
+      "imageUrl": "/projects/morales.webp"
+    }
+  ]
 }

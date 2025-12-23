@@ -2,12 +2,6 @@
 
 export function GlassLayer() {
   return (
-    <div
-      className="fixed inset-0 z-[-5] pointer-events-none"
-      style={{
-        backdropFilter: "blur(100px)",
-        background: "transparent", // Allow base theme color to show through
-      }}
-    />
+    <div className="fixed inset-0 z-[-5] pointer-events-none backdrop-blur-none md:backdrop-blur-[100px] bg-transparent" />
   );
 }

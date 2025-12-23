@@ -26,7 +26,7 @@ export default function DifferentialsSection() {
               <motion.div
                 key={index}
                 whileHover={{ y: -5 }}
-                className="p-8 rounded-2xl bg-light-surface dark:bg-deep-void border border-light-border dark:border-white/10 hover:border-light-primary dark:hover:border-holographic transition-all relative group overflow-hidden shadow-sm hover:shadow-lg dark:shadow-none bg-white dark:bg-transparent"
+                className="p-8 rounded-2xl bg-light-surface dark:bg-deep-void border border-light-border dark:border-white/10 hover:border-light-primary dark:hover:border-holographic transition-all relative group overflow-hidden shadow-sm hover:shadow-lg dark:shadow-none bg-white dark:bg-transparent flex flex-col h-full"
               >
                 {/* Barra superior */}
                 <div className="absolute top-0 left-0 w-full h-1 bg-light-primary dark:bg-holographic origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
@@ -36,7 +36,7 @@ export default function DifferentialsSection() {
                   size={40}
                 />
 
-                <h3 className="text-xl font-bold text-light-fg dark:text-white max-w-[80%] mb-4">
+                <h3 className="text-xl font-bold text-light-fg dark:text-white max-w-[90%] mb-4 min-h-[3.5rem] flex items-center">
                   {item.title}
                 </h3>
 

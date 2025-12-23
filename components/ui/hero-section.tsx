@@ -35,7 +35,7 @@ export default function HeroSection() {
         {/* <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,_#14b8a6_0%,_transparent_50%)] dark:bg-[radial-gradient(circle_at_50%_50%,_#1f2833_0%,_transparent_50%)]" /> */}
       </div>
 
-      <div className="z-10 flex flex-col items-center px-6 text-center max-w-5xl mx-auto">
+      <div className="z-10 flex flex-col items-center px-6 text-center max-w-7xl mx-auto">
         <motion.h1
           className="text-4xl md:text-5xl lg:text-7xl font-bold leading-[1.1] tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-light-fg to-light-fg/60 dark:from-white dark:to-white/60 mb-8"
           initial={{ opacity: 0, y: 20 }}
@@ -53,7 +53,7 @@ export default function HeroSection() {
         </motion.h1>
 
         <motion.p
-          className="text-lg md:text-xl text-light-muted dark:text-white/70 max-w-2xl font-light mb-10 leading-relaxed flex flex-col gap-4"
+          className="text-xl md:text-2xl text-light-muted dark:text-white/70 max-w-3xl font-light mb-10 leading-relaxed flex flex-col gap-4"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.8 }}
