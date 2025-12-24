@@ -425,14 +425,14 @@ function ProcessContent({
               </div>
 
               {/* Card Footer - Navigation */}
-              <div className="flex justify-between items-center px-8 py-6 bg-light-bg dark:bg-white/5 border-t-2 border-light-border dark:border-white/10">
+              <div className="flex justify-between items-center px-4 md:px-8 py-6 bg-light-bg dark:bg-white/5 border-t-2 border-light-border dark:border-white/10">
                 <button
                   onClick={() => setActiveStep(Math.max(0, activeStep - 1))}
                   disabled={activeStep === 0}
                   className="flex items-center gap-2 text-light-muted hover:text-light-primary disabled:opacity-30 disabled:cursor-not-allowed transition-colors text-sm font-semibold"
                 >
                   <ArrowRight size={16} className="rotate-180" />
-                  Anterior
+                  <span className="hidden md:block">Anterior</span>
                 </button>
 
                 <div className="flex gap-2">
@@ -458,7 +458,7 @@ function ProcessContent({
                   disabled={activeStep === steps.length - 1}
                   className="flex items-center gap-2 text-light-muted hover:text-light-primary disabled:opacity-30 disabled:cursor-not-allowed transition-colors text-sm font-semibold"
                 >
-                  Siguiente
+                  <span className="hidden md:block">Siguiente</span>
                   <ArrowRight size={16} />
                 </button>
               </div>
