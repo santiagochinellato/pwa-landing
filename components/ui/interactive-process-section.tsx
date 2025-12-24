@@ -182,7 +182,7 @@ function ProcessContent({
 
         {/* Timeline Visual con Cards - SOLO MOBILE */}
         <div className="mb-16 lg:hidden">
-          <div className="flex justify-between items-start gap-2 md:gap-4 overflow-x-auto py-8 px-4 scrollbar-hide -mx-4 md:mx-0">
+          <div className="flex justify-start gap-4 overflow-x-auto py-8 px-4 scrollbar-hide -mx-4 md:mx-0 snap-x snap-mandatory">
             {steps.map((step, idx) => {
               const StepIcon = step.icon;
               const isActive = idx === activeStep;
@@ -193,7 +193,7 @@ function ProcessContent({
                 <button
                   key={idx}
                   onClick={() => setActiveStep(idx)}
-                  className="flex flex-col items-center gap-3 min-w-[100px] group relative"
+                  className="flex flex-col items-center gap-3 min-w-[100px] group relative snap-center shrink-0"
                 >
                   {/* Círculo con número */}
                   <div className="relative">
