@@ -1,7 +1,7 @@
 "use client";
 
 import { Canvas } from "@react-three/fiber";
-import { Environment, OrbitControls, ContactShadows } from "@react-three/drei";
+import { OrbitControls } from "@react-three/drei";
 import { CityModel } from "./CityModel";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -18,9 +18,9 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="relative w-full h-[100vh] min-h-[600px] flex items-center justify-center overflow-hidden bg-gradient-to-b from-background to-secondary/20 pt-20">
-      <div className="container px-4 md:px-6 z-10 h-full max-h-[900px]">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center h-full">
+    <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-background to-secondary/20 pt-24 lg:pt-32 pb-20">
+      <div className="container px-4 md:px-6 z-10 w-full max-w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* COLUMNA IZQUIERDA: Textos */}
           <div className="flex flex-col space-y-6 text-center lg:text-left relative z-20 lg:pl-10">
             <motion.h1
@@ -81,7 +81,7 @@ export default function HeroSection() {
           </div>
 
           {/* COLUMNA DERECHA: El Modelo 3D */}
-          <div className="h-[50vh] lg:h-full w-full relative min-h-[400px]">
+          <div className="hidden lg:block lg:h-[800px] w-full relative min-h-[400px]">
             {isMounted && (
               <Canvas
                 shadows

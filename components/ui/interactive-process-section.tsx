@@ -152,7 +152,7 @@ function ProcessContent({
   return (
     <section
       id="process"
-      className="bg-transparent py-24 px-6 relative transition-colors duration-300"
+      className="bg-transparent py-24 px-4 md:px-6 relative transition-colors duration-300"
     >
       <div className="absolute inset-0 bg-light-primary/5 dark:bg-holographic/5 pointer-events-none" />
       <div className="max-w-6xl mx-auto relative z-10">
@@ -180,8 +180,8 @@ function ProcessContent({
           </p>
         </div>
 
-        {/* Timeline Visual con Cards */}
-        <div className="mb-16">
+        {/* Timeline Visual con Cards - SOLO MOBILE */}
+        <div className="mb-16 lg:hidden">
           <div className="flex justify-between items-start gap-2 md:gap-4 overflow-x-auto py-8 px-4 scrollbar-hide -mx-4 md:mx-0">
             {steps.map((step, idx) => {
               const StepIcon = step.icon;
@@ -274,9 +274,9 @@ function ProcessContent({
         </div>
 
         {/* Main Content Grid */}
-        <div className="grid lg:grid-cols-5 gap-8">
-          {/* Left Sidebar - Mini Cards */}
-          <div className="lg:col-span-2 space-y-3 flex flex-col justify-center items-start">
+        <div className="flex flex-col lg:grid lg:grid-cols-5 gap-8">
+          {/* Left Sidebar - Mini Cards - SOLO DESKTOP */}
+          <div className="hidden lg:flex lg:col-span-2 space-y-3 flex-col justify-center items-start">
             <h4 className="text-sm font-bold text-light-muted dark:text-white/50 uppercase tracking-wider mb-4 px-2">
               Todas las etapas
             </h4>
@@ -331,11 +331,11 @@ function ProcessContent({
           </div>
 
           {/* Right - Active Step Detail Card */}
-          <div className="lg:col-span-3">
+          <div className="w-full lg:col-span-3">
             <div className="bg-white dark:bg-white/5 rounded-3xl border-2 border-light-border dark:border-white/10 shadow-2xl overflow-hidden">
               {/* Card Header con color del step */}
               <div
-                className={`p-8 pb-6 bg-gradient-to-br transition-colors duration-300 ${
+                className={`p-6 md:p-8 pb-6 bg-gradient-to-br transition-colors duration-300 ${
                   currentStep.color === "text-sky-400"
                     ? "from-sky-50 to-cyan-50 dark:from-sky-500/10 dark:to-cyan-500/5 border-b-2 border-sky-200 dark:border-sky-500/20"
                     : currentStep.color === "text-purple-400"
@@ -374,7 +374,7 @@ function ProcessContent({
               </div>
 
               {/* Card Body */}
-              <div className="p-8">
+              <div className="p-6 md:p-8">
                 <h4 className="text-sm font-bold text-light-muted dark:text-white/50 uppercase tracking-wider mb-6">
                   Lo que incluye
                 </h4>
