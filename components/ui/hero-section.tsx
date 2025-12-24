@@ -1,103 +1,137 @@
 "use client";
 
-import { motion, useScroll, useTransform, useSpring } from "framer-motion";
-import { useRef } from "react";
+import { Canvas } from "@react-three/fiber";
+import { Environment, OrbitControls, ContactShadows } from "@react-three/drei";
+import { CityModel } from "./CityModel";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import siteContent from "@/data/site-content.json";
+import React from "react";
 
 export default function HeroSection() {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start start", "end start"],
-  });
-
-  const smoothProgress = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 30,
-    restDelta: 0.001,
-  });
-
-  // Sphere Reveal
-  const sphereScale = useTransform(smoothProgress, [0, 1], [0.8, 1.2]);
-  const sphereOpacity = useTransform(smoothProgress, [0, 0.5], [0.4, 0]);
-
   const { hero } = siteContent;
+  const [isMounted, setIsMounted] = React.useState(false);
+
+  React.useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   return (
-    <section
-      ref={containerRef}
-      className="relative h-[110vh] flex flex-col items-center justify-center overflow-hidden bg-transparent pt-20 transition-colors duration-300"
-    >
-      {/* Background Gradient Mesh */}
-      <div className="absolute inset-0 pointer-events-none opacity-20">
-        {/* <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,_#14b8a6_0%,_transparent_50%)] dark:bg-[radial-gradient(circle_at_50%_50%,_#1f2833_0%,_transparent_50%)]" /> */}
+    <section className="relative w-full h-[100vh] min-h-[600px] flex items-center justify-center overflow-hidden bg-gradient-to-b from-background to-secondary/20 pt-20">
+      <div className="container px-4 md:px-6 z-10 h-full max-h-[900px]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center h-full">
+          {/* COLUMNA IZQUIERDA: Textos */}
+          <div className="flex flex-col space-y-6 text-center lg:text-left relative z-20 lg:pl-10">
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl"
+            >
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-light-fg to-light-fg/80 dark:from-white dark:to-white/80">
+                {hero.titleLine1}
+              </span>
+              <br />
+              <span className="text-light-primary dark:text-holographic">
+                {hero.titleHighlight}
+              </span>
+              <br />
+              <span className="text-xl md:text-3xl text-muted-foreground font-normal">
+                {hero.subtitle}
+              </span>
+            </motion.h1>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="mx-auto lg:mx-0 max-w-[600px] text-muted-foreground md:text-xl leading-relaxed"
+            >
+              {hero.description}
+              <br className="hidden md:block" />
+              <span className="font-medium text-foreground">
+                {hero.subDescriptionStrong}
+              </span>
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4"
+            >
+              <a
+                href={hero.whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex h-11 items-center justify-center rounded-full bg-light-primary dark:bg-holographic px-8 text-sm font-bold text-white dark:text-deep-void shadow transition-transform hover:scale-105"
+              >
+                {hero.ctaPrimary}
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </a>
+
+              <Link
+                href="#process"
+                className="inline-flex h-11 items-center justify-center rounded-full border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground"
+              >
+                {hero.ctaSecondary}
+              </Link>
+            </motion.div>
+          </div>
+
+          {/* COLUMNA DERECHA: El Modelo 3D */}
+          <div className="h-[50vh] lg:h-full w-full relative min-h-[400px]">
+            {isMounted && (
+              <Canvas
+                shadows
+                dpr={[1, 2]} // 1. Sharpness: Handle Retina displays
+                gl={{ antialias: true, preserveDrawingBuffer: true }} // 2. Sharpness: Antialias
+                camera={{ position: [8, 6, 8], fov: 35 }}
+              >
+                {/* Luces mejoradas: más intensidad para evitar modorro "oscuro" */}
+                <ambientLight intensity={1.5} />
+                <directionalLight
+                  position={[10, 10, 5]}
+                  intensity={3}
+                  castShadow
+                  shadow-mapSize={[1024, 1024]}
+                  shadow-bias={-0.0001} // 3. Sharpness: Better shadow quality
+                />
+                <spotLight position={[-5, 5, 0]} intensity={2} angle={0.5} />
+
+                {/* Entorno suave - DISABLED FOR STABILITY
+                <Environment preset="city" blur={0.8} />
+                */}
+
+                <React.Suspense fallback={null}>
+                  <CityModel />
+                </React.Suspense>
+
+                {/* Controles para que el usuario pueda rotar la ciudad, limitado */}
+                <OrbitControls
+                  enableZoom={false}
+                  enablePan={true}
+                  autoRotate
+                  autoRotateSpeed={0.8}
+                  minPolarAngle={Math.PI / 4}
+                  maxPolarAngle={Math.PI / 2.2} // Limita para no ver desde abajo
+                />
+
+                {/* Sombra de contacto - DISABLED FOR STABILITY
+                <ContactShadows
+                  position={[0, -0.05, 0]} // Justo debajo del modelo centrado
+                  opacity={0.4}
+                  scale={10}
+                  blur={2}
+                  far={4.5}
+                />
+                */}
+              </Canvas>
+            )}
+          </div>
+        </div>
       </div>
-
-      <div className="z-10 flex flex-col items-center px-6 text-center max-w-7xl mx-auto">
-        <motion.h1
-          className="text-4xl md:text-5xl lg:text-7xl font-bold leading-[1.1] tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-light-fg to-light-fg/60 dark:from-white dark:to-white/60 mb-8"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-        >
-          {hero.titleLine1} <br />
-          <span className="text-light-fg dark:text-white">
-            {hero.titleHighlight}
-          </span>{" "}
-          <br />
-          <span className="text-light-primary dark:text-holographic">
-            {hero.subtitle}
-          </span>
-        </motion.h1>
-
-        <motion.p
-          className="text-xl md:text-2xl text-light-muted dark:text-white/70 max-w-3xl font-light mb-10 leading-relaxed flex flex-col gap-4"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.3, duration: 0.8 }}
-        >
-          {hero.description}
-          <br className="hidden md:block" />
-          <span className="text-light-fg dark:text-white font-medium ">
-            {hero.subDescriptionStrong}
-          </span>
-        </motion.p>
-
-        <motion.div
-          className="flex flex-col md:flex-row gap-4 items-center"
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6, duration: 0.5 }}
-        >
-          <a
-            href={hero.whatsappLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative px-8 py-4 bg-light-primary dark:bg-holographic text-white dark:text-deep-void font-bold text-lg rounded-full overflow-hidden transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(20,184,166,0.5)] dark:hover:shadow-[0_0_20px_rgba(102,252,241,0.5)]"
-          >
-            <span className="relative z-10 flex items-center gap-2">
-              {hero.ctaPrimary}{" "}
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </span>
-            <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
-          </a>
-
-          <Link
-            href="#process"
-            className="px-8 py-4 text-light-fg dark:text-white border border-light-border dark:border-white/20 rounded-full font-medium text-lg hover:bg-light-surface dark:hover:bg-white/5 transition-colors"
-          >
-            {hero.ctaSecondary}
-          </Link>
-        </motion.div>
-      </div>
-
-      {/* The "Sphere" Background Element */}
-      <motion.div
-        style={{ scale: sphereScale, opacity: sphereOpacity }}
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60vw] h-[60vw] md:w-[40vw] md:h-[40vw] rounded-full blur-[100px] bg-gradient-to-tr from-light-primary/20 via-cyan-500/20 to-blue-600/20 dark:from-holographic/20 dark:via-purple-500/20 dark:to-blue-600/20 pointer-events-none z-0"
-      />
     </section>
   );
 }
