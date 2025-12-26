@@ -9,6 +9,8 @@ import InteractiveProcessSection from "@/components/ui/interactive-process-secti
 import StackSection from "@/components/ui/stack-section";
 import TestimonialsSection from "@/components/ui/testimonials-section";
 import FinalCTASection from "@/components/ui/final-cta-section";
+import LogoCloud from "@/components/ui/logo-cloud";
+import InvestmentSection from "@/components/ui/investment-section";
 
 export default function Home() {
   return (
@@ -18,6 +20,7 @@ export default function Home() {
     >
       <Navbar />
       <HeroSection />
+      <LogoCloud />
       <DifferentialsSection />
       {/* <InfiniteMarquee /> */}
       <ServicesSection />
@@ -55,6 +58,7 @@ export default function Home() {
       </section>
       <TestimonialsSection />
       <StackSection />
+      {/* <InvestmentSection /> */}
       <FinalCTASection />
       <Footer />
     </main>

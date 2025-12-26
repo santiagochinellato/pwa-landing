@@ -18,6 +18,9 @@ export default function Footer() {
                 {footer.titleHighlight}
               </span>
             </h2>
+            <p className="text-sm font-bold text-light-primary dark:text-holographic uppercase tracking-widest">
+              Estudio de ingeniería web
+            </p>
             <div className="space-y-4">
               <a
                 href={`mailto:${footer.email}`}

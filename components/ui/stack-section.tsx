@@ -36,13 +36,13 @@ export default function StackSection() {
   return (
     <section
       id="stack"
-      className="py-24 bg-transparent px-6 md:px-12 relative border-t border-light-border dark:border-white/5 transition-colors duration-300"
+      className="py-16 md:py-24 bg-transparent px-4 md:px-12 relative border-t border-light-border dark:border-white/5 transition-colors duration-300"
     >
       <div className="absolute inset-0 bg-light-primary/5 dark:bg-holographic/5 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 md:mb-16">
           <div className="inline-block mb-4 px-4 py-2 bg-light-primary/10 dark:bg-holographic/10 rounded-full border-2 border-light-primary/20 dark:border-holographic/20">
             <h2 className="text-xs font-bold text-light-primary dark:text-holographic tracking-widest uppercase">
               {stack.badge}
@@ -65,7 +65,7 @@ export default function StackSection() {
         {/* DESKTOP: Tabs Layout */}
         <div className="hidden lg:grid lg:grid-cols-2 gap-8 items-start">
           {/* Left: Tabs */}
-          <div className="space-y-3 flex flex-col justify-center items-center h-full">
+          <div className="space-y-3 flex flex-col justify-start items-center h-full">
             {benefits.map((benefit, idx) => {
               const BenefitIcon = benefit.icon;
               return (
@@ -75,7 +75,7 @@ export default function StackSection() {
                   className={`w-full text-left p-6 rounded-xl border transition-all duration-300 group ${
                     idx === activeTab
                       ? "border-light-primary bg-white dark:bg-holographic/10 dark:border-holographic shadow-lg shadow-light-primary/10 dark:shadow-holographic/10"
-                      : "bg-white dark:bg-white/5 border-light-border dark:border-white/10 hover:border-light-primary/30 dark:hover:border-white/20 hover:bg-light-surface dark:hover:bg-white/10"
+                      : "bg-white dark:bg-white/10 border-light-border dark:border-white/20 hover:border-light-primary/30 dark:hover:border-holographic/30 hover:bg-light-surface dark:hover:bg-white/20"
                   }`}
                 >
                   <div className="flex items-start gap-4">
@@ -102,11 +102,16 @@ export default function StackSection() {
                         {benefit.tech}
                       </p>
                     </div>
-                    {idx === activeTab && (
-                      <div className="text-2xl font-bold text-light-primary dark:text-holographic">
-                        {benefit.metric}
-                      </div>
-                    )}
+
+                    <div
+                      className={`text-xs font-bold px-2 py-1 rounded hidden lg:block transition-all ${
+                        idx === activeTab
+                          ? "bg-light-primary text-white dark:bg-holographic dark:text-deep-void shadow-sm"
+                          : "bg-light-border/50 text-light-muted dark:bg-white/10 dark:text-white/60"
+                      }`}
+                    >
+                      {benefit.metric}
+                    </div>
                   </div>
                 </button>
               );
@@ -169,14 +174,14 @@ export default function StackSection() {
               </p>
 
               {/* Visual Comparison */}
-              <div className="rounded-xl bg-light-surface dark:bg-white/5 p-6 border border-light-border dark:border-white/10">
-                <div className="text-xs font-mono text-light-muted dark:text-white/90 mb-4">
+              <div className="rounded-xl bg-light-surface dark:bg-white/10 p-6 border border-light-border dark:border-white/20 shadow-inner">
+                <div className="text-xs font-mono text-light-muted dark:text-white/90 mb-4 tracking-widest uppercase">
                   {stack.labels.comparisonTitle}
                 </div>
                 <div className="space-y-4">
                   <div>
                     <div className="flex justify-between text-sm mb-2">
-                      <span className="text-light-primary dark:text-holographic font-medium">
+                      <span className="text-light-primary dark:text-holographic font-bold">
                         {stack.labels.ourTech}
                       </span>
                       <span className="font-bold text-light-fg dark:text-white">
@@ -185,23 +190,23 @@ export default function StackSection() {
                     </div>
                     <div className="h-2 bg-light-border dark:bg-white/10 rounded-full overflow-hidden">
                       <div
-                        className={`h-full bg-gradient-to-r ${current.color}`}
+                        className={`h-full bg-gradient-to-r ${current.color} shadow-[0_0_10px_rgba(255,255,255,0.3)]`}
                         style={{ width: `${current.percentage}%` }}
                       />
                     </div>
                   </div>
                   <div>
                     <div className="flex justify-between text-sm mb-2">
-                      <span className="text-light-muted dark:text-white/90">
+                      <span className="text-light-muted dark:text-white/60">
                         {stack.labels.marketAvg}
                       </span>
-                      <span className="font-bold text-light-muted dark:text-white/90">
+                      <span className="font-bold text-light-muted dark:text-white/60">
                         {current.comparison}
                       </span>
                     </div>
-                    <div className="h-2 bg-light-border dark:bg-white/10 rounded-full overflow-hidden">
+                    <div className="h-2 bg-light-border dark:bg-white/5 rounded-full overflow-hidden">
                       <div
-                        className="h-full bg-light-muted/20 dark:bg-white/20"
+                        className="h-full bg-light-muted/20 dark:bg-white/10"
                         style={{ width: "35%" }}
                       />
                     </div>
@@ -216,13 +221,17 @@ export default function StackSection() {
                 {stack.cta.text}
               </p>
               <a
-                href="https://wa.me/5492944227526"
+                href={siteContent.hero.whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full bg-light-primary dark:bg-holographic text-white dark:text-deep-void px-6 py-3 rounded-lg font-bold hover:bg-light-primary/90 dark:hover:bg-white transition-all shadow-md hover:shadow-lg"
+                className="block w-full bg-light-primary dark:bg-holographic text-white dark:text-deep-void px-6 py-4 rounded-lg font-bold hover:bg-light-primary/90 dark:hover:bg-cyan-400 transition-all shadow-md hover:shadow-cyan-400/20 hover:scale-[1.02]"
               >
                 {stack.cta.button}
               </a>
+              <div className="mt-3 flex items-center justify-center gap-2 text-[10px] text-light-muted dark:text-white/60 font-mono uppercase tracking-widest">
+                <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
+                Respuesta hoy garantizada
+              </div>
             </div>
           </div>
         </div>
@@ -379,7 +388,7 @@ export default function StackSection() {
         </div>
 
         {/* Bottom Stats */}
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
+        {/* <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
           {stack.bottomStats.map((stat, idx) => (
             <div
               key={idx}
@@ -393,7 +402,7 @@ export default function StackSection() {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

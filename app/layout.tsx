@@ -7,6 +7,7 @@ import { Providers } from "@/components/providers";
 import { Spotlight } from "@/components/ui/spotlight";
 import { GlassLayer } from "@/components/ui/glass-layer";
 import { LazyMotion, domAnimation } from "framer-motion";
+import FloatingCTA from "@/components/ui/floating-cta";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -99,6 +100,7 @@ export default function RootLayout({
             <LocalBusinessSchema />
             <div className="relative z-10">
               <ClientWrapper>{children}</ClientWrapper>
+              <FloatingCTA />
             </div>
           </LazyMotion>
         </Providers>
