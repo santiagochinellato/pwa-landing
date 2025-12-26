@@ -10,17 +10,17 @@ export default function ServicesSection() {
   return (
     <section
       id="services"
-      className="py-24 bg-transparent px-6 md:px-12 relative border-t border-light-border dark:border-white/5 transition-colors duration-300"
+      className="py-16 md:py-24 bg-transparent px-4 md:px-12 relative border-t border-light-border dark:border-white/5 transition-colors duration-300"
     >
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-5xl font-bold mb-16 text-center text-light-fg dark:text-white">
+        <h2 className="text-3xl md:text-5xl font-bold mb-8 md:mb-16 text-center text-light-fg dark:text-white">
           {services.heading}{" "}
           <span className="text-light-primary dark:text-holographic">
             {services.headingHighlight}
           </span>
         </h2>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8 mb-8">
           {/* Main Service - Featured - Updated Design */}
           <div className="lg:col-span-2 p-6 md:p-10 rounded-2xl bg-gradient-to-br from-light-primary/10 via-light-surface to-light-surface dark:from-holographic/10 dark:via-white/5 dark:to-white/5 border-2 border-light-primary/50 dark:border-holographic/50 hover:border-light-primary dark:hover:border-holographic transition-all duration-300 group relative overflow-hidden shadow-xl dark:shadow-[0_0_40px_rgba(102,252,241,0.15)] bg-white dark:bg-transparent">
             {/* Badge */}
@@ -78,7 +78,7 @@ export default function ServicesSection() {
           </div>
 
           {/* Secondary Services */}
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-6 md:gap-8">
             {services.secondaryServices.map((service, index) => {
               const Icon = secondaryIcons[index] || Globe;
               return (
@@ -115,7 +115,7 @@ export default function ServicesSection() {
         <div className="p-6 md:p-8 rounded-2xl bg-light-surface dark:bg-white/5 shadow-2xl bg-gradient-to-r from-purple-500/10 via-light-primary/10 dark:via-holographic/10 to-blue-500/10 border border-light-primary/30 dark:border-holographic/30 hover:border-light-primary/60 dark:hover:border-holographic/60 transition-all duration-300 group relative overflow-hidden mb-8 bg-white dark:bg-transparent">
           <div className="absolute inset-0 bg-gradient-to-r from-purple-500/5 via-light-primary/5 dark:via-holographic/5 to-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity" />
 
-          <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-6">
+          <div className="relative z-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
             <div className="flex flex-row items-center gap-4 md:gap-6 text-center md:text-left">
               <div className="w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-gradient-to-br from-purple-500/20 to-light-primary/20 dark:to-holographic/20 flex items-center justify-center border-2 border-light-primary/30 dark:border-holographic/30 bg-white/50 dark:bg-transparent shrink-0 md:shrink-0 self-start">
                 <Package

@@ -48,7 +48,7 @@ export default function StackSection() {
               {stack.badge}
             </h2>
           </div>
-          <h1 className="text-3xl md:text-5xl font-bold mb-4 text-light-fg dark:text-white">
+          <h1 className="text-2xl md:text-5xl font-bold mb-4 text-light-fg dark:text-white">
             {stack.title}{" "}
             <span className="relative inline-block">
               <span className="text-light-primary dark:text-holographic">
@@ -57,7 +57,7 @@ export default function StackSection() {
               <span className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-light-primary to-cyan-500 dark:from-holographic dark:to-cyan-400 rounded-full" />
             </span>
           </h1>
-          <p className="text-lg text-light-muted dark:text-white/90 max-w-2xl mx-auto font-light">
+          <p className="text-l text-light-muted dark:text-white/90 max-w-2xl mx-auto font-light">
             {stack.description}
           </p>
         </div>

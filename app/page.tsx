@@ -24,7 +24,7 @@ export default function Home() {
       <InteractiveProcessSection />
       <section
         id="portfolio"
-        className="px-6 py-24 md:px-12 bg-transparent border-t border-light-border dark:border-white/5"
+        className="px-6 py-12 md:py-24 md:px-12 bg-transparent border-t border-light-border dark:border-white/5"
       >
         <div className="max-w-7xl mx-auto space-y-12">
           <h2 className="text-3xl md:text-5xl font-bold mb-12 text-center text-light-fg dark:text-white text-balance leading-normal">

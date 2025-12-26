@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <footer className="bg-light-surface dark:bg-deep-void py-12 md:py-24 border-t border-light-border dark:border-white/5 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 mb-8 md:mb-16">
           <div className="space-y-8">
             <h2 className="text-4xl md:text-6xl font-bold tracking-tighter text-light-fg dark:text-white">
               {footer.title.split("\n")[0]} <br />

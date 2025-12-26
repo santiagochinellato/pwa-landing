@@ -152,37 +152,37 @@ function ProcessContent({
   return (
     <section
       id="process"
-      className="bg-transparent py-24 px-4 md:px-6 relative transition-colors duration-300"
+      className="bg-transparent py-16 md:py-24 px-4 md:px-6 relative transition-colors duration-300"
     >
       <div className="absolute inset-0 bg-light-primary/5 dark:bg-holographic/5 pointer-events-none" />
       <div className="max-w-6xl mx-auto relative z-10">
         {/* Header - Diseño con underline colorida */}
-        <div className="text-center mb-16">
-          <div className="inline-block mb-4 px-4 py-2 bg-light-primary/10 dark:bg-holographic/10 rounded-full border-2 border-light-primary/20 dark:border-holographic/20">
-            <h2 className="text-xs font-bold text-light-primary dark:text-holographic tracking-widest uppercase">
+        <div className="text-center mb-8 md:mb-16">
+          <div className="inline-block mb-3 px-3 py-1 bg-light-primary/10 dark:bg-holographic/10 rounded-full border border-light-primary/20 dark:border-holographic/20">
+            <h2 className="text-[10px] md:text-xs font-bold text-light-primary dark:text-holographic tracking-widest uppercase">
               {process.badge}
             </h2>
           </div>
 
-          <h2 className="text-3xl md:text-6xl font-bold mb-4 text-light-fg dark:text-white text-balance leading-normal lg:leading-tight">
+          <h2 className="text-2xl md:text-5xl lg:text-6xl font-extrabold mb-4 text-light-fg dark:text-white text-balance leading-relaxed md:leading-tight">
             {process.title}{" "}
             <span className="relative inline-block">
               <span className="text-light-primary dark:text-holographic">
                 {process.titleHighlight}
               </span>
-              <span className="absolute -bottom-1 md:-bottom-2 left-0 w-full h-1 bg-gradient-to-r from-light-primary to-cyan-500 dark:from-holographic dark:to-cyan-400 rounded-full" />
+              <span className="absolute -bottom-1 md:-bottom-2 left-0 w-full h-1 bg-gradient-to-r from-light-primary to-cyan-500 dark:from-holographic dark:to-cyan-400 rounded-full opacity-80" />
             </span>{" "}
             {process.titleSuffix}
           </h2>
 
-          <p className="text-lg text-light-muted dark:text-white/60 max-w-2xl mx-auto font-light">
+          <p className="text-base md:text-lg text-light-muted dark:text-white/60 max-w-2xl mx-auto font-light leading-relaxed px-4">
             {process.description}
           </p>
         </div>
 
         {/* Timeline Visual con Cards - SOLO MOBILE */}
-        <div className="mb-16 lg:hidden">
-          <div className="flex justify-start gap-4 overflow-x-auto py-8 px-4 scrollbar-hide -mx-4 md:mx-0 snap-x snap-mandatory">
+        <div className="mb-8 md:mb-16 lg:hidden">
+          <div className="flex justify-start gap-4 overflow-x-auto py-4 px-4 scrollbar-hide -mx-4 md:mx-0 snap-x snap-mandatory">
             {steps.map((step, idx) => {
               const StepIcon = step.icon;
               const isActive = idx === activeStep;
@@ -198,7 +198,7 @@ function ProcessContent({
                   {/* Círculo con número */}
                   <div className="relative">
                     <div
-                      className={`w-16 h-16 md:w-20 md:h-20 rounded-2xl flex items-center justify-center transition-all duration-300 shadow-lg ${
+                      className={`w-14 h-14 md:w-20 md:h-20 rounded-2xl flex items-center justify-center transition-all duration-300 shadow-lg ${
                         isActive
                           ? `${stepColors.bg} scale-110 ${stepColors.shadow} text-white`
                           : isPast
@@ -207,7 +207,7 @@ function ProcessContent({
                       }`}
                     >
                       <StepIcon
-                        size={isActive ? 28 : 24}
+                        size={isActive ? 20 : 18}
                         className={`transition-all ${
                           isActive
                             ? "text-white"
@@ -365,7 +365,7 @@ function ProcessContent({
                 </div>
 
                 {currentStep.title ? (
-                  <h3 className="text-3xl md:text-4xl font-bold text-light-fg dark:text-white mb-3">
+                  <h3 className="text-2xl md:text-4xl font-bold text-light-fg dark:text-white mb-3">
                     {currentStep.title}
                   </h3>
                 ) : null}
@@ -416,7 +416,7 @@ function ProcessContent({
                   href="https://wa.me/5492944227526"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`w-full ${currentColors.bg} text-white px-8 py-5 rounded-2xl font-bold text-lg hover:opacity-90 transition-all flex items-center justify-center gap-3 group shadow-lg ${currentColors.shadow} hover:shadow-xl hover:-translate-y-1`}
+                  className={`w-full ${currentColors.bg} text-white px-8 py-5 rounded-2xl font-bold text-l hover:opacity-90 transition-all flex items-center justify-center gap-3 group shadow-lg ${currentColors.shadow} hover:shadow-xl hover:-translate-y-1`}
                 >
                   {currentStep.cta}
                   <ArrowRight
@@ -508,7 +508,7 @@ function ProcessContent({
         </div>
 
         {/* Final CTA Banner */}
-        <div className="mt-16 shadow-2xl  from-light-primary/10 via-cyan-50 to-blue-50 dark:from-holographic/10 dark:via-cyan-900/10 dark:to-blue-900/10 rounded-3xl border-2  border-light-primary/30 dark:border-holographic/30 p-8 md:p-12 text-center relative overflow-hidden">
+        <div className="mt-12 md:mt-16 shadow-2xl from-light-primary/10 via-cyan-50 to-blue-50 dark:from-holographic/10 dark:via-cyan-900/10 dark:to-blue-900/10 rounded-3xl border-2 border-light-primary/30 dark:border-holographic/30 p-6 md:p-12 text-center relative overflow-hidden">
           <div className="absolute inset-0 bg-light-surface dark:bg-white/5 bg-[radial-gradient(circle_at_70%_30%,_rgba(20,184,166,0.1),transparent_50%)] pointer-events-none" />
 
           <h3 className="text-2xl md:text-3xl font-bold text-light-fg dark:text-white mb-4 relative z-10">

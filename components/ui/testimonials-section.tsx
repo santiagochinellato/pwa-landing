@@ -29,10 +29,10 @@ export default function TestimonialsSection() {
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div className="text-left">
-            <h2 className="text-sm font-mono text-light-primary dark:text-holographic tracking-widest mb-2">
+            <h2 className="text-sm text-center font-mono text-light-primary dark:text-holographic tracking-widest mb-2">
               {testimonials.badge}
             </h2>
-            <h3 className="text-3xl md:text-4xl font-bold text-light-fg dark:text-white">
+            <h3 className="text-3xl md:text-4xl font-bold text-center text-light-fg dark:text-white">
               {testimonials.title}{" "}
               <span className="text-light-primary dark:text-holographic">
                 {testimonials.titleHighlight}

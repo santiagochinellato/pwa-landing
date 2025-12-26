@@ -9,9 +9,9 @@ export default function DifferentialsSection() {
   const icons = [Clock, Code2, Target];
 
   return (
-    <section className="py-24 bg-transparent px-6 md:px-12 relative overflow-hidden transition-colors duration-300">
+    <section className="py-16 md:py-24 bg-transparent px-4 md:px-12 relative overflow-hidden transition-colors duration-300">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-5xl font-bold mb-16 text-center text-light-fg dark:text-white">
+        <h2 className="text-3xl md:text-5xl font-bold mb-10 md:mb-16 text-center text-light-fg dark:text-white">
           {differentials.title}{" "}
           <span className="text-light-primary dark:text-holographic">
             {differentials.titleHighlight}
@@ -26,7 +26,7 @@ export default function DifferentialsSection() {
               <motion.div
                 key={index}
                 whileHover={{ y: -5 }}
-                className="p-8 rounded-2xl bg-light-surface dark:bg-deep-void border border-light-border dark:border-white/10 hover:border-light-primary dark:hover:border-holographic transition-all relative group overflow-hidden shadow-sm hover:shadow-lg dark:shadow-none bg-white dark:bg-transparent flex flex-col h-full"
+                className="p-6 md:p-8 rounded-2xl bg-light-surface dark:bg-deep-void border border-light-border dark:border-white/10 hover:border-light-primary dark:hover:border-holographic transition-all relative group overflow-hidden shadow-sm hover:shadow-lg dark:shadow-none bg-white dark:bg-transparent flex flex-col h-full"
               >
                 {/* Barra superior */}
                 <div className="absolute top-0 left-0 w-full h-1 bg-light-primary dark:bg-holographic origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
@@ -45,11 +45,11 @@ export default function DifferentialsSection() {
                 </p>
 
                 {/* Metric Reveal */}
-                <div className="mt-auto pt-4 border-t border-light-border dark:border-white/5 flex items-baseline gap-2">
-                  <span className="text-3xl font-black text-light-fg dark:text-white group-hover:text-light-primary dark:group-hover:text-holographic transition-colors">
+                <div className="mt-auto pt-4 border-t border-light-border dark:border-white/5 flex items-baseline align-center gap-2">
+                  <span className="text-2xl font-black text-light-fg dark:text-white group-hover:text-light-primary dark:group-hover:text-holographic transition-colors">
                     {item.metric}
                   </span>
-                  <span className="text-xs text-light-muted dark:text-white/40 uppercase tracking-widest">
+                  <span className="text-[10px] md:text-xs text-light-muted dark:text-white/40 uppercase tracking-widest">
                     {item.metricLabel}
                   </span>
                 </div>
