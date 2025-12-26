@@ -55,7 +55,7 @@ export function Spotlight() {
         translateX: "-50%",
         translateY: "-50%",
       }}
-      className="fixed z-[-10] w-[400px] h-[400px] rounded-full pointer-events-none opacity-100"
+      className="hidden md:block fixed z-[-10] w-[400px] h-[400px] rounded-full pointer-events-none opacity-100"
     >
       {/* Light Mode Gradient (Teal) */}
       <div

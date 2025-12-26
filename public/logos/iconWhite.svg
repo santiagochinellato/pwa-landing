@@ -1,81 +1,32 @@
-<!-- VERSIÓN LIGHT MODE -->
-<svg viewBox="0 0 950 200" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 900 180" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%;">
     <defs>
-        <!-- Gradientes Light Mode -->
-        <linearGradient id="lightPrimaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <linearGradient id="grad1d" x1="0%" y1="0%" x2="100%" y2="0%">
             <stop offset="0%" style="stop-color:#14b8a6;stop-opacity:1" />
-            <stop offset="100%" style="stop-color:#0d9488;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
         </linearGradient>
-
-        <linearGradient id="lightMountainGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" style="stop-color:#14b8a6;stop-opacity:0.9" />
-            <stop offset="100%" style="stop-color:#0891b2;stop-opacity:0.75" />
-        </linearGradient>
-
-        <linearGradient id="lightMountainGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
-            <stop offset="100%" style="stop-color:#0891b2;stop-opacity:0.85" />
-        </linearGradient>
-
-        <!-- Shadow para light mode -->
-        <filter id="lightShadow" x="-50%" y="-50%" width="200%" height="200%">
-            <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#14b8a6" flood-opacity="0.15" />
-        </filter>
-
-        <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
-            <feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#0f172a" flood-opacity="0.1" />
-        </filter>
     </defs>
 
-    <!-- Icon Group - Light Mode -->
-    <g transform="translate(50, 40)">
-        <!-- Montañas con sombras -->
-        <g filter="url(#lightShadow)">
-            <!-- Montaña trasera izquierda -->
-            <path d="M 20 120 L 50 50 L 80 90 L 80 120 Z" fill="url(#lightMountainGrad1)" opacity="0.65" />
+    <g transform="translate(35, 40)">
+        <!-- 4 montañas formando un rango -->
+        <path d="M 10 85 L 40 60 L 70 85 Z" fill="#14b8a6" opacity="0.5" />
+        <path d="M 50 85 L 85 35 L 120 85 Z" fill="#0d9488" opacity="0.8" />
+        <path d="M 100 85 L 135 25 L 170 85 Z" fill="#14b8a6" opacity="0.95" />
+        <path d="M 150 85 L 180 50 L 210 85 Z" fill="#06b6d4" opacity="0.7" />
 
-            <!-- Montaña principal izquierda -->
-            <path d="M 50 120 L 85 25 L 120 80 L 120 120 Z" fill="url(#lightMountainGrad2)" />
+        <!-- Línea base que conecta todo -->
+        <path d="M 10 85 L 210 85" stroke="url(#grad1d)" stroke-width="2.5" opacity="0.6" />
 
-            <!-- Montaña principal centro -->
-            <path d="M 100 120 L 135 40 L 170 90 L 170 120 Z" fill="url(#lightMountainGrad1)" opacity="0.9" />
-
-            <!-- Montaña principal derecha -->
-            <path d="M 150 120 L 185 60 L 220 120 Z" fill="url(#lightMountainGrad2)" opacity="0.8" />
-
-            <!-- Detalles de luz en picos -->
-            <path d="M 85 25 L 90 35 L 80 35 Z" fill="#ffffff" opacity="0.7" />
-            <path d="M 135 40 L 140 50 L 130 50 Z" fill="#ffffff" opacity="0.7" />
-        </g>
-
-        <!-- Brackets light mode con más presencia -->
-        <g opacity="0.7" filter="url(#softShadow)">
-            <path d="M 0 60 L 12 60 L 12 65 L 6 65 L 6 115 L 12 115 L 12 120 L 0 120 Z" fill="#0d9488" />
-            <path d="M 230 60 L 218 60 L 218 65 L 224 65 L 224 115 L 218 115 L 218 120 L 230 120 Z" fill="#0d9488" />
-
-            <!-- Slash del cierre más grueso -->
-            <line x1="208" y1="75" x2="218" y2="95" stroke="#0d9488" stroke-width="2.5" opacity="0.85" />
-        </g>
+        <!-- Detalles de nieve en los 2 picos más altos -->
+        <path d="M 135 25 L 138 30 L 132 30 Z" fill="white" opacity="0.8" />
+        <path d="M 85 35 L 88 40 L 82 40 Z" fill="white" opacity="0.7" />
     </g>
 
-    <!-- Text Group Light Mode -->
-    <g transform="translate(0, 0)">
-        <!-- Título principal con sombra -->
-        <text x="300" y="130" font-family="'Inter', 'Arial', sans-serif" font-size="42" font-weight="800"
-            fill="url(#lightPrimaryGrad)" letter-spacing="3" filter="url(#lightShadow)">
-            DIGITAL PATAGONIA
-        </text>
-
-        <!-- Subtítulo -->
-        <text x="300" y="155" font-family="'Inter', 'Arial', sans-serif" font-size="18" font-weight="600" fill="#0d9488"
-            letter-spacing="6" opacity="0.9" filter="url(#softShadow)">
-            SOLUCIONES DIGITALES
-        </text>
-
-        <!-- Tagline -->
-        <!-- <text x="300" y="155" font-family="'Inter', 'Arial', sans-serif" font-size="10" font-weight="500" fill="#64748b"
-            letter-spacing="2" opacity="0.7">
-            DIGITAL INFRASTRUCTURE
-        </text> -->
-    </g>
+    <text x="260" y="100" font-family="'Inter', sans-serif" font-size="38" font-weight="800" fill="url(#grad1d)"
+        letter-spacing="2">
+        DIGITAL PATAGONIA
+    </text>
+    <text x="260" y="130" font-family="'Inter', sans-serif" font-size="24" font-weight="600" fill="#0d9488"
+        letter-spacing="4" opacity="0.9">
+        DESARROLLO WEB ESTRATÉGICO
+    </text>
 </svg>

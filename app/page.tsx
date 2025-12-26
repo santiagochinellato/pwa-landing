@@ -12,7 +12,10 @@ import FinalCTASection from "@/components/ui/final-cta-section";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-transparent text-light-fg dark:text-white selection:bg-light-primary dark:selection:bg-holographic selection:text-white dark:selection:text-deep-void transition-colors duration-300">
+    <main
+      id="main-content"
+      className="min-h-screen bg-transparent text-light-fg dark:text-white selection:bg-light-primary dark:selection:bg-holographic selection:text-white dark:selection:text-deep-void transition-colors duration-300"
+    >
       <Navbar />
       <HeroSection />
       <DifferentialsSection />

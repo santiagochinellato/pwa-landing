@@ -46,7 +46,7 @@ export default function DifferentialsSection() {
 
                 {/* Metric Reveal */}
                 <div className="mt-auto pt-4 border-t border-light-border dark:border-white/5 flex items-baseline gap-2">
-                  <span className="text-4xl font-black text-light-fg dark:text-white group-hover:text-light-primary dark:group-hover:text-holographic transition-colors">
+                  <span className="text-3xl font-black text-light-fg dark:text-white group-hover:text-light-primary dark:group-hover:text-holographic transition-colors">
                     {item.metric}
                   </span>
                   <span className="text-xs text-light-muted dark:text-white/40 uppercase tracking-widest">

@@ -17,7 +17,7 @@ const config: Config = {
                 // Light mode specific (Explicit classes requested)
                 "light-bg": "#f8fafc",
                 "light-fg": "#0f172a",
-                "light-primary": "#14b8a6",
+                "light-primary": "#0f766e",
                 "light-muted": "#64748b",
                 "light-surface": "#ffffff",
                 "light-border": "#e2e8f0",

@@ -127,9 +127,9 @@ export default function ProjectCard({
                 </div>
               </div>
 
-              <h3 className="text-2xl font-bold text-light-fg dark:text-white mb-6">
+              <div className="text-2xl font-bold text-light-fg dark:text-white mb-6">
                 {title}
-              </h3>
+              </div>
 
               <ul className="space-y-3">
                 {metrics.map((metric, i) => (

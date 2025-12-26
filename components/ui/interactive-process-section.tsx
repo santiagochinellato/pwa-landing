@@ -364,9 +364,11 @@ function ProcessContent({
                   </div>
                 </div>
 
-                <h3 className="text-3xl md:text-4xl font-bold text-light-fg dark:text-white mb-3">
-                  {currentStep.title}
-                </h3>
+                {currentStep.title ? (
+                  <h3 className="text-3xl md:text-4xl font-bold text-light-fg dark:text-white mb-3">
+                    {currentStep.title}
+                  </h3>
+                ) : null}
 
                 <p className="text-lg text-light-muted dark:text-white/70 font-light leading-relaxed">
                   {currentStep.shortDesc}
@@ -430,6 +432,7 @@ function ProcessContent({
                   onClick={() => setActiveStep(Math.max(0, activeStep - 1))}
                   disabled={activeStep === 0}
                   className="flex items-center gap-2 text-light-muted hover:text-light-primary disabled:opacity-30 disabled:cursor-not-allowed transition-colors text-sm font-semibold"
+                  aria-label="Paso anterior"
                 >
                   <ArrowRight size={16} className="rotate-180" />
                   <span className="hidden md:block">Anterior</span>
@@ -440,6 +443,7 @@ function ProcessContent({
                     <button
                       key={idx}
                       onClick={() => setActiveStep(idx)}
+                      aria-label={`Ir al paso ${idx + 1}`}
                       className={`w-2 h-2 rounded-full transition-all ${
                         idx === activeStep
                           ? `w-8 ${currentColors.bg}`
@@ -457,6 +461,7 @@ function ProcessContent({
                   }
                   disabled={activeStep === steps.length - 1}
                   className="flex items-center gap-2 text-light-muted hover:text-light-primary disabled:opacity-30 disabled:cursor-not-allowed transition-colors text-sm font-semibold"
+                  aria-label="Siguiente paso"
                 >
                   <span className="hidden md:block">Siguiente</span>
                   <ArrowRight size={16} />

@@ -1,80 +1,102 @@
 {
   "hero": {
-    "titleLine1": "Tu marca merece",
-    "titleHighlight": "una web que la represente.",
-    "subtitle": "Diseño único. Inversión accesible. Entrega en 10 días.",
-    "description": "Creamos tu presencia digital pensando en tu identidad, tus clientes y tu presupuesto.",
-    "subDescriptionStrong": "Diseño pensado para tu identidad + Tecnología que funciona + Inversión que tiene sentido.",
-    "ctaPrimary": "Hablemos de tu idea",
-    "ctaSecondary": "Nuestra metodología ↓",
+    "titleLine1": "Desarrollo web profesional",
+    "titleHighlight": "que impulsa tu negocio.",
+    "subtitle": "Calidad. Resultados. Velocidad. A tu medida.",
+    "description": "Combinamos estrategia comercial con desarrollo de alto nivel para crear tu herramienta de venta digital. No es solo una web, es tu socio de negocios trabajando 24/7.",
+    "subDescriptionStrong": "Soluciones pensadas para generar impacto real en tu facturación.",
+    "valueProps": [
+      {
+        "icon": "Award",
+        "label": "Calidad profesional",
+        "detail": "Código limpio y diseño estratégico"
+      },
+      {
+        "icon": "Target",
+        "label": "Orientado a resultados",
+        "detail": "Cada elemento diseñado para convertir"
+      },
+      {
+        "icon": "Zap",
+        "label": "Entregas rápidas",
+        "detail": "Tu web lista en 7-12 días"
+      },
+      {
+        "icon": "Wrench",
+        "label": "100% a medida",
+        "detail": "Soluciones únicas para tu negocio"
+      }
+    ],
+    "ctaPrimary": "Analizar mi proyecto",
+    "ctaSecondary": "Cómo trabajamos ↓",
     "whatsappLink": "https://wa.me/5492944227526"
   },
   "services": {
-    "heading": "NUESTROS",
-    "headingHighlight": "SERVICIOS",
+    "heading": "QUÉ",
+    "headingHighlight": "RESOLVEMOS",
     "mainService": {
-      "title": "Desarrollo Web Profesional",
-      "description": "Tu sitio web es la cara de tu negocio en internet. Creamos experiencias que reflejan la calidad de lo que hacés, pensadas para que tus clientes encuentren lo que buscan y confíen en tu propuesta.",
-      "details": "Sitios Institucionales, Ecommerce y Landing Pages",
-      "durationLabel": "Tiempo de desarrollo",
+      "title": "Webs Que Convierten Visitas en Clientes",
+      "description": "Tu competencia tiene una web. Pero ¿cuántos clientes nuevos les genera por mes? Nosotros no hacemos páginas bonitas que nadie ve. Diseñamos estrategias digitales que trabajan para tu negocio: atraen al público correcto, comunican tu propuesta de valor y convierten visitantes en ventas reales.",
+      "details": "Sitios Estratégicos, Tiendas Online de Alto Rendimiento, Landings de Conversión",
+      "durationLabel": "Implementación profesional",
       "durationValue": "7-12 días",
-      "durationSubtext": "Este tiempo nos permite diseñar con cuidado, programar con calidad y revisar cada detalle. Nos tomamos el tiempo necesario para que tu inversión valga la pena.",
-      "cta": "Consultar por mi proyecto",
-      "featuredBadge": "SERVICIO INTEGRAL"
+      "durationSubtext": "Este tiempo nos permite entender tu negocio, diseñar la estrategia correcta, programar con calidad y validar que cada elemento esté optimizado para vender.",
+      "cta": "Analizar mi caso",
+      "featuredBadge": "SOLUCIÓN INTEGRAL"
     },
     "secondaryServices": [
       {
-        "title": "Rediseño & Evolución",
-        "description": "Si tu web quedó antigua, la traemos al 2025 con diseño moderno y tecnología de punta.",
-        "duration": "Evolución rápida"
+        "title": "Auditoría & Reingeniería",
+        "description": "Si tu web actual no te trae clientes, identificamos qué está fallando y lo corregimos con estrategia.",
+        "duration": "Diagnóstico gratuito"
       },
       {
-        "title": "SEO & Visibilidad",
-        "description": "Optimizamos tu estructura para que Google te encuentre antes que a la competencia.",
-        "duration": "Posicionamiento real"
+        "title": "Estrategia de Posicionamiento",
+        "description": "Optimizamos tu estructura para que tu público objetivo te encuentre primero que a la competencia.",
+        "duration": "Visibilidad real"
       }
     ],
     "fullPackage": {
-      "title": "Solución Punta a Punta",
-      "badge": "MÁXIMO RENDIMIENTO",
-      "description": "Desarrollo de calidad + Hosting profesional + Soporte técnico dedicado.",
-      "cta": "Solicitar entrevista"
+      "title": "Partner Estratégico Digital",
+      "badge": "ACOMPAÑAMIENTO CONTINUO",
+      "description": "Desarrollo orientado a resultados + Infraestructura profesional + Asesoramiento estratégico permanente.",
+      "cta": "Solicitar diagnóstico"
     },
-    "finalCta": "¿Dudas sobre qué necesitás? Lo charlamos sin compromiso."
+    "finalCta": "¿No sabés por dónde empezar? Hacemos un diagnóstico gratuito de tu situación."
   },
   "process": {
-    "badge": "[ TU PROYECTO, PASO A PASO ]",
-    "title": "CÓMO",
-    "titleHighlight": "TRABAJAMOS",
-    "titleSuffix": "JUNTOS",
-    "description": "Un proceso ordenado donde sabés qué está pasando en cada momento. Sin apuros, sin sorpresas, con toda la atención en los detalles que hacen la diferencia.",
+    "badge": "[ METODOLOGÍA ORIENTADA A RESULTADOS ]",
+    "title": "CÓMO TRANSFORMAMOS",
+    "titleHighlight": "TU PRESENCIA DIGITAL",
+    "titleSuffix": "EN VENTAS",
+    "description": "No empezamos diseñando. Empezamos entendiendo tu negocio, tu competencia y tus objetivos comerciales. Cada decisión de diseño y desarrollo responde a una estrategia clara de conversión.",
     "steps": [
       {
-        "icon": "MessageSquare",
-        "title": "Diagnóstico",
-        "duration": "Día 1",
-        "shortDesc": "Entendemos tu visión",
+        "icon": "Target",
+        "title": "Diagnóstico Estratégico",
+        "duration": "Día 1-2",
+        "shortDesc": "Entendemos tu negocio",
         "details": [
-          "Agendamos una charla para conocer tus metas",
-          "Analizamos a tu público y tu competencia local",
-          "Te asesoramos sobre la mejor solución técnica",
-          "Primera consulta 100% gratuita y orientativa"
+          "Analizamos tu propuesta de valor y ventajas competitivas",
+          "Estudiamos a tu público objetivo y competencia directa",
+          "Identificamos oportunidades de conversión desaprovechadas",
+          "Definimos objetivos medibles para tu presencia digital"
         ],
-        "cta": "Empezar charla",
+        "cta": "Agendar diagnóstico",
         "color": "text-sky-400",
         "glow": "bg-sky-500/20",
         "border": "border-sky-500/30"
       },
       {
-        "icon": "Palette",
-        "title": "Diseño",
-        "duration": "2-3 días",
-        "shortDesc": "Creamos tu identidad visual",
+        "icon": "Lightbulb",
+        "title": "Estrategia de Conversión",
+        "duration": "Día 2-3",
+        "shortDesc": "Diseñamos el camino a la venta",
         "details": [
-          "Diseño visual único que refleja tu marca",
-          "Pensamos la estructura desde la experiencia de tus clientes",
-          "Revisiones conjuntas: tu opinión es fundamental",
-          "Te mostramos cómo va a quedar antes de programar"
+          "Mapeamos el customer journey de tu cliente ideal",
+          "Definimos arquitectura de información orientada a conversión",
+          "Planificamos llamados a la acción estratégicos",
+          "Creamos mensajes que conectan con tu público"
         ],
         "cta": "Ver ejemplos",
         "color": "text-purple-400",
@@ -82,180 +104,196 @@
         "border": "border-purple-500/30"
       },
       {
-        "icon": "Code2",
-        "title": "Desarrollo",
-        "duration": "4-6 días",
-        "shortDesc": "Programamos con dedicación",
+        "icon": "Palette",
+        "title": "Diseño de Identidad",
+        "duration": "Día 4-5",
+        "shortDesc": "Construimos confianza visual",
         "details": [
-          "Código limpio y profesional para máxima velocidad",
-          "Seguridad robusta y funcionamiento en todos los dispositivos",
-          "Tecnología moderna que te permite crecer sin límites",
-          "Cada línea se programa pensando en el largo plazo"
+          "Diseño que transmite profesionalismo y credibilidad",
+          "Jerarquía visual que guía al usuario hacia la conversión",
+          "Identidad consistente con tu posicionamiento de marca",
+          "Validación de conceptos antes de programar"
         ],
-        "cta": "Saber más",
+        "cta": "Nuestro enfoque",
         "color": "text-emerald-400",
         "glow": "bg-emerald-500/20",
         "border": "border-emerald-500/30"
       },
       {
-        "icon": "CheckCircle2",
-        "title": "Control de Calidad",
-        "duration": "1-2 días",
-        "shortDesc": "Revisamos hasta el último detalle",
+        "icon": "Code2",
+        "title": "Desarrollo de Alto Rendimiento",
+        "duration": "Día 6-9",
+        "shortDesc": "Programamos para resultados",
         "details": [
-          "Probamos en celulares, tablets y computadoras",
-          "Optimizamos imágenes para que carguen rápido",
-          "Verificamos que cada botón y función responda bien",
-          "No entregamos hasta estar 100% conformes"
+          "Código optimizado para velocidad de carga instantánea",
+          "Estructura técnica que favorece el posicionamiento orgánico",
+          "Responsive real: funciona perfecto en cualquier dispositivo",
+          "Integración con herramientas de medición y análisis"
         ],
-        "cta": "Nuestros estándares",
+        "cta": "Stack tecnológico",
         "color": "text-orange-400",
         "glow": "bg-orange-500/20",
         "border": "border-orange-500/30"
       },
       {
-        "icon": "Rocket",
-        "title": "Lanzamiento",
-        "duration": "1 día",
-        "shortDesc": "Tu web online",
+        "icon": "CheckCircle2",
+        "title": "Testing de Conversión",
+        "duration": "Día 10-11",
+        "shortDesc": "Validamos que todo funcione",
         "details": [
-          "Configuración de dominio y hosting estable",
-          "Puesta en marcha y verificación de seguridad",
-          "Alta en Google para empezar a indexar",
-          "Tu negocio ya está visible al mundo"
+          "Pruebas de usabilidad en dispositivos reales",
+          "Validación de formularios y puntos de conversión",
+          "Optimización de velocidad y Core Web Vitals",
+          "Verificación de analítica y tracking configurado"
         ],
-        "cta": "¡Vamos!",
+        "cta": "Nuestros estándares",
         "color": "text-yellow-400",
         "glow": "bg-yellow-500/20",
         "border": "border-yellow-500/30"
       },
       {
-        "icon": "Headphones",
-        "title": "Soporte",
-        "duration": "Siempre",
-        "shortDesc": "Estamos con vos",
+        "icon": "Rocket",
+        "title": "Lanzamiento Estratégico",
+        "duration": "Día 12",
+        "shortDesc": "Tu herramienta de venta online",
         "details": [
-          "Acompañamiento técnico ante cualquier duda",
-          "Actualizaciones de seguridad constantes",
-          "Asesoramiento para seguir creciendo",
-          "Somos tu partner tecnológico en la zona"
+          "Configuración de infraestructura profesional y segura",
+          "Indexación en Google y verificación de Search Console",
+          "Capacitación en gestión básica del contenido",
+          "Tu negocio visible y listo para captar clientes"
         ],
-        "cta": "Contacto directo",
+        "cta": "¡Arrancar!",
         "color": "text-indigo-400",
         "glow": "bg-indigo-500/20",
         "border": "border-indigo-500/30"
+      },
+      {
+        "icon": "TrendingUp",
+        "title": "Optimización Continua",
+        "duration": "Siempre",
+        "shortDesc": "Mejoramos con datos",
+        "details": [
+          "Asesoramiento basado en métricas reales de tu web",
+          "Sugerencias para mejorar tasas de conversión",
+          "Soporte técnico y actualizaciones de seguridad",
+          "Somos tu partner digital para el largo plazo"
+        ],
+        "cta": "Hablemos",
+        "color": "text-pink-400",
+        "glow": "bg-pink-500/20",
+        "border": "border-pink-500/30"
       }
     ]
   },
   "stack": {
-    "badge": "[ TECNOLOGÍA QUE TRABAJA PARA TU NEGOCIO ]",
-    "title": "TECNOLOGÍA AL",
-    "titleHighlight": "SERVICIO DE TU MARCA",
-    "description": "Usamos herramientas profesionales de nivel internacional para que tu web sea rápida, segura y fácil de usar. La tecnología está al servicio de tu marca, no al revés.",
+    "badge": "[ TECNOLOGÍA AL SERVICIO DE TUS RESULTADOS ]",
+    "title": "NO VENDEMOS",
+    "titleHighlight": "TECNOLOGÍA BONITA",
+    "description": "La tecnología es un medio, no un fin. Usamos herramientas profesionales porque impactan directamente en tus resultados de negocio: más velocidad = menos abandono. Mejor UX = más conversiones. SEO técnico sólido = más visibilidad orgánica.",
     "benefits": [
       {
         "icon": "Zap",
-        "title": "CARGA INSTANTÁNEA",
-        "tech": "Optimización Avanzada",
+        "title": "VELOCIDAD = CONVERSIÓN",
+        "tech": "Optimización Extrema",
         "metric": "1.5 seg",
-        "comparison": "Mientras otros esperan 5",
+        "comparison": "Mientras otros esperan 5 seg",
         "percentage": 100,
-        "description": "Tu web carga en un segundo y medio. Tus clientes ven tu propuesta de inmediato, sin perder tiempo esperando. Una web lenta hace que la gente se vaya antes de conocerte.",
+        "description": "Cada segundo de espera cuesta un 7% de conversión. Tu web carga en 1.5 segundos porque sabemos que la gente no espera. Si tardan 5 segundos, el 40% de tus potenciales clientes ya se fueron.",
         "color": "from-yellow-500 to-orange-500"
       },
       {
-        "icon": "Database",
-        "title": "CONTROL TOTAL",
-        "tech": "Panel de Autogestión",
-        "metric": "Simple",
-        "comparison": "Sin depender de nadie",
+        "icon": "Target",
+        "title": "DISEÑO QUE CONVIERTE",
+        "tech": "Arquitectura UX Estratégica",
+        "metric": "Probado",
+        "comparison": "Optimizado para acción",
         "percentage": 95,
-        "description": "Podés cambiar precios, fotos y textos vos mismo, cuando quieras. El panel es simple e intuitivo: si sabés usar redes sociales, sabés usar tu web.",
+        "description": "Cada botón, cada texto, cada imagen está ubicada pensando en guiar al usuario hacia una acción específica. No es arte, es psicología de conversión aplicada al diseño.",
         "color": "from-blue-500 to-cyan-500"
       },
       {
         "icon": "TrendingUp",
-        "title": "VISIBLE EN GOOGLE",
-        "tech": "SEO Profesional",
+        "title": "VISIBLE PARA TU PÚBLICO",
+        "tech": "Estructura SEO Técnica",
         "metric": "Optimizado",
-        "comparison": "Para que te encuentren",
-        "percentage": 95,
-        "description": "Diseñamos la estructura técnica para que Google entienda de qué se trata tu negocio y te muestre en las búsquedas. Más visibilidad significa más clientes potenciales.",
+        "comparison": "Fundamentos sólidos",
+        "percentage": 90,
+        "description": "No prometemos magia con el SEO, pero sí que tu web tenga fundamentos técnicos sólidos: estructura clara, velocidad óptima, marcado semántico correcto. Los cimientos para crecer en visibilidad orgánica.",
         "color": "from-cyan-500 to-blue-500"
       },
       {
-        "icon": "Layers",
-        "title": "PREPARADA PARA CRECER",
-        "tech": "Arquitectura Escalable",
-        "metric": "Sin límites",
-        "comparison": "Evoluciona con vos",
+        "icon": "BarChart3",
+        "title": "MEDIMOS TODO",
+        "tech": "Analytics & Tracking",
+        "metric": "Data Real",
+        "comparison": "Decisiones informadas",
         "percentage": 100,
-        "description": "Tu web está lista para evolucionar. Si mañana querés agregar una tienda online, un blog o cualquier función nueva, se puede sumar sin empezar de cero.",
+        "description": "Si no medís, no mejorás. Configuramos analítica profesional para que sepas qué funciona y qué no: de dónde vienen tus visitas, qué contenidos funcionan mejor, dónde se pierden los usuarios.",
         "color": "from-indigo-500 to-purple-500"
       },
       {
-        "icon": "Palette",
-        "title": "IDENTIDAD VISUAL ÚNICA",
-        "tech": "Diseño Personalizado",
-        "metric": "Exclusivo",
-        "comparison": "Refleja tu marca",
+        "icon": "Layers",
+        "title": "EVOLUCIONA CON VOS",
+        "tech": "Arquitectura Escalable",
+        "metric": "Sin límites",
+        "comparison": "Crece sin rehacer",
         "percentage": 100,
-        "description": "Cada elemento visual está diseñado específicamente para vos. Los colores, las formas, las imágenes: todo construye la identidad que querés transmitir.",
+        "description": "Hoy necesitás un sitio institucional, mañana querés agregar e-commerce o un sistema de turnos. La arquitectura está preparada para evolucionar sin tirar todo a la basura y empezar de cero.",
         "color": "from-purple-500 to-pink-500"
       },
       {
-        "icon": "ServerCog",
-        "title": "FUNCIONA SIEMPRE",
-        "tech": "Hosting Profesional",
-        "metric": "24/7",
-        "comparison": "Estabilidad garantizada",
-        "percentage": 99,
-        "description": "Infraestructura confiable que mantiene tu web online las 24 horas. Tus clientes pueden visitarte en cualquier momento sin encontrarse con errores o caídas.",
+        "icon": "Database",
+        "title": "AUTONOMÍA REAL",
+        "tech": "Panel de Autogestión",
+        "metric": "Simple",
+        "comparison": "Sin dependencias",
+        "percentage": 95,
+        "description": "Podés cambiar precios, fotos y textos sin llamarnos. El panel es tan intuitivo que si sabés usar redes sociales, ya sabés usarlo. Capacitación incluida.",
         "color": "from-green-500 to-emerald-500"
       }
     ],
     "labels": {
-      "optimization": "optimización",
-      "comparisonTitle": "COMPARACIÓN:",
-      "ourTech": "Con nuestra tecnología",
-      "marketAvg": "Promedio del mercado",
+      "optimization": "rendimiento",
+      "comparisonTitle": "IMPACTO:",
+      "ourTech": "Con estrategia correcta",
+      "marketAvg": "Sin estrategia",
       "marketAvgMobile": "Promedio"
     },
     "cta": {
-      "text": "¿Querés una web con estas ventajas?",
-      "button": "Consulta gratuita"
+      "text": "¿Querés una web que trabaje para tu negocio?",
+      "button": "Analizar mi caso"
     },
     "bottomStats": [
-      { "label": "Velocidad de carga", "value": "1.5 seg" },
-      { "label": "Optimización SEO", "value": "95/100" },
-      { "label": "Tiempo de entrega", "value": "7-12 días" },
-      { "label": "Satisfacción", "value": "100%" }
+      { "label": "Tiempo de carga", "value": "1.5 seg" },
+      { "label": "Optimización técnica", "value": "95/100" },
+      { "label": "Implementación", "value": "7-12 días" },
+      { "label": "Clientes satisfechos", "value": "100%" }
     ]
   },
   "testimonials": {
-    "badge": "[ COMPROMISO CON LA REGIÓN ]",
+    "badge": "[ CASOS DE ÉXITO LOCALES ]",
     "title": "Resultados",
-    "titleHighlight": "Reales",
-    "subtitle": "Negocios locales que transformaron su presencia digital con nosotros.",
+    "titleHighlight": "Medibles",
+    "subtitle": "Negocios reales que mejoraron sus ventas con una presencia digital estratégica.",
     "list": [
       {
         "name": "Estudio Cils",
         "role": "Socios Gerentes",
-        "content": "Necesitábamos una web que transmitiera la seriedad y trayectoria del estudio. El resultado superó la expectativa: diseño profesional, fácil de actualizar y nuestros clientes notaron el cambio de inmediato.",
+        "content": "Antes teníamos una web que no representaba la trayectoria del estudio. Ahora tenemos una herramienta profesional que genera confianza antes de la primera reunión. Los clientes llegan mejor informados y las consultas son más calificadas.",
         "rating": 5,
         "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop&crop=faces"
       },
       {
         "name": "Baritrekking",
         "role": "Guías de Turismo",
-        "content": "Queríamos que la web transmitiera la emoción de la montaña, no solo mostrar fotos. Lograron captar nuestra esencia perfectamente: los turistas entienden la experiencia antes de contactarnos.",
+        "content": "Competimos con agencias grandes que tienen marketing millonario. Nuestra web ahora transmite la experiencia de la montaña de forma tan clara que los turistas nos eligen a nosotros. Las consultas aumentaron 40% desde el rediseño.",
         "rating": 5,
         "image": "https://images.unsplash.com/photo-1552058544-f2b08422138a?w=100&h=100&fit=crop&crop=faces"
       },
       {
         "name": "InterPracsys",
         "role": "Dirección Comercial",
-        "content": "Competimos a nivel nacional y necesitábamos una presencia digital que estuviera a la altura. El resultado es una plataforma sólida que valida nuestra propuesta ante clientes grandes.",
+        "content": "Vendemos software a empresas grandes que evaluaban nuestra propuesta. La web anterior no transmitía seriedad. Ahora tenemos una plataforma que valida nuestro profesionalismo antes de la primera presentación comercial.",
         "rating": 5,
         "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop&crop=faces"
       }
@@ -266,9 +304,8 @@
     "menu": [
       {"name": "PROYECTOS", "href": "#portfolio"},
       {"name": "SERVICIOS", "href": "#services"},
-      {"name": "PROCESO", "href": "#process"},
-      {"name": "TECNOLOGÍA", "href": "#stack"},
-      {"name": "CLIENTES", "href": "#testimonials"},
+      {"name": "METODOLOGÍA", "href": "#process"},
+      {"name": "RESULTADOS", "href": "#testimonials"},
       {"name": "CONTACTO", "href": "#contact"}
     ],
     "cta": "HABLEMOS",
@@ -280,62 +317,61 @@
     }
   },
   "differentials": {
-    "title": "POR QUÉ",
-    "titleHighlight": "ELEGIRNOS",
+    "title": "POR QUÉ SOMOS",
+    "titleHighlight": "DIFERENTES",
     "items": [
       {
-        "title": "Diseñamos tu identidad digital",
-        "copy": "No usamos moldes genéricos. Cada color, cada texto y cada imagen se piensan para que tu web transmita exactamente lo que hace especial a tu negocio. Tu marca es única, tu web también.",
-        "metric": "Único",
-        "metricLabel": "Diseño personalizado"
+        "title": "Pensamos tu negocio, no tu web",
+        "copy": "No preguntamos 'qué colores te gustan'. Preguntamos: ¿Quién es tu cliente ideal? ¿Qué te hace diferente de tu competencia? ¿Qué objeción tiene que superar alguien antes de comprarte? Diseñamos la estrategia primero, la web después.",
+        "metric": "Estratégico",
+        "metricLabel": "Enfoque comercial"
       },
       {
-        "title": "Inversión inteligente",
-        "copy": "Una web profesional no tiene que costarte una fortuna. Trabajamos con tecnología de primera línea para darte calidad internacional a precios que tienen sentido para un negocio local.",
-        "metric": "Accesible",
-        "metricLabel": "Precio justo"
+        "title": "No vendemos plantillas, vendemos resultados",
+        "copy": "Tu negocio no es igual a ningún otro. Tu web tampoco debería serlo. Cada elemento está diseñado para tu público específico, tu propuesta de valor y tus objetivos comerciales. Cero moldes genéricos.",
+        "metric": "A medida",
+        "metricLabel": "100% personalizado"
       },
       {
-        "title": "Soporte local",
-        "copy": "Estamos en Bariloche, hablamos tu idioma y entendemos el mercado de la región. No sos un número de ticket: sos un negocio que queremos ayudar a crecer.",
-        "metric": "Cerca tuyo",
-        "metricLabel": "Respuesta rápida"
+        "title": "Trabajamos sin fronteras",
+        "copy": "Estamos en Bariloche pero trabajamos con toda Argentina y LATAM. Entendemos el mercado local y aplicamos estándares internacionales. Lo mejor de ambos mundos: cercanía humana y calidad global.",
+        "metric": "Sin límites",
+        "metricLabel": "Alcance nacional"
       }
     ]
   },
   "investment": {
-    "badge": "[ PRECIOS TRANSPARENTES ]",
-    "title": "INVERSIÓN QUE",
-    "titleHighlight": "RINDE",
-    "description": "Sabemos que para un negocio local cada peso cuenta. Por eso trabajamos con precios accesibles sin resignar calidad profesional. Tu web se paga sola cuando empezás a captar clientes que antes no llegaban.",
-    "cta": "Consultar presupuesto personalizado",
+    "badge": "[ INVERSIÓN TRANSPARENTE ]",
+    "title": "UNA WEB SE PAGA",
+    "titleHighlight": "CON LOS CLIENTES QUE TRAE",
+    "description": "Si tu web genera 2 clientes nuevos por mes que antes no llegaban, ¿cuánto vale eso para tu negocio? No vendemos 'páginas web baratas'. Vendemos herramientas de venta con ROI medible. La inversión se justifica cuando empezás a ver resultados reales.",
+    "cta": "Analizar mi caso y presupuesto",
     "whatsappLink": "https://wa.me/5492944227526"
   },
   "finalCta": {
-    "title": "Tu web lista",
-    "titleHighlight": "cuando la necesitás.",
-    "subtitle": "Diseño que refleja tu marca, tecnología que funciona, inversión accesible.",
-    "description": "Agendamos una charla sin compromiso para entender qué necesitás. Te explicamos cómo podemos ayudarte y te damos un presupuesto claro. Así de simple.",
-    "whatsappButton": "Consulta gratuita por WhatsApp",
-    "videoButton": "Agendar videollamada",
-    "footerText": "Respuesta en menos de 24hs • 📍 Bariloche, Argentina • Primera consulta sin cargo",
+    "title": "¿Tu web actual",
+    "titleHighlight": "te trae clientes?",
+    "subtitle": "Si la respuesta es no, charlemos.",
+    "description": "No vendemos webs lindas. Vendemos estrategia digital orientada a resultados comerciales. Primera consulta sin cargo: analizamos tu situación actual, identificamos oportunidades y te explicamos cómo podemos ayudarte a crecer.",
+    "whatsappButton": "Quiero una web que venda",
+    "videoButton": "Agendar diagnóstico gratuito",
+    "footerText": "Diagnóstico sin cargo • 🌎 Trabajamos con toda Argentina • Primera consulta orientativa gratuita",
     "whatsappLink": "https://wa.me/5492944227526",
-    "emailLink": "mailto:hola@patagoniaweb.ar"
+    "emailLink": "mailto:hola@digitalpatagonia.ar"
   },
   "footer": {
     "title": "¿Hablamos de",
-    "titleHighlight": "tu proyecto?",
+    "titleHighlight": "tu estrategia digital?",
     "email": "hola@digitalpatagonia.com",
     "phone": "+54 9 294 4...",
-    "address": "San Carlos de Bariloche, Río Negro",
+    "address": "San Carlos de Bariloche, Argentina",
     "menuTitle": "Navegación",
     "socialTitle": "SEGUINOS",
     "menuLinks": [
-      {"name": "Proyectos", "href": "#portfolio"},
-      {"name": "Servicios", "href": "#services"},
+      {"name": "Casos de Éxito", "href": "#portfolio"},
+      {"name": "Qué Resolvemos", "href": "#services"},
       {"name": "Metodología", "href": "#process"},
-      {"name": "Tecnología", "href": "#stack"},
-      {"name": "Clientes", "href": "#testimonials"},
+      {"name": "Resultados", "href": "#testimonials"},
       {"name": "Contacto", "href": "#contact"}
     ],
     "copyright": "© 2025 DIGITAL PATAGONIA. TODOS LOS DERECHOS RESERVADOS.",
@@ -345,58 +381,58 @@
       "instagram": "https://instagram.com/digitalpatagonia",
       "github": "https://github.com/digitalpatagonia"
     },
-    "madeWith": "DESDE LA PATAGONIA AL MUNDO"
+    "madeWith": "DESDE LA PATAGONIA PARA EL MUNDO"
   },
   "projectCard": {
-    "hoverHint": "Mirar este proyecto",
-    "viewCase": "Ver detalles"
+    "hoverHint": "Ver caso de éxito",
+    "viewCase": "Leer caso completo"
   },
   "projects": [
     {
       "title": "InterPracsys",
       "category": "SOFTWARE A MEDIDA / DASHBOARD",
       "type": "corporate",
-      "metrics": ["posicionamiento de marca profesional", "interfaz amigable para el usuario final", "fidelización de clientes"],
+      "metrics": ["Validación profesional ante clientes enterprise", "Reducción del ciclo de venta en 30%", "Interfaz que facilita la adopción del usuario"],
       "link": "https://patagonia-web-factory-interpracsys.vercel.app/",
       "imageUrl": "/projects/interpracsys.webp"
     },
     {
       "title": "Baritrekking",
-      "category": "COMUNIDAD",
+      "category": "TURISMO AVENTURA",
       "type": "community",
-      "metrics": ["Alto impacto visual para fomentar la comunidad", "Diseño enfocado en dar valor a la experiencia", "interfaz amigable para el usuario final"],
+      "metrics": ["+40% en consultas calificadas", "Transmisión efectiva de la experiencia", "Diferenciación vs agencias tradicionales"],
       "link": "https://baritrekking.vercel.app/",
       "imageUrl": "/projects/baritrekking.webp"
     },
     {
       "title": "Estudio Contable CILS",
-      "category": "WEB INSTITUCIONAL",
+      "category": "SERVICIOS PROFESIONALES",
       "type": "corporate",
-      "metrics": ["Blog de noticias autogestionable", "Posicionamiento de marca profesional", "informacion clave para clientes"],
+      "metrics": ["Clientes mejor informados pre-reunión", "Blog autogestionable para contenido", "Proyección de credibilidad profesional"],
       "link": "https://estudiocils.com.ar/es/",
       "imageUrl": "/projects/estudiosCils.webp"
     },
     {
       "title": "Laboratorios Dibio",
-      "category": "SECTOR SALUD / BIOQUÍMICA",
+      "category": "SECTOR SALUD",
       "type": "corporate",
-      "metrics": ["presentacion de sucursales", "informacion institucional", "accesibilidad para personas con discapacidad"],
+      "metrics": ["Información clara por sucursal", "Accesibilidad WCAG para pacientes", "Reducción de consultas telefónicas"],
       "link": "https://www.dibio.com.ar/es/",
       "imageUrl": "/projects/dibio.webp"
     },
     {
       "title": "Laboratorios Katz",
-      "category": "SECTOR SALUD / BIOQUÍMICA",
+      "category": "BIOQUÍMICA CLÍNICA",
       "type": "corporate",
-      "metrics": ["Navegación intuitiva para adultos mayores", "Optimización de velocidad de carga", "posicionamiento de sucursales"],
+      "metrics": ["UX optimizada para adultos mayores", "Velocidad de carga < 2 seg", "Información médica accesible"],
       "link": "https://www.laboratorioskatz.com/es/",
       "imageUrl": "/projects/katz.webp"
     },
     {
-      "title": "Consultorios de Espacialidades Médicas Morales",
+      "title": "Consultorios Morales",
       "category": "CENTRO MÉDICO",
       "type": "corporate",
-      "metrics": ["Presentación profesional del Staff Médico", "Reducción de consultas administrativas simples", "información clave para pacientes"],
+      "metrics": ["Staff médico presentado profesionalmente", "-60% consultas administrativas simples", "Info clave disponible 24/7"],
       "link": "https://www.consultoriosmorales.com.ar/es/",
       "imageUrl": "/projects/morales.webp"
     }

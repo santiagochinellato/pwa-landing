@@ -87,6 +87,7 @@ export default function Navbar() {
                 } as React.CSSProperties
               }
               priority
+              sizes="(max-width: 768px) 250px, 350px"
             />
           </Link>
         </div>

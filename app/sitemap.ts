@@ -3,7 +3,7 @@ import { MetadataRoute } from 'next'
 export const dynamic = 'force-static'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://patagoniawebfactory.com.ar'
+  const baseUrl = 'https://digitalpatagonia.com'
   return [
     { url: baseUrl, lastModified: new Date(), priority: 1 },
     { url: `${baseUrl}/proyectos`, lastModified: new Date(), priority: 0.8 },

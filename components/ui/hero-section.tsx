@@ -1,56 +1,67 @@
 "use client";
 
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
-import { CityModel } from "./CityModel";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Award, Target, Zap, Wrench } from "lucide-react";
 import siteContent from "@/data/site-content.json";
 import React from "react";
 
+const iconMap: { [key: string]: React.ElementType } = {
+  Award,
+  Target,
+  Zap,
+  Wrench,
+};
+
 export default function HeroSection() {
   const { hero } = siteContent;
-  const [isMounted, setIsMounted] = React.useState(false);
-
-  React.useEffect(() => {
-    setIsMounted(true);
-  }, []);
 
   return (
-    <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-background to-secondary/20 pt-24 lg:pt-32 pb-20">
-      <div className="container px-4 md:px-6 z-10 w-full max-w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          {/* COLUMNA IZQUIERDA: Textos */}
-          <div className="flex flex-col space-y-6 text-center lg:text-left relative z-20 lg:pl-10">
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl"
-            >
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-light-fg to-light-fg/80 dark:from-white dark:to-white/80">
-                {hero.titleLine1}
-              </span>
-              <br />
-              <span className="text-light-primary dark:text-holographic">
-                {hero.titleHighlight}
-              </span>
-              <br />
-              <span className="text-xl md:text-3xl text-muted-foreground font-normal">
+    <section className="relative w-full min-h-screen flex flex-col items-center justify-center overflow-hidden bg-gradient-to-b from-background via-background/95 to-secondary/20 pt-24 lg:pt-32 pb-20">
+      {/* Decorative background elements */}
+      <div className="absolute top-1/4 -left-64 w-96 h-96 bg-primary/10 rounded-full blur-3xl opacity-50 pointer-events-none" />
+      <div className="absolute bottom-1/4 -right-64 w-96 h-96 bg-secondary/10 rounded-full blur-3xl opacity-50 pointer-events-none" />
+
+      <div className="container px-4 md:px-6 z-10 w-full max-w-5xl">
+        <div className="flex flex-col items-center justify-center text-center space-y-10">
+          {/* Main Text Content */}
+          <div className="flex flex-col space-y-6 relative z-20 max-w-4xl mx-auto">
+            <div className="space-y-4">
+              <h1 className="text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl leading-[1.1]">
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
+                  {hero.titleLine1}
+                </span>
+                <br />
+                <span className="text-primary dark:text-holographic relative inline-block">
+                  {hero.titleHighlight}
+                  <svg
+                    className="absolute w-full h-3 -bottom-1 left-0 text-primary/20 -z-10"
+                    viewBox="0 0 100 10"
+                    preserveAspectRatio="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M0 5 Q 50 10 100 5 L 100 10 L 0 10 Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </span>
+              </h1>
+
+              <p className="text-xl md:text-2xl font-medium text-muted-foreground/90 max-w-2xl mx-auto pt-2">
                 {hero.subtitle}
-              </span>
-            </motion.h1>
+              </p>
+            </div>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="mx-auto lg:mx-0 max-w-[600px] text-muted-foreground md:text-xl leading-relaxed"
+              className="mx-auto max-w-[700px] text-muted-foreground md:text-lg leading-relaxed"
             >
               {hero.description}
-              <br className="hidden md:block" />
-              <span className="font-medium text-foreground">
+              <br className="hidden md:block my-2" />
+              <span className="font-semibold text-foreground block mt-2">
                 {hero.subDescriptionStrong}
               </span>
             </motion.p>
@@ -59,77 +70,56 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4"
+              className="flex flex-col sm:flex-row gap-4 justify-center pt-6"
             >
               <a
                 href={hero.whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex h-11 items-center justify-center rounded-full bg-light-primary dark:bg-holographic px-8 text-sm font-bold text-white dark:text-deep-void shadow transition-transform hover:scale-105"
+                className="inline-flex h-12 items-center justify-center rounded-full bg-primary hover:bg-primary/90 text-primary-foreground px-8 text-white font-bold shadow-lg shadow-primary/20 transition-all hover:scale-105"
               >
                 {hero.ctaPrimary}
-                <ArrowRight className="ml-2 w-4 h-4" />
+                <ArrowRight className="ml-2 w-5 h-5" />
               </a>
 
               <Link
                 href="#process"
-                className="inline-flex h-11 items-center justify-center rounded-full border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground"
+                className="inline-flex h-12 items-center justify-center rounded-full border border-input bg-background/50 backdrop-blur-sm px-8 text-base font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground"
               >
                 {hero.ctaSecondary}
               </Link>
             </motion.div>
           </div>
 
-          {/* COLUMNA DERECHA: El Modelo 3D */}
-          <div className="hidden lg:block lg:h-[800px] w-full relative min-h-[400px]">
-            {isMounted && (
-              <Canvas
-                shadows
-                dpr={[1, 2]} // 1. Sharpness: Handle Retina displays
-                gl={{ antialias: true, preserveDrawingBuffer: true }} // 2. Sharpness: Antialias
-                camera={{ position: [8, 6, 8], fov: 35 }}
-              >
-                {/* Luces mejoradas: más intensidad para evitar modorro "oscuro" */}
-                <ambientLight intensity={1.5} />
-                <directionalLight
-                  position={[10, 10, 5]}
-                  intensity={3}
-                  castShadow
-                  shadow-mapSize={[1024, 1024]}
-                  shadow-bias={-0.0001} // 3. Sharpness: Better shadow quality
-                />
-                <spotLight position={[-5, 5, 0]} intensity={2} angle={0.5} />
-
-                {/* Entorno suave - DISABLED FOR STABILITY
-                <Environment preset="city" blur={0.8} />
-                */}
-
-                <React.Suspense fallback={null}>
-                  <CityModel />
-                </React.Suspense>
-
-                {/* Controles para que el usuario pueda rotar la ciudad, limitado */}
-                <OrbitControls
-                  enableZoom={false}
-                  enablePan={true}
-                  autoRotate
-                  autoRotateSpeed={0.8}
-                  minPolarAngle={Math.PI / 4}
-                  maxPolarAngle={Math.PI / 2.2} // Limita para no ver desde abajo
-                />
-
-                {/* Sombra de contacto - DISABLED FOR STABILITY
-                <ContactShadows
-                  position={[0, -0.05, 0]} // Justo debajo del modelo centrado
-                  opacity={0.4}
-                  scale={10}
-                  blur={2}
-                  far={4.5}
-                />
-                */}
-              </Canvas>
-            )}
-          </div>
+          {/* Value Props Grid */}
+          {hero.valueProps && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+              className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-12 w-full border-t border-border/40 mt-12"
+            >
+              {hero.valueProps.map((prop, index) => {
+                const Icon = iconMap[prop.icon] || Target;
+                return (
+                  <div
+                    key={index}
+                    className="flex flex-col items-center space-y-2 p-4 rounded-xl transition-all duration-300 hover:bg-white hover:shadow-xl hover:-translate-y-1 dark:hover:bg-muted/30 dark:hover:shadow-none dark:hover:translate-y-0"
+                  >
+                    <div className="p-3 bg-primary/10 rounded-full text-primary mb-1">
+                      <Icon className="w-6 h-6" />
+                    </div>
+                    <h3 className="font-bold text-sm md:text-base">
+                      {prop.label}
+                    </h3>
+                    <p className="text-xs md:text-sm text-muted-foreground">
+                      {prop.detail}
+                    </p>
+                  </div>
+                );
+              })}
+            </motion.div>
+          )}
         </div>
       </div>
     </section>

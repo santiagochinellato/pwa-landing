@@ -15,7 +15,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://patagoniawebfactory.com.ar"),
+  metadataBase: new URL("https://digitalpatagonia.com"),
   title: {
     default: "Digital Patagonia | Desarrollo Web y SEO desde la Patagonia",
     template: "%s | Digital Patagonia",
@@ -41,9 +41,25 @@ export const metadata: Metadata = {
     description:
       "Convertimos tu negocio en un líder digital. Desarrollo web de alto impacto desde la Patagonia para todo el país.",
     images: ["/og-image-bariloche.jpg"],
+    siteName: "Digital Patagonia",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Digital Patagonia | Desarrollo Web y SEO",
+    description:
+      "Agencia de desarrollo web y marketing digital en Bariloche. Transformamos tu presencia digital.",
+    images: ["/og-image-bariloche.jpg"],
+    creator: "@digitalpatagonia", // Placeholder, adjust if user provides specific handle
   },
   icons: {
     icon: "/logos/favicon.svg",
+    apple: "/logos/favicon.svg", // Adding apple touch icon as good practice
+  },
+  verification: {
+    google: "google-site-verification=YOUR_VERIFICATION_CODE", // Placeholder for GSC
+  },
+  alternates: {
+    canonical: "./",
   },
   robots: {
     index: true,
@@ -51,6 +67,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
 };
@@ -62,7 +81,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" suppressHydrationWarning>
-      <body className={`${inter.variable} antialiased`}>
+      <body
+        className={`${inter.variable} antialiased`}
+        suppressHydrationWarning
+      >
+        <a
+          href="#main-content"
+          className="absolute opacity-0 pointer-events-none focus:opacity-100 focus:pointer-events-auto focus:z-[100] focus:p-4 focus:bg-background focus:text-foreground top-0 left-0"
+        >
+          Saltar al contenido principal
+        </a>
         <Providers>
           <LazyMotion features={domAnimation}>
             <Spotlight />
