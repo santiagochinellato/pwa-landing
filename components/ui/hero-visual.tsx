@@ -82,7 +82,7 @@ export const AnimatedHeroVisual = () => {
       duration: 4,
       repeat: Infinity,
       repeatType: "reverse" as const,
-      ease: "easeInOut",
+      ease: "easeInOut" as const,
       delay: delay,
     },
   });

@@ -77,7 +77,7 @@ export default function HeroSection() {
               href={hero.whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex h-12 items-center justify-center rounded-full bg-primary hover:bg-primary/90 text-primary-foreground px-8 text-white font-bold shadow-lg shadow-primary/20 transition-all hover:scale-105"
+              className="inline-flex h-12 items-center justify-center rounded-full bg-primary hover:bg-primary/90 text-primary-foreground px-8 text-base font-bold shadow-lg shadow-primary/20 transition-all hover:scale-105"
             >
               {hero.ctaPrimary}
               <ArrowRight className="ml-2 w-5 h-5" />
