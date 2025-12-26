@@ -19,7 +19,7 @@
       {
         "icon": "Zap",
         "label": "Entregas rápidas",
-        "detail": "Tu web lista en 7-12 días"
+        "detail": "Tu web lista en 7-15 días"
       },
       {
         "icon": "Wrench",
@@ -39,7 +39,7 @@
       "description": "Tu competencia tiene una web. Pero ¿cuántos clientes nuevos les genera por mes? Nosotros no hacemos páginas bonitas que nadie ve. Diseñamos estrategias digitales que trabajan para tu negocio: atraen al público correcto, comunican tu propuesta de valor y convierten visitantes en ventas reales.",
       "details": "Sitios Estratégicos, Tiendas Online de Alto Rendimiento, Landings de Conversión",
       "durationLabel": "Implementación profesional",
-      "durationValue": "7-12 días",
+      "durationValue": "7-15 días",
       "durationSubtext": "Este tiempo nos permite entender tu negocio, diseñar la estrategia correcta, programar con calidad y validar que cada elemento esté optimizado para vender.",
       "cta": "Analizar mi caso",
       "featuredBadge": "SOLUCIÓN INTEGRAL"
@@ -154,7 +154,7 @@
       {
         "icon": "Rocket",
         "title": "Lanzamiento Estratégico",
-        "duration": "Día 12",
+        "duration": "Día 15",
         "shortDesc": "Tu herramienta de venta online",
         "details": [
           "Configuración de infraestructura profesional y segura",
@@ -266,7 +266,7 @@
     "bottomStats": [
       { "label": "Tiempo de carga", "value": "1.5 seg" },
       { "label": "Optimización técnica", "value": "95/100" },
-      { "label": "Implementación", "value": "7-12 días" },
+      { "label": "Implementación", "value": "7-15 días" },
       { "label": "Clientes satisfechos", "value": "100%" }
     ]
   },

@@ -4,8 +4,13 @@ import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
+import { useLoading } from "./loading-context";
+
+// ... (imports remain the same above, except added useLoading)
+
 export default function ThemeToggle() {
-  const { theme, setTheme, resolvedTheme } = useTheme();
+  const { theme, resolvedTheme } = useTheme(); // Removed setTheme from here
+  const { transitionTheme } = useLoading();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -13,15 +18,12 @@ export default function ThemeToggle() {
   }, []);
 
   const toggleTheme = () => {
-    console.log("Toggle clicked. Current:", theme, "Resolved:", resolvedTheme);
     if (theme === "system") {
       const newTheme = resolvedTheme === "dark" ? "light" : "dark";
-      console.log("System mode. Switching to:", newTheme);
-      setTheme(newTheme);
+      transitionTheme(newTheme);
     } else {
       const newTheme = theme === "dark" ? "light" : "dark";
-      console.log("Manual mode. Switching to:", newTheme);
-      setTheme(newTheme);
+      transitionTheme(newTheme);
     }
   };
 
