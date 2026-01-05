@@ -63,13 +63,13 @@ export default function ProjectCard({
           </div>
         </div>
         <div className="p-6">
-          <ul className="space-y-3">
+          <ul className="space-y-4">
             {metrics.map((metric, i) => (
               <li
                 key={i}
-                className="flex items-start gap-3 text-light-muted dark:text-white/70 text-sm"
+                className="flex items-start gap-3 text-light-muted dark:text-white/80 text-base"
               >
-                <CheckCircle2 className="w-4 h-4 text-light-primary dark:text-holographic shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-5 h-5 text-light-primary dark:text-holographic shrink-0 mt-0.5" />
                 <span>{metric}</span>
               </li>
             ))}
@@ -152,6 +152,10 @@ export default function ProjectCard({
                   />
                   {hoverHint}
                 </span>
+
+                <button className="bg-light-primary dark:bg-holographic text-white dark:text-deep-void px-4 py-2 rounded-lg text-xs font-bold hover:opacity-90 transition-opacity">
+                  Ver caso completo
+                </button>
               </div>
             </div>
           </div>

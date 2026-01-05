@@ -1,4 +1,4 @@
-import { ArrowRight, Video } from "lucide-react";
+import { Video, MessageCircle } from "lucide-react";
 import siteContent from "@/data/site-content.json";
 
 export default function FinalCTASection() {
@@ -7,14 +7,22 @@ export default function FinalCTASection() {
   return (
     <section
       id="contact"
-      className="py-16 md:py-32 px-6 md:px-12 relative overflow-hidden bg-transparent transition-colors duration-300"
+      className="py-16 md:py-32 px-4 md:px-12 relative overflow-hidden bg-transparent transition-colors duration-300"
     >
       {/* Background decoration */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_#14b8a6_0%,_transparent_70%)] dark:bg-[radial-gradient(circle_at_center,_#66FCF1_0%,_transparent_70%)] opacity-5 pointer-events-none" />
 
-      <div className="max-w-4xl mx-auto text-center relative z-10">
+      <div className="max-w-5xl mx-auto text-center relative z-10">
+        <div className="inline-flex items-center gap-2 px-4 py-2 bg-red-500/10 border border-red-500/20 rounded-full text-red-500 text-sm font-bold mb-6 animate-pulse">
+          <span className="relative flex h-2 w-2">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+          </span>
+          Cupos limitados: 3 lugares este mes
+        </div>
+
         <h2 className="text-3xl md:text-6xl font-bold text-light-fg dark:text-white mb-6 tracking-tight">
-          {finalCta.title} <br />
+          {finalCta.title} <br className="md:hidden" />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-light-primary dark:from-holographic to-light-fg dark:to-white">
             {finalCta.titleHighlight}
           </span>
@@ -29,9 +37,10 @@ export default function FinalCTASection() {
             href={finalCta.whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full md:w-auto px-8 py-4 bg-light-primary dark:bg-holographic text-white dark:text-deep-void font-bold text-l rounded-full hover:opacity-90 hover:scale-105 transition-all flex items-center justify-center gap-2"
+            className="w-full md:w-auto px-8 py-4 bg-[#25D366] text-white font-bold text-l rounded-full hover:bg-[#20bd5a] hover:scale-105 transition-all flex items-center justify-center gap-2 shadow-lg hover:shadow-green-500/30"
           >
-            {finalCta.whatsappButton} <ArrowRight size={20} />
+            <MessageCircle size={24} className="fill-white" />{" "}
+            {finalCta.whatsappButton}
           </a>
 
           <a

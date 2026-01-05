@@ -164,7 +164,7 @@ function ProcessContent({
             </h2>
           </div>
 
-          <h2 className="text-2xl md:text-5xl lg:text-6xl font-extrabold mb-4 text-light-fg dark:text-white text-balance leading-relaxed md:leading-tight">
+          <h2 className="text-2xl md:text-5xl lg:text-5xl font-extrabold mb-4 text-light-fg dark:text-white text-balance leading-relaxed md:leading-tight">
             {process.title}{" "}
             <span className="relative inline-block">
               <span className="text-light-primary dark:text-holographic">
@@ -193,7 +193,7 @@ function ProcessContent({
                 <button
                   key={idx}
                   onClick={() => setActiveStep(idx)}
-                  className="flex flex-col items-center gap-3 min-w-[100px] group relative snap-center shrink-0"
+                  className="flex flex-col items-center gap-3 min-w-[130px] group relative snap-center shrink-0"
                 >
                   {/* Círculo con número */}
                   <div className="relative">
@@ -276,7 +276,7 @@ function ProcessContent({
         {/* Main Content Grid */}
         <div className="flex flex-col lg:grid lg:grid-cols-5 gap-8">
           {/* Left Sidebar - Mini Cards - SOLO DESKTOP */}
-          <div className="hidden lg:flex lg:col-span-2 space-y-3 flex-col justify-center items-start">
+          <div className="hidden lg:flex lg:col-span-2 space-y-3 flex-col justify-start items-start">
             <h4 className="text-sm font-bold text-light-muted dark:text-white/50 uppercase tracking-wider mb-4 px-2">
               Todas las etapas
             </h4>
@@ -508,7 +508,7 @@ function ProcessContent({
         </div>
 
         {/* Final CTA Banner */}
-        <div className="mt-12 md:mt-16 shadow-2xl from-light-primary/10 via-cyan-50 to-blue-50 dark:from-holographic/10 dark:via-cyan-900/10 dark:to-blue-900/10 rounded-3xl border-2 border-light-primary/30 dark:border-holographic/30 p-6 md:p-12 text-center relative overflow-hidden">
+        {/* <div className="mt-12 md:mt-16 shadow-2xl from-light-primary/10 via-cyan-50 to-blue-50 dark:from-holographic/10 dark:via-cyan-900/10 dark:to-blue-900/10 rounded-3xl border-2 border-light-primary/30 dark:border-holographic/30 p-6 md:p-12 text-center relative overflow-hidden">
           <div className="absolute inset-0 bg-light-surface dark:bg-white/5 bg-[radial-gradient(circle_at_70%_30%,_rgba(20,184,166,0.1),transparent_50%)] pointer-events-none" />
 
           <h3 className="text-2xl md:text-3xl font-bold text-light-fg dark:text-white mb-4 relative z-10">
@@ -528,7 +528,7 @@ function ProcessContent({
             Iniciar conversación
             <ArrowRight size={20} />
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );

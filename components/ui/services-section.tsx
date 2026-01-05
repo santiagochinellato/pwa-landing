@@ -22,7 +22,7 @@ export default function ServicesSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8 mb-8">
           {/* Main Service - Featured - Updated Design */}
-          <div className="lg:col-span-2 p-6 md:p-10 rounded-2xl bg-gradient-to-br from-light-primary/10 via-light-surface to-light-surface dark:from-holographic/10 dark:via-white/5 dark:to-white/5 border-2 border-light-primary/50 dark:border-holographic/50 hover:border-light-primary dark:hover:border-holographic transition-all duration-300 group relative overflow-hidden shadow-xl dark:shadow-[0_0_40px_rgba(102,252,241,0.15)] bg-white dark:bg-transparent">
+          <div className="lg:col-span-2 p-6 md:p-10 rounded-2xl bg-gradient-to-br from-light-primary/10 via-light-surface to-light-surface dark:from-holographic/10 dark:via-white/5 dark:to-white/5 border-2 border-light-primary dark:border-holographic/50 hover:border-light-primary dark:hover:border-holographic transition-all duration-300 group relative overflow-hidden shadow-xl dark:shadow-[0_0_40px_rgba(102,252,241,0.15)] bg-white dark:bg-transparent">
             {/* Badge */}
             <div className="absolute top-4 right-4 flex items-center gap-1 px-3 py-1 bg-light-primary/20 dark:bg-holographic/20 border border-light-primary/50 dark:border-holographic/50 rounded-full">
               <Star
@@ -84,11 +84,9 @@ export default function ServicesSection() {
               return (
                 <div
                   key={index}
-                  className="p-6 rounded-2xl bg-light-surface dark:bg-white/5 border border-light-border dark:border-white/10 hover:border-light-primary/50 dark:hover:border-holographic/50 transition-all duration-300 group relative overflow-hidden flex-1 shadow-sm hover:shadow-lg dark:shadow-none bg-white dark:bg-transparent"
+                  className="p-6 rounded-2xl border border-light-border dark:border-white/5 transition-all duration-300 flex-1 bg-transparent hover:bg-light-surface/30 dark:hover:bg-white/5"
                 >
-                  <div className="absolute top-0 right-0 p-20 bg-light-primary/5 dark:bg-holographic/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
-
-                  <div className="w-12 h-12 mb-4 rounded-lg bg-light-bg dark:bg-deep-void border border-light-border dark:border-white/10 flex items-center justify-center text-light-primary/80 dark:text-holographic/80 group-hover:text-light-primary dark:group-hover:text-holographic group-hover:scale-110 transition-all">
+                  <div className="w-12 h-12 mb-4 rounded-lg bg-light-bg/50 dark:bg-deep-void/50 border border-light-border/50 dark:border-white/5 flex items-center justify-center text-light-primary/70 dark:text-holographic/70">
                     <Icon size={24} />
                   </div>
 
@@ -100,8 +98,8 @@ export default function ServicesSection() {
                     {service.description}
                   </p>
 
-                  <div className="flex items-center justify-between text-sm relative z-10">
-                    <span className="text-light-muted dark:text-white/90 font-mono text-xs">
+                  <div className="flex items-center justify-between text-sm relative z-10 opacity-70">
+                    <span className="font-mono text-xs">
                       {service.duration}
                     </span>
                   </div>
@@ -112,7 +110,7 @@ export default function ServicesSection() {
         </div>
 
         {/* Paquete Completo */}
-        <div className="p-6 md:p-8 rounded-2xl bg-light-surface dark:bg-white/5 shadow-2xl bg-gradient-to-r from-purple-500/10 via-light-primary/10 dark:via-holographic/10 to-blue-500/10 border border-light-primary/30 dark:border-holographic/30 hover:border-light-primary/60 dark:hover:border-holographic/60 transition-all duration-300 group relative overflow-hidden mb-8 bg-white dark:bg-transparent">
+        <div className="p-6 md:p-8 rounded-2xl bg-light-surface dark:bg-white/5 shadow-2xl bg-gradient-to-r from-purple-500/10 via-light-primary/10 dark:via-holographic/10 to-blue-500/10 border border-light-primary/60 dark:border-holographic/30 hover:border-light-primary dark:hover:border-holographic/60 transition-all duration-300 group relative overflow-hidden mb-8 bg-white dark:bg-transparent">
           <div className="absolute inset-0 bg-gradient-to-r from-purple-500/5 via-light-primary/5 dark:via-holographic/5 to-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity" />
 
           <div className="relative z-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
