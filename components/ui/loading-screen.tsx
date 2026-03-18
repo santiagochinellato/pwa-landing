@@ -42,7 +42,7 @@ export default function LoadingScreen() {
               transition: { duration: 0.5, ease: "easeOut" },
             }}
             exit={{ scale: 1.1, opacity: 0, transition: { duration: 0.3 } }}
-            className="relative w-[300px] h-auto"
+            className="relative max-w-[500px] h-auto"
           >
             <MacizoLogoAnimation
               variant="loader"
@@ -51,6 +51,8 @@ export default function LoadingScreen() {
             />
 
             {/* Animated Loading Text */}
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }} className="text-center font-medium tracking-widest text-3xl  text-primary dark:text-holographic pt-8"><strong className="text-primary font-extrabold dark:text-holographic">Macizo</strong>Digital</motion.div>
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }} className="text-center font-medium tracking-widest text-2xl  text-primary dark:text-holographic pt-2">Diseño y Desarrollo Web</motion.div>
             <motion.div
               initial={{ opacity: 0.5 }}
               animate={{ opacity: [0.5, 1, 0.5] }}

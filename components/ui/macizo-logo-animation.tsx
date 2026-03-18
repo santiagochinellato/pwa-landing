@@ -85,6 +85,13 @@ export default function MacizoLogoAnimation({
 
   const wordmarkOpacity = useTransform(effectiveProgress, [0.55, 0.8], [0, 1]);
 
+  const guidelinesOpacity = useTransform(effectiveProgress, [0.05, 0.35], [0, 0.25]);
+
+  const iconSizeClass =
+    variant === "hero"
+      ? "w-[260px] h-[308px] md:w-[320px] md:h-[378px]"
+      : "w-[215px] h-[254px]";
+
   return (
     <div
       className={clsx(
@@ -93,14 +100,50 @@ export default function MacizoLogoAnimation({
         className
       )}
     >
-      <motion.svg
-        viewBox={viewBox}
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        className={clsx(
-          "overflow-visible",
-          variant === "hero" ? "w-[260px] h-[308px] md:w-[320px] md:h-[378px]" : "w-[215px] h-[254px]"
-        )}
+      <div className={clsx("relative", iconSizeClass)}>
+        {/* Suaves guías de diseño (dashed) */}
+        {isBuilding ? (
+          <motion.div
+            aria-hidden="true"
+            style={{
+              opacity: guidelinesOpacity,
+              WebkitMaskImage:
+                "radial-gradient(circle at 50% 45%, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 45%, rgba(0,0,0,0) 78%)",
+              maskImage:
+                "radial-gradient(circle at 50% 45%, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 45%, rgba(0,0,0,0) 78%)",
+            }}
+            className="absolute -inset-x-32 -inset-y-24 pointer-events-none overflow-visible"
+          >
+            <svg
+              viewBox="0 0 215 254"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none"
+              className="w-full h-full"
+            >
+              <g
+                fill="none"
+                stroke="var(--primary)"
+                strokeWidth="0.8"
+                strokeDasharray="3 5"
+                opacity="0.6"
+              >
+                <path d="M20 60 H195" />
+                <path d="M20 120 H195" />
+                <path d="M20 180 H195" />
+                <path d="M107.5 20 V234" />
+                <circle cx="107.5" cy="127" r="70" />
+                <path d="M28 40 L187 214" opacity="0.35" />
+                <path d="M28 214 L187 40" opacity="0.25" />
+              </g>
+            </svg>
+          </motion.div>
+        ) : null}
+
+        <motion.svg
+          viewBox={viewBox}
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          className="overflow-visible w-full h-full"
           initial={reduceMotion || isBuilding ? undefined : { opacity: 0, scale: 0.98 }}
           animate={reduceMotion || isBuilding ? undefined : { opacity: 1, scale: 1 }}
           transition={reduceMotion || isBuilding ? undefined : { duration: 0.6, ease }}
@@ -117,7 +160,7 @@ export default function MacizoLogoAnimation({
               : {}),
         }}
         aria-hidden={showWordmark ? undefined : true}
-      >
+        >
         {/* Grupo 1a: Cara lateral izquierda */}
           {isBuilding ? (
             <motion.g style={{ opacity: reduceMotion ? 1 : leftOpacity, x: leftX, y: leftY }}>
@@ -307,7 +350,8 @@ export default function MacizoLogoAnimation({
               />
             </motion.g>
           )}
-      </motion.svg>
+        </motion.svg>
+      </div>
 
       {showWordmark ? (
         <motion.div
