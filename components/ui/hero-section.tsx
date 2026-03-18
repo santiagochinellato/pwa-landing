@@ -43,7 +43,7 @@ export default function HeroSection() {
                 {hero.titleLine1}
               </span>
               <br />
-              <span className="text-primary dark:text-holographic relative inline-block text-7xl">
+              <span className="text-primary dark:text-holographic relative inline-block text-7xl pt-6">
                 {hero.titleHighlight}
                 <svg
                   className="absolute w-full h-3 -bottom-1 left-0 text-primary/20 -z-10"
@@ -68,7 +68,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="mx-auto max-w-[720px] text-muted-foreground text-base md:text-xl leading-relaxed text-center"
+            className="mx-auto max-w-[780px] text-muted-foreground text-base md:text-xl leading-relaxed text-center"
           >
             {hero.description}
             <br className="hidden md:block my-2" />
@@ -88,7 +88,7 @@ export default function HeroSection() {
                 href={hero.whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex h-12 items-center justify-center rounded-full bg-primary hover:bg-primary/90 text-primary-foreground text-deep-void px-8 md:px-10 text-lg font-bold shadow-lg shadow-primary/20 transition-all hover:scale-105 whitespace-nowrap"
+                className="inline-flex h-12 items-center justify-center rounded-full bg-primary hover:bg-primary/90 text-primary-foreground text-white dark:text-deep-void px-8 md:px-10 text-lg font-bold shadow-lg shadow-primary/20 transition-all hover:scale-105 whitespace-nowrap"
               >
                 {hero.ctaPrimary}
                 <ArrowRight className="ml-2 w-5 h-5" />
@@ -103,7 +103,7 @@ export default function HeroSection() {
             </div>
 
             {/* Social Proof Strip (In-Hero) */}
-            <div className="flex flex-wrap justify-center lg:justify-center items-center gap-4 md:gap-6 border-t border-border/40 w-full pt-6 md:pt-4">
+            {/* <div className="flex flex-wrap justify-center lg:justify-center items-center gap-4 md:gap-6 border-t border-border/40 w-full pt-6 md:pt-4">
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="text-primary dark:text-holographic w-4 h-4" />
                 <span className="text-xs font-medium text-muted-foreground dark:text-white/80">
@@ -122,7 +122,7 @@ export default function HeroSection() {
                   2 sem. entrega
                 </span>
               </div>
-            </div>
+            </div> */}
           </motion.div>
         </div>
 

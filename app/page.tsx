@@ -10,6 +10,7 @@ import StackSection from "@/components/ui/stack-section";
 import TestimonialsSection from "@/components/ui/testimonials-section";
 import FinalCTASection from "@/components/ui/final-cta-section";
 import LogoCloud from "@/components/ui/logo-cloud";
+import WhyMacizoSection from "@/components/ui/why-macizo-section";
 import InvestmentSection from "@/components/ui/investment-section";
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
     >
       <Navbar />
       <HeroSection />
+      <WhyMacizoSection />
       <LogoCloud />
       <DifferentialsSection />
       {/* <InfiniteMarquee /> */}
