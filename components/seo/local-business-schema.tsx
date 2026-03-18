@@ -2,10 +2,10 @@ export default function LocalBusinessSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: "Digital Patagonia",
-    image: "https://digitalpatagonia.com/logo.png",
-    "@id": "https://digitalpatagonia.com",
-    url: "https://digitalpatagonia.com",
+    name: "MacizoDigital",
+    image: "https://macizodigital.com/logo.png",
+    "@id": "https://macizodigital.com",
+    url: "https://macizodigital.com",
     telephone: "+542944227526",
     address: {
       "@type": "PostalAddress",
@@ -30,7 +30,7 @@ export default function LocalBusinessSchema() {
       opens: "09:00",
       closes: "18:00",
     },
-    sameAs: ["https://www.instagram.com/digitalpatagonia"],
+    sameAs: ["https://www.instagram.com/macizo.digital"],
   };
 
   return (

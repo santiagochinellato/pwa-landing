@@ -19,7 +19,7 @@ export default function Footer() {
               </span>
             </h2>
             <p className="text-sm font-bold text-light-primary dark:text-holographic uppercase tracking-widest">
-              Estudio de ingeniería web
+            Diseño y desarrollo web — Bariloche, Patagonia
             </p>
             <div className="space-y-4">
               <a
@@ -46,7 +46,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-light-border dark:border-white/5 text-xs text-light-muted dark:text-white/40 font-mono">
+        <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-light-border dark:border-white/5 text-xs text-light-muted dark:text-white/40 font-mono uppercase">
           <p>{footer.copyright.replace("{year}", currentYear.toString())}</p>
           <div className="flex items-center gap-4 mt-4 md:mt-0">
             <span>{footer.hours}</span>

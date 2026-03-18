@@ -16,10 +16,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://digitalpatagonia.com"),
+  metadataBase: new URL("https://macizodigital.com"),
   title: {
-    default: "Digital Patagonia | Desarrollo Web y SEO desde la Patagonia",
-    template: "%s | Digital Patagonia",
+    default: "MacizoDigital | Desarrollo Web y SEO desde la Patagonia",
+    template: "%s | MacizoDigital",
   },
   description:
     "Agencia de desarrollo web y marketing digital en Bariloche. Creamos sitios web de alto rendimiento, tiendas online y estrategias SEO para potenciar tu negocio.",
@@ -32,25 +32,25 @@ export const metadata: Metadata = {
     "Tiendas Online",
     "Ecommerce",
   ],
-  authors: [{ name: "Digital Patagonia" }],
-  creator: "Digital Patagonia",
+  authors: [{ name: "MacizoDigital" }],
+  creator: "MacizoDigital",
   openGraph: {
     type: "website",
     locale: "es_AR",
-    url: "https://digitalpatagonia.com",
-    title: "Digital Patagonia - Infraestructura Digital desde la Patagonia",
+    url: "https://macizodigital.com",
+    title: "MacizoDigital - Infraestructura Digital desde la Patagonia",
     description:
       "Convertimos tu negocio en un líder digital. Desarrollo web de alto impacto desde la Patagonia para todo el país.",
     images: ["/og-image-bariloche.jpg"],
-    siteName: "Digital Patagonia",
+    siteName: "MacizoDigital",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Digital Patagonia | Desarrollo Web y SEO",
+    title: "MacizoDigital | Desarrollo Web y SEO",
     description:
       "Agencia de desarrollo web y marketing digital en Bariloche. Transformamos tu presencia digital.",
     images: ["/og-image-bariloche.jpg"],
-    creator: "@digitalpatagonia", // Placeholder, adjust if user provides specific handle
+    creator: "@macizo.digital", // Placeholder, adjust if user provides specific handle
   },
   icons: {
     icon: "/logos/favicon.svg",

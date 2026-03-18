@@ -3,8 +3,8 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useLoading } from "./loading-context";
 import { useTheme } from "next-themes";
-import Image from "next/image";
 import { useEffect, useState } from "react";
+import MacizoLogoAnimation from "@/components/ui/macizo-logo-animation";
 
 export default function LoadingScreen() {
   const { isLoading } = useLoading();
@@ -23,9 +23,6 @@ export default function LoadingScreen() {
   const isDark = resolvedTheme === "dark";
 
   const bgColor = isDark ? "bg-deep-void" : "bg-white";
-  const logoSrc = isDark
-    ? "/logos/iconWhiteCentered.svg"
-    : "/logos/iconDarkCentered.svg";
 
   return (
     <AnimatePresence>
@@ -35,7 +32,7 @@ export default function LoadingScreen() {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5 }}
-          className={`fixed inset-0 z-[100] flex items-center justify-center ${bgColor}`}
+          className={`fixed inset-0 z-100 flex items-center justify-center ${bgColor}`}
         >
           <motion.div
             initial={{ scale: 0.9, opacity: 0 }}
@@ -47,13 +44,10 @@ export default function LoadingScreen() {
             exit={{ scale: 1.1, opacity: 0, transition: { duration: 0.3 } }}
             className="relative w-[300px] h-auto"
           >
-            <Image
-              src={logoSrc}
-              alt="Loading..."
-              width={400} // Increased width for better visibility of 600px viewBox
-              height={133}
-              priority
-              className="object-contain"
+            <MacizoLogoAnimation
+              variant="loader"
+              showWordmark={false}
+              className="mx-auto"
             />
 
             {/* Animated Loading Text */}

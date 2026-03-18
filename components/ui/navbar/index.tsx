@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { useState } from "react";
 import Link from "next/link";
@@ -9,8 +8,6 @@ import siteContent from "@/data/site-content.json";
 import NavbarDesktop from "./navbar-desktop";
 import NavbarMobileToggle from "./navbar-mobile-toggle";
 import NavbarMobileMenu from "./navbar-mobile-menu";
-import { useTheme } from "next-themes";
-import { useEffect } from "react";
 
 interface NavbarConfig {
   logoAlt: string;
@@ -30,17 +27,7 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { navbar } = siteContent as { navbar: NavbarConfig };
-  const { resolvedTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => setMounted(true), 0);
-  }, []);
-
-  const logoSrc =
-    mounted && resolvedTheme === "dark"
-      ? "/logos/iconDark.svg"
-      : "/logos/iconWhite.svg";
+  const logoSrc = "/logos/macizoDigitalWhite.svg";
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     const previous = scrollY.getPrevious() || 0;
@@ -73,21 +60,25 @@ export default function Navbar() {
         )}
       >
         <div className="flex items-center gap-2 relative z-50">
-          <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
-            <Image
-              src={logoSrc}
-              alt={navbar.logoAlt}
-              width={950}
-              height={200}
-              className="w-[var(--logo-w-mobile)] md:w-[var(--logo-w-desktop)] h-auto object-contain transition-opacity hover:opacity-80 dark:invert-0"
+          <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="h-[60px] md:h-[90px]">
+            <div
+              role="img"
+              aria-label={navbar.logoAlt}
+              className="w-(--logo-w-mobile) md:w-(--logo-w-desktop) h-[60px] md:h-[90px] transition-opacity hover:opacity-80 bg-(--primary)"
               style={
                 {
                   "--logo-w-mobile": navbar.logoSize?.mobile || "250px",
-                  "--logo-w-desktop": navbar.logoSize?.desktop || "350px",
+                  "--logo-w-desktop": navbar.logoSize?.desktop || "300px",
+                  WebkitMaskImage: `url(${logoSrc})`,
+                  maskImage: `url(${logoSrc})`,
+                  WebkitMaskRepeat: "no-repeat",
+                  maskRepeat: "no-repeat",
+                  WebkitMaskPosition: "center",
+                  maskPosition: "center",
+                  WebkitMaskSize: "contain",
+                  maskSize: "contain",
                 } as React.CSSProperties
               }
-              priority
-              sizes="(max-width: 768px) 250px, 350px"
             />
           </Link>
         </div>

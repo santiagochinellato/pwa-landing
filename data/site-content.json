@@ -3,7 +3,7 @@
     "titleLine1": "Tu negocio necesita más clientes.",
     "titleHighlight": "Tu web puede traértelos.",
     "subtitle": "Más clientes. Más ventas. Sin complicaciones.",
-    "description": "Creamos webs que te traen clientes mientras dormís. No es solo diseño, es estrategia: tu sitio trabaja 24/7 para aumentar tus ventas.",
+    "description": "Creamos webs que trabajan por tu negocio: atraen visitas, generan confianza y convierten esas visitas en consultas y ventas. No solo diseño, estrategia: cada elemento pensado para que la gente te contacte o te compre.",
     "subDescriptionStrong": "Una herramienta de ventas, no solo una página linda.",
     "valueProps": [
       {
@@ -31,7 +31,7 @@
     "headingHighlight": "RESOLVEMOS",
     "mainService": {
       "title": "¿Tu web te trae clientes nuevos cada mes?",
-      "description": "Tu competencia tiene web, pero ¿les trae clientes? Nosotros no hacemos páginas lindas que nadie ve. Hacemos sitios que cuando alguien entra, entiende qué hacés, confía en vos y te contacta.",
+      "description": "Tu competencia ya tiene web. La diferencia está en si esa web trabaja o solo existe. Hacemos sitios donde quien entra entiende qué hacés, confía en vos y te contacta.",
       "details": "Páginas web estratégicas • Tiendas online que venden • Páginas para campañas",
       "durationLabel": "Tu web funcionando en",
       "durationValue": "2 semanas",
@@ -64,7 +64,7 @@
     "title": "CÓMO CONVERTIMOS",
     "titleHighlight": "TU WEB",
     "titleSuffix": "EN UNA HERRAMIENTA DE VENTAS",
-    "description": "No empezamos haciendo dibujitos. Primero charlamos: ¿qué vendés? ¿quiénes te compran? ¿qué hace tu competencia? Después diseñamos todo pensando en que la gente te contacte o te compre.",
+    "description": "Antes de diseñar una sola pantalla, entendemos tu negocio: qué vendés, quiénes te compran, qué hace tu competencia. Solo entonces diseñamos, y todo apunta a que la gente te contacte o te compre.",
     "steps": [
       {
         "icon": "MessageSquare",
@@ -247,7 +247,7 @@
     ]
   },
   "navbar": {
-    "logoAlt": "Digital Patagonia Logo",
+    "logoAlt": "MacizoDigital Logo",
     "menu": [
       {"name": "PROYECTOS", "href": "#portfolio"},
       {"name": "SERVICIOS", "href": "#services"},
@@ -259,8 +259,8 @@
     "themeLabel": "Tema",
     "whatsappLink": "https://wa.me/5492944227526",
     "logoSize": {
-      "mobile": "230px",
-      "desktop": "290px"
+      "mobile": "150px",
+      "desktop": "300px"
     }
   },
   "differentials": {
@@ -268,7 +268,7 @@
     "titleHighlight": "ELEGIRNOS",
     "items": [
       {
-        "title": "Pensamos tu negocio, no solo tu web",
+        "title": "Empezamos por entender tu negocio, no por abrir el editor de diseño",
         "benefits": [
           "Entendemos tu negocio primero",
           "Diseñamos la estrategia antes que la web",
@@ -316,12 +316,12 @@
     "videoButton": "Agendar diagnóstico gratuito",
     "footerText": "Diagnóstico gratis • 🌎 Trabajamos con toda Argentina y LATAM • Primera consulta sin cargo",
     "whatsappLink": "https://wa.me/5492944227526",
-    "emailLink": "mailto:hola@digitalpatagonia.ar"
+    "emailLink": "mailto:hola@macizodigital.com"
   },
   "footer": {
     "title": "¿Hablamos de",
     "titleHighlight": "tu negocio?",
-    "email": "hola@digitalpatagonia.com",
+    "email": "hola@macizodigital.com",
     "phone": "+54 9 294 4...",
     "address": "San Carlos de Bariloche, Argentina",
     "menuTitle": "Navegación",
@@ -333,12 +333,12 @@
       {"name": "Resultados", "href": "#testimonials"},
       {"name": "Contacto", "href": "#contact"}
     ],
-    "copyright": "© 2025 DIGITAL PATAGONIA. TODOS LOS DERECHOS RESERVADOS.",
+    "copyright": "© 2025 MacizoDigital. TODOS LOS DERECHOS RESERVADOS.",
     "hours": "LUN - VIE: 9:00 - 18:00 ART",
     "socialLinks": {
-      "linkedin": "https://linkedin.com/company/digitalpatagonia",
-      "instagram": "https://instagram.com/digitalpatagonia",
-      "github": "https://github.com/digitalpatagonia"
+      "linkedin": "https://linkedin.com/company/macizo.digital",
+      "instagram": "https://instagram.com/macizo.digital",
+      "github": "https://github.com/macizo.digital"
     },
     "madeWith": "DESDE LA PATAGONIA PARA EL MUNDO"
   },

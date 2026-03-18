@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://digitalpatagonia.com/sitemap.xml
+Sitemap: https://macizodigital.com/sitemap.xml

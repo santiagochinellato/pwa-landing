@@ -18,7 +18,7 @@ export default function FinalCTASection() {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
           </span>
-          Cupos limitados: 3 lugares este mes
+          Primera consulta esta semana: diagnóstico gratis de tu situación actual
         </div>
 
         <h2 className="text-3xl md:text-6xl font-bold text-light-fg dark:text-white mb-6 tracking-tight">
