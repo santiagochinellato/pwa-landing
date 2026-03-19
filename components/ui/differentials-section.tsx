@@ -18,14 +18,19 @@ export default function DifferentialsSection() {
           </span>
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {differentials.items.map((item, index) => {
             const Icon = icons[index];
 
             return (
               <motion.div
                 key={index}
+                initial={{ opacity: 0, y: 14 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-10% 0px" }}
+                transition={{ duration: 0.45, delay: index * 0.06 }}
                 whileHover={{ y: -5 }}
+                whileTap={{ y: -3 }}
                 className="p-6 md:p-8 rounded-2xl bg-transparent border border-light-border dark:border-white/5 hover:bg-light-surface/30 dark:hover:bg-white/5 transition-all relative group overflow-hidden flex flex-col h-full"
               >
                 <Icon
@@ -52,7 +57,7 @@ export default function DifferentialsSection() {
                 </ul>
 
                 {/* Metric Reveal */}
-                <div className="mt-auto pt-4 border-t border-light-border dark:border-white/5 flex items-baseline align-center gap-2">
+                <div className="mt-auto pt-4 border-t border-light-border dark:border-white/5 flex items-center gap-2">
                   <span className="text-2xl font-black text-light-fg dark:text-white group-hover:text-light-primary dark:group-hover:text-holographic transition-colors">
                     {item.metric}
                   </span>

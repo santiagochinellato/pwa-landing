@@ -240,7 +240,49 @@
       {
         "name": "InterPracsys",
         "role": "Dirección Comercial",
-        "content": "Nuestro mercado es el sector corporativo. Hoy tenemos una infraestructura web que transmite el nivel de profesionalismo de nuestro software y nos posiciona con mucha fuerza antes del primer contacto con el cliente.",
+        "content": "Nuestro mercado es el sector corporativo. Hoy tenemos una infraestructura web que transmite el nivel de profesionalismo de nuestro software y nos posiciona re bien antes del primer contacto con el cliente. Un laburo impecable que nos dio un salto de calidad enorme.",
+        "rating": 5,
+        "image": ""
+      },
+      {
+        "name": "Laboratorios Katz",
+        "role": "Laboratorio Clínico",
+        "content": "El diseño de la nueva web fue un antes y un después para nosotros. Necesitábamos algo que le diera confianza al paciente y que fuera fácil de navegar. Entendieron enseguida lo que buscábamos y la página quedó súper profesional y clara. La verdad, una experiencia de diez.",
+        "rating": 5,
+        "image": ""
+      },
+      {
+        "name": "Laboratorios Dibio",
+        "role": "Laboratorio Clínico",
+        "content": "Excelente experiencia. Lograron modernizar nuestra imagen digital sin perder la seriedad que requiere un laboratorio. Ahora los pacientes encuentran la información de los estudios y el contacto al toque. Nos dieron muy buenas recomendaciones durante todo el proceso.",
+        "rating": 5,
+        "image": ""
+      },
+      {
+        "name": "Consultorios Morales",
+        "role": "Centro Médico",
+        "content": "Teníamos el desafío de armar una página donde se entendieran bien todas nuestras especialidades y cómo sacar turno. Nos dieron una mano bárbara no solo con lo técnico, sino también con la forma de ordenar la info. El diseño quedó limpio, funcional y muy amigable para los pacientes.",
+        "rating": 5,
+        "image": ""
+      },
+      {
+        "name": "Martín Quero",
+        "role": "Coaching",
+        "content": "Llevar mi marca personal a la web era todo un desafío, pero supieron captar mi esencia al cien por ciento. Me ayudaron a bajar los conceptos y armaron una página que transmite exactamente lo que quiero comunicar con mis sesiones de coaching. Estéticamente es un lujo.",
+        "rating": 5,
+        "image": ""
+      },
+      {
+        "name": "Del Valle Soluciones",
+        "role": "Redes e Internet",
+        "content": "Nosotros brindamos soluciones tecnológicas, así que nuestra web no podía quedarse atrás. Hicieron un trabajo de primera, armando un sitio rápido, robusto y que explica nuestros servicios corporativos de una forma re clara. Superaron totalmente nuestras expectativas.",
+        "rating": 5,
+        "image": ""
+      },
+      {
+        "name": "G-net",
+        "role": "Redes e Internet",
+        "content": "Necesitábamos una plataforma ágil para que la gente entienda nuestros planes de conectividad y se pueda contactar fácil. El resultado fue un golazo. La web vuela, se ve espectacular en el celular y la estructura que armaron nos ayudó a organizar mucho mejor las consultas que nos entran.",
         "rating": 5,
         "image": ""
       }
@@ -347,42 +389,93 @@
   },
   "projects": [
     {
+      "title": "Martín Quero",
+      "category": "COACHING ONTOLÓGICO",
+      "type": "Sitio profesional",
+      "metrics": [
+        "Consolidación digital de marca personal",
+        "Centralización de servicios, biografía y contacto",
+        "Diseño responsive enfocado en la lectura cómoda"
+      ],
+      "design_explanation": "Apunta a profesionales, ejecutivos o empresas que buscan servicios de coaching. Es un diseño minimalista y centrado en la persona (marca personal). Destaca la propuesta de valor del profesional y facilita el agendamiento de sesiones o charlas.",
+      "link": "https://martinquero.com/",
+      "imageUrl": "/projects/queroProyecto.webp"
+    },
+    {
       "title": "InterPracsys",
       "category": "SOFTWARE A MEDIDA",
       "type": "corporate",
-      "metrics": ["Los hace quedar bien ante clientes grandes", "Cerraron ventas 30% más rápido", "Sistema fácil de usar para sus clientes"],
-      "link": "https://patagonia-web-factory-interpracsys.vercel.app/",
+      "metrics": [
+        "Arquitectura de la información optimizada B2B",
+        "Tiempos de carga reducidos para sector corporativo",
+        "Presentación profesional de soluciones complejas"
+      ],
+      "design_explanation": "Apunta a empresas medianas y grandes (B2B). El diseño es sobrio, netamente corporativo y estructurado. Busca transmitir la robustez y seguridad del software, evitando distracciones visuales y yendo directo a los beneficios técnicos y operativos.",
+      "link": "https://interpracsys.com/",
       "imageUrl": "/projects/interpracsys.webp"
     },
     {
       "title": "Baritrekking",
-      "category": "TURISMO AVENTURA",
+      "category": "COMUNIDAD DE TREKKING",
       "type": "community",
-      "metrics": ["40% más consultas de turistas", "Muestra la experiencia real de la montaña", "Compite con agencias grandes"],
-      "link": "https://baritrekking.vercel.app/",
+      "metrics": [
+        "Alta visibilidad visual mediante galerías optimizadas",
+        "Navegación fluida en dispositivos móviles",
+        "Llamados a la acción (CTAs) directos a WhatsApp"
+      ],
+      "design_explanation": "Apunta a turistas y aventureros. Es un diseño altamente visual, donde la fotografía de montaña es la protagonista. Transmite dinamismo y aventura, con una estructura pensada para que el usuario consulte rápidamente desde su celular mientras viaja.",
+      "link": "https://baritrekking.com.ar/",
       "imageUrl": "/projects/baritrekking.webp"
     },
     {
       "title": "Estudio Contable CILS",
-      "category": "SERVICIOS PROFESIONALES",
+      "category": "ESTUDIO CONTABLE",
       "type": "corporate",
-      "metrics": ["Clientes llegan mejor informados", "Blog que manejan ellos mismos", "Los hace ver más profesionales"],
+      "metrics": [
+        "Estructura clara del catálogo de servicios",
+        "Sección de novedades y artículos autogestionable",
+        "Mejora en la credibilidad y presencia digital"
+      ],
+      "design_explanation": "Apunta a pymes, autónomos y empresas. El diseño es formal y limpio, utilizando una paleta de colores sobria para generar confianza, un valor fundamental en el rubro contable y financiero. Facilita el primer contacto.",
       "link": "https://estudiocils.com.ar/es/",
       "imageUrl": "/projects/estudiosCils.webp"
     },
     {
       "title": "Laboratorios Dibio",
-      "category": "SALUD",
+      "category": "LABORATORIO BIOQUÍMICO",
       "type": "corporate",
-      "metrics": ["Info clara de cada sucursal", "Fácil de usar para pacientes mayores", "Menos llamadas con preguntas simples"],
+      "metrics": [
+        "Acceso rápido a la plataforma de resultados online",
+        "Información de sucursales a un solo clic",
+        "Navegación intuitiva y accesible para todas las edades"
+      ],
+      "design_explanation": "Apunta a pacientes particulares y derivaciones médicas. Tiene un diseño 'higiénico' (basado en blancos y azules), priorizando la usabilidad por encima de la estética compleja. El objetivo es que cualquier persona encuentre rápido cómo prepararse para un estudio o ver sus resultados.",
       "link": "https://www.dibio.com.ar/es/",
       "imageUrl": "/projects/dibio.webp"
     },
     {
+      "title": "Gnet",
+      "category": "INTERNET Y REDES",
+      "type": "corporativa",
+      "metrics": [
+        "Visualización clara y comparable de planes de internet",
+        "Accesos directos para autogestión y soporte técnico",
+        "Optimización móvil extrema para usuarios en zonas de baja señal"
+      ],
+      "design_explanation": "Apunta a usuarios residenciales y comercios locales buscando conexión a internet. El diseño está puramente enfocado en la conversión (mostrar planes, velocidades y precios) y en derivar fácilmente a los clientes actuales a los canales de atención al cliente.",
+      "link": "https://asociaciondevecinos.com/",
+      "imageUrl": "/projects/gnetproyecto.webp"
+    },
+    {
       "title": "Laboratorios Katz",
-      "category": "LABORATORIO CLÍNICO",
+      "category": "LABORATORIO BIOQUÍMICO",
       "type": "corporate",
-      "metrics": ["Fácil para adultos mayores", "Carga rapidísimo", "Info médica clara y accesible"],
+      "metrics": [
+        "Accesibilidad mejorada con tipografías legibles",
+        "Organización clara de indicaciones previas a estudios",
+        "Carga rápida para consultas desde redes móviles"
+      ],
+      "design_explanation": "Apunta a la comunidad local que necesita análisis clínicos. Es un sitio muy directo, enfocado en resolver las dudas rápidas del paciente antes de ir al laboratorio. Su diseño es funcional y evita que el paciente tenga que llamar por teléfono para preguntas simples.",
       "link": "https://www.laboratorioskatz.com/es/",
       "imageUrl": "/projects/katz.webp"
     },
@@ -390,9 +483,28 @@
       "title": "Consultorios Morales",
       "category": "CENTRO MÉDICO",
       "type": "corporate",
-      "metrics": ["Equipo médico presentado profesionalmente", "60% menos llamadas por consultas simples", "Info disponible 24/7"],
+      "metrics": [
+        "Directorio de profesionales y especialidades organizado",
+        "Información de obras sociales visible y clara",
+        "Facilidad en la ruta para solicitar turnos"
+      ],
+      "design_explanation": "Apunta a pacientes que buscan atención médica ambulatoria. Su diseño es institucional y transmite seguridad y respaldo. Está estructurado para que el usuario filtre por especialidad médica y entienda rápidamente cómo es el proceso de admisión.",
       "link": "https://www.consultoriosmorales.com.ar/es/",
       "imageUrl": "/projects/morales.webp"
+    },
+  
+    {
+      "title": "Del Valle Soluciones",
+      "category": "SOLUCIONES TECNOLÓGICAS",
+      "type": "corporativa",
+      "metrics": [
+        "Presentación detallada de servicios técnicos",
+        "Estructuración SEO para posicionamiento local",
+        "Formularios de contacto rápido y soporte"
+      ],
+      "design_explanation": "Apunta a empresas y particulares que necesitan infraestructura de redes. Tiene un diseño técnico, moderno y robusto. Prioriza la claridad técnica de los servicios ofrecidos, demostrando capacidad instalada y profesionalismo en telecomunicaciones.",
+      "link": "https://delvallesoluciones.com/",
+      "imageUrl": "/projects/delvalle.webp"
     }
   ]
 }

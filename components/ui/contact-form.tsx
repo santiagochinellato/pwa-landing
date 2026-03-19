@@ -10,6 +10,7 @@ type ContactFormProps = {
 export default function ContactForm({ whatsappLink }: ContactFormProps) {
   const [nombre, setNombre] = useState("");
   const [email, setEmail] = useState("");
+  const [telefono, setTelefono] = useState("");
   const [mensaje, setMensaje] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -18,11 +19,12 @@ export default function ContactForm({ whatsappLink }: ContactFormProps) {
       `Nuevo mensaje desde MacizoDigital`,
       `Nombre: ${nombre || "-"}`,
       email ? `Email: ${email}` : "",
+      telefono ? `Teléfono: ${telefono}` : "",
       `Mensaje: ${mensaje || "-"}`,
     ].filter(Boolean);
 
     return lines.join("\n");
-  }, [email, mensaje, nombre]);
+  }, [email, mensaje, nombre, telefono]);
 
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -51,6 +53,7 @@ export default function ContactForm({ whatsappLink }: ContactFormProps) {
             value={nombre}
             onChange={(e) => setNombre(e.target.value)}
             required
+            autoComplete="name"
             className="w-full rounded-xl border border-light-border/70 dark:border-white/10 bg-light-surface/40 dark:bg-white/5 px-4 py-3 text-light-fg dark:text-white placeholder:text-light-muted/70"
             placeholder="Tu nombre"
           />
@@ -58,12 +61,28 @@ export default function ContactForm({ whatsappLink }: ContactFormProps) {
 
         <label className="space-y-2">
           <span className="block text-sm font-bold text-light-fg dark:text-white">
+            Teléfono
+          </span>
+          <input
+            value={telefono}
+            onChange={(e) => setTelefono(e.target.value)}
+            type="tel"
+            inputMode="tel"
+            autoComplete="tel"
+            className="w-full rounded-xl border border-light-border/70 dark:border-white/10 bg-light-surface/40 dark:bg-white/5 px-4 py-3 text-light-fg dark:text-white placeholder:text-light-muted/70"
+            placeholder="+54 9 ..."
+          />
+        </label>
+
+        <label className="space-y-2 col-span-2">
+          <span className="block text-sm font-bold text-light-fg dark:text-white">
             Email
           </span>
           <input
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             type="email"
+            autoComplete="email"
             className="w-full rounded-xl border border-light-border/70 dark:border-white/10 bg-light-surface/40 dark:bg-white/5 px-4 py-3 text-light-fg dark:text-white placeholder:text-light-muted/70"
             placeholder="tu@email.com"
           />

@@ -19,6 +19,8 @@ interface ProjectCardProps {
   category: string;
   type: "hotel" | "corporate" | "ecommerce" | "landing";
   metrics: string[];
+  designExplanation?: string;
+  link: string;
   imageUrl: string;
   featured?: boolean;
 }
@@ -28,6 +30,8 @@ export default function ProjectCard({
   category,
   type,
   metrics,
+  designExplanation,
+  link,
   imageUrl,
   featured,
 }: ProjectCardProps) {
@@ -67,8 +71,13 @@ export default function ProjectCard({
             <h3 className="text-xl font-bold text-white">{title}</h3>
           </div>
         </div>
-        <div className="p-6 flex-1 flex">
-          <ul className="space-y-4 w-full">
+        <div className="p-6 flex-1 flex flex-col gap-2">
+          {/* {designExplanation && (
+            <p className="text-sm md:text-base font-light italic text-light-fg/80 dark:text-white/80 leading-relaxed line-clamp-3">
+              {designExplanation}
+            </p>
+          )} */}
+          <ul className="space-y-2 w-full flex-1 min-h-0">
             {metrics.map((metric, i) => (
               <li
                 key={i}
@@ -162,6 +171,12 @@ export default function ProjectCard({
               {title}
             </div>
 
+            {/* {designExplanation && (
+              <p className="text-sm md:text-base font-light italic text-light-fg/80 dark:text-white/80 leading-relaxed mb-6 line-clamp-3">
+                {designExplanation}
+              </p>
+            )} */}
+
             <ul className="space-y-3">
               {metrics.map((metric, i) => (
                 <li
@@ -180,9 +195,15 @@ export default function ProjectCard({
                 {hoverHint}
               </span>
 
-              <button className="bg-light-primary dark:bg-holographic text-white dark:text-deep-void px-4 py-2 rounded-lg text-xs font-bold hover:opacity-90 transition-opacity">
+              <a
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-light-primary dark:bg-holographic text-white dark:text-deep-void px-4 py-2 rounded-lg text-xs font-bold hover:opacity-90 transition-opacity"
+                aria-label={`Ver caso completo: ${title}`}
+              >
                 Ver caso completo
-              </button>
+              </a>
             </div>
           </div>
         </motion.div>

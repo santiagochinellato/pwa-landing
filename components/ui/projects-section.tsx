@@ -64,6 +64,8 @@ export default function ProjectsSection({ limit }: { limit?: number }) {
                   featured.type as "hotel" | "corporate" | "ecommerce" | "landing"
                 }
                 metrics={featured.metrics}
+                designExplanation={featured.design_explanation}
+                link={featured.link}
                 imageUrl={featured.imageUrl}
                 featured
               />
@@ -98,6 +100,8 @@ export default function ProjectsSection({ limit }: { limit?: number }) {
                         | "landing"
                     }
                     metrics={project.metrics}
+                    designExplanation={project.design_explanation}
+                    link={project.link}
                     imageUrl={project.imageUrl}
                   />
                 </div>

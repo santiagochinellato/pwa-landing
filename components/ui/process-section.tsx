@@ -1,4 +1,8 @@
+import siteContent from "@/data/site-content.json";
+
 export default function ProcessSection() {
+  const whatsappLink = siteContent.finalCta.whatsappLink;
+
   const steps = [
     {
       number: "01",
@@ -76,7 +80,7 @@ export default function ProcessSection() {
 
         <div className="mt-16 text-center">
           <a
-            href="https://wa.me/5492944XXXXXX"
+            href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block border-b border-holographic text-holographic pb-1 hover:text-white hover:border-white transition-colors cursor-pointer"

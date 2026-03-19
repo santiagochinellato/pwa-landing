@@ -1,13 +1,18 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Star } from "lucide-react";
+import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 import siteContent from "@/data/site-content.json";
+import { useEffect, useMemo, useState } from "react";
 
 const INDUSTRY_MAP: Record<string, string> = {
-  "Estudio Cils": "Servicios profesionales",
-  "Baritrekking": "Turismo aventura",
-  "InterPracsys": "Software B2B",
+  "Estudio Cils": "ESTUDIO CONTABLE",
+  "Baritrekking": "COMUNIDAD DE TREKKING",
+  "InterPracsys": "SOFTWARE A MEDIDA",
+  "Consultorios Morales": "CENTRO MÉDICO",
+  "Martín Quero": "COACHING ONTOLÓGICO",
+  "Del Valle Soluciones": "SOLUCIONES TECNOLÓGICAS",
+  "Gnet": "INTERNET Y REDES",
 };
 
 export default function TestimonialsSection({
@@ -21,6 +26,38 @@ export default function TestimonialsSection({
     typeof limit === "number"
       ? testimonialList.slice(0, limit)
       : testimonialList;
+
+  const [perView, setPerView] = useState<number>(1);
+  const [activeStartIndex, setActiveStartIndex] = useState<number>(0);
+
+  const maxStartIndex = useMemo(() => {
+    return Math.max(0, visibleTestimonials.length - perView);
+  }, [perView, visibleTestimonials.length]);
+
+  useEffect(() => {
+    const computePerView = () => {
+      const w = window.innerWidth;
+      setPerView(w >= 1024 ? 3 : w >= 768 ? 2 : 1);
+    };
+
+    computePerView();
+    window.addEventListener("resize", computePerView);
+    return () => window.removeEventListener("resize", computePerView);
+  }, []);
+
+  useEffect(() => {
+    const raf = window.requestAnimationFrame(() => {
+      setActiveStartIndex((prev) => Math.min(prev, maxStartIndex));
+    });
+    return () => window.cancelAnimationFrame(raf);
+  }, [maxStartIndex]);
+
+  const carouselTestimonials = useMemo(() => {
+    return visibleTestimonials.slice(
+      activeStartIndex,
+      activeStartIndex + perView,
+    );
+  }, [activeStartIndex, perView, visibleTestimonials]);
 
   return (
     <section
@@ -43,15 +80,20 @@ export default function TestimonialsSection({
           </p>
         </div>
 
-        {/* Grid Layout - No Carousel */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {visibleTestimonials.map((testimonial, idx) => (
+        <motion.div
+          key={activeStartIndex}
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.35 }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
+        >
+          {carouselTestimonials.map((testimonial, idx) => (
             <motion.div
               key={idx}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: idx * 0.1 }}
+              transition={{ duration: 0.5, delay: idx * 0.07 }}
               className="rounded-2xl bg-light-surface dark:bg-white/5
      border border-light-border dark:border-white/10
      hover:border-light-primary/40 dark:hover:border-holographic/40
@@ -129,7 +171,54 @@ export default function TestimonialsSection({
               </div>
             </motion.div>
           ))}
-        </div>
+        </motion.div>
+
+        {(visibleTestimonials.length > perView || maxStartIndex > 0) && (
+          <div className="mt-10 flex items-center justify-center gap-4">
+            <button
+              type="button"
+              onClick={() =>
+                setActiveStartIndex((prev) =>
+                  Math.max(0, prev - perView),
+                )
+              }
+              disabled={activeStartIndex === 0}
+              aria-label="Reseñas anteriores"
+              className="inline-flex items-center justify-center rounded-full
+                border border-light-border dark:border-white/10
+                px-4 py-3
+                text-light-fg dark:text-white
+                hover:border-light-primary/40 dark:hover:border-holographic/40
+                transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              <ChevronLeft size={18} />
+            </button>
+
+            <div className="text-[11px] text-light-muted dark:text-white/40 font-mono">
+              {Math.floor(activeStartIndex / perView) + 1} /{" "}
+              {Math.max(1, Math.ceil(visibleTestimonials.length / perView))}
+            </div>
+
+            <button
+              type="button"
+              onClick={() =>
+                setActiveStartIndex((prev) =>
+                  Math.min(maxStartIndex, prev + perView),
+                )
+              }
+              disabled={activeStartIndex === maxStartIndex}
+              aria-label="Próximas reseñas"
+              className="inline-flex items-center justify-center rounded-full
+                border border-light-border dark:border-white/10
+                px-4 py-3
+                text-light-fg dark:text-white
+                hover:border-light-primary/40 dark:hover:border-holographic/40
+                transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              <ChevronRight size={18} />
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
