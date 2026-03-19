@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import {
   ArrowUpRight,
   CheckCircle2,
@@ -20,6 +20,7 @@ interface ProjectCardProps {
   type: "hotel" | "corporate" | "ecommerce" | "landing";
   metrics: string[];
   imageUrl: string;
+  featured?: boolean;
 }
 
 export default function ProjectCard({
@@ -28,8 +29,10 @@ export default function ProjectCard({
   type,
   metrics,
   imageUrl,
+  featured,
 }: ProjectCardProps) {
-  const [isFlipped, setIsFlipped] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
+  const reduceMotion = useReducedMotion();
 
   const iconMap = {
     hotel: Building2,
@@ -47,12 +50,12 @@ export default function ProjectCard({
     <>
       {/* Mobile Version (Simple Card) */}
       <div className="md:hidden rounded-2xl bg-light-surface dark:bg-white/5 border border-light-border dark:border-white/10 overflow-hidden">
-        <div className="relative h-48 w-full">
+        <div className={`relative w-full ${featured ? "h-64" : "h-48"}`}>
           <Image
             src={imageUrl}
             alt={title}
             fill
-            className="object-contain bg-zinc-900"
+            className="object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-deep-void/80 to-transparent" />
           <div className="absolute bottom-4 left-4">
@@ -79,84 +82,97 @@ export default function ProjectCard({
 
       {/* Desktop Version (Flip Card) */}
       <motion.div
-        className="relative w-full h-[400px] [perspective:1000px] hidden md:block group cursor-pointer"
-        onHoverStart={() => setIsFlipped(true)}
-        onHoverEnd={() => setIsFlipped(false)}
+        className={`relative w-full hidden md:block group cursor-pointer ${
+          featured ? "h-full min-h-[520px]" : "h-[400px]"
+        }`}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+        onFocus={() => setIsHovered(true)}
+        onBlur={() => setIsHovered(false)}
+        tabIndex={0}
+        role="group"
+        aria-label={`Proyecto: ${title}`}
       >
-        <motion.div
-          className="relative w-full h-full [transform-style:preserve-3d] transition-all duration-500"
-          animate={{ rotateY: isFlipped ? 180 : 0 }}
-          transition={{ duration: 0.6, ease: [0.23, 1, 0.32, 1] }}
-        >
-          {/* Front Face (Image) */}
-          <div className="absolute inset-0 [backface-visibility:hidden] rounded-2xl overflow-hidden bg-deep-void border border-white/10">
-            <Image
-              src={imageUrl}
-              alt={title}
-              fill
-              className="object-contain transition-all duration-700 hover:scale-105 bg-deep-void"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-deep-void/90 via-deep-void/20 to-transparent" />
+        {/* Background Image + minimal front copy */}
+        <div className="absolute inset-0 rounded-2xl overflow-hidden bg-deep-void border border-white/10">
+          <Image
+            src={imageUrl}
+            alt={title}
+            fill
+            className="object-cover transition-all duration-700 group-hover:scale-102"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-deep-void/90 via-deep-void/20 to-transparent" />
 
-            <div className="absolute bottom-0 left-0 w-full p-8">
-              <span className="text-holographic font-mono text-xs tracking-widest mb-2 block uppercase bg-deep-void/60 backdrop-blur-md border border-holographic/20 w-fit px-3 py-1 rounded-full shadow-lg">
-                {category}
+          <div
+            className={`absolute bottom-0 left-0 w-full p-8 transition-opacity duration-300 ${
+              isHovered ? "opacity-0" : "opacity-100"
+            }`}
+          >
+            <span className="text-holographic font-mono text-xs tracking-widest mb-2 block uppercase bg-deep-void/60 backdrop-blur-md border border-holographic/20 w-fit px-3 py-1 rounded-full shadow-lg">
+              {category}
+            </span>
+            <h3 className="text-3xl font-bold text-white mb-2">{title}</h3>
+            <div className="flex items-center gap-2 text-white/80 text-sm">
+              <span className="text-xs uppercase tracking-wider">
+                Ver detalles
               </span>
-              <h3 className="text-3xl font-bold text-white mb-2">{title}</h3>
-              <div className="flex items-center gap-2 text-white/80 text-sm">
-                <span className="text-xs uppercase tracking-wider">
-                  Ver detalles
-                </span>
-                <ArrowUpRight size={16} className="text-holographic" />
-              </div>
+              <ArrowUpRight size={16} className="text-holographic" />
             </div>
           </div>
+        </div>
 
-          {/* Back Face (Info Reveal) */}
-          <div className="absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)] rounded-2xl overflow-hidden bg-light-surface dark:bg-deep-void border border-light-border dark:border-white/10 shadow-md dark:shadow-none">
-            {/* Gradient overlay */}
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-light-bg/50 dark:to-deep-void/50 pointer-events-none" />
+        {/* Overlay reveal */}
+        <motion.div
+          className={`absolute inset-0 rounded-2xl overflow-hidden border border-light-border/70 dark:border-white/10
+            bg-light-surface/90 dark:bg-deep-void/70 backdrop-blur-md shadow-md dark:shadow-none
+            ${isHovered ? "pointer-events-auto" : "pointer-events-none"}`}
+          initial={false}
+          animate={{
+            opacity: isHovered ? 1 : 0,
+            y: isHovered ? 0 : 12,
+          }}
+          transition={{
+            duration: reduceMotion ? 0 : 0.35,
+            ease: [0.22, 1, 0.36, 1],
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-b from-deep-void/30 to-light-bg/15 dark:to-deep-void/70 pointer-events-none" />
 
-            <div className="relative p-8 flex flex-col h-full">
-              <div className="flex justify-between items-start mb-6">
-                <div className="w-12 h-12 rounded-xl bg-light-primary/10 dark:bg-white/5 flex items-center justify-center text-light-primary dark:text-white/50 group-hover:text-light-primary dark:group-hover:text-holographic transition-colors">
-                  <Icon size={24} />
-                </div>
-                <div className="w-8 h-8 rounded-full bg-light-primary/10 dark:bg-white/10 flex items-center justify-center text-light-primary dark:text-white transition-all">
-                  <ArrowUpRight size={16} />
-                </div>
+          <div className="relative p-8 flex flex-col h-full">
+            <div className="flex justify-between items-start mb-6">
+              <div className="w-12 h-12 rounded-xl bg-light-primary/10 dark:bg-white/5 flex items-center justify-center text-light-primary dark:text-white/90 transition-colors">
+                <Icon size={24} />
               </div>
-
-              <div className="text-2xl font-bold text-light-fg dark:text-white mb-6">
-                {title}
+              <div className="w-8 h-8 rounded-full bg-light-primary/10 dark:bg-white/10 flex items-center justify-center text-light-primary dark:text-white transition-all">
+                <ArrowUpRight size={16} />
               </div>
+            </div>
 
-              <ul className="space-y-3">
-                {metrics.map((metric, i) => (
-                  <li
-                    key={i}
-                    className="flex items-start gap-3 text-light-muted dark:text-white/70 text-sm md:text-base font-light"
-                  >
-                    <CheckCircle2 className="w-5 h-5 text-light-primary dark:text-holographic/70 shrink-0 mt-0.5" />
-                    <span>{metric}</span>
-                  </li>
-                ))}
-              </ul>
+            <div className="text-2xl font-bold text-light-fg dark:text-white/95 mb-6">
+              {title}
+            </div>
 
-              {/* Footer */}
-              <div className="mt-auto pt-6 border-t border-light-border dark:border-white/5 flex justify-between items-center text-sm font-medium">
-                <span className="text-light-muted dark:text-white/40 flex items-center gap-2">
-                  <Eye
-                    size={16}
-                    className="text-light-primary dark:text-holographic"
-                  />
-                  {hoverHint}
-                </span>
+            <ul className="space-y-3">
+              {metrics.map((metric, i) => (
+                <li
+                  key={i}
+                  className="flex items-start gap-3 text-light-fg/80 dark:text-white/80 text-sm md:text-base font-light"
+                >
+                  <CheckCircle2 className="w-5 h-5 text-light-primary dark:text-holographic/70 shrink-0 mt-0.5" />
+                  <span>{metric}</span>
+                </li>
+              ))}
+            </ul>
 
-                <button className="bg-light-primary dark:bg-holographic text-white dark:text-deep-void px-4 py-2 rounded-lg text-xs font-bold hover:opacity-90 transition-opacity">
-                  Ver caso completo
-                </button>
-              </div>
+            <div className="mt-auto pt-6 border-t border-light-border dark:border-white/5 flex justify-between items-center text-sm font-medium">
+              <span className="text-light-fg/70 dark:text-white/40 flex items-center gap-2">
+                <Eye size={16} className="text-light-primary dark:text-holographic" />
+                {hoverHint}
+              </span>
+
+              <button className="bg-light-primary dark:bg-holographic text-white dark:text-deep-void px-4 py-2 rounded-lg text-xs font-bold hover:opacity-90 transition-opacity">
+                Ver caso completo
+              </button>
             </div>
           </div>
         </motion.div>

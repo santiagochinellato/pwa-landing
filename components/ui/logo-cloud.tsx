@@ -1,14 +1,20 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
-const companies = [
-  "TechFlow",
-  "Nexus",
-  "Horizon",
-  "Apex",
-  "Velocity",
-  "Zenith",
+const logoFiles = [
+  "KATZ.png",
+  "btLogo.webp",
+  "LogoLabSarmiento.png",
+  "interpracsysLogo.webp",
+  "logo.png",
+  "cilsLogo.webp",
+  "Gnet-black.png",
+  "COL-CEMM.png",
+  "delvallelogo.webp",
+  "COL-CMM1.png",
+  "martinquero.svg",
 ];
 
 export default function LogoCloud() {
@@ -18,17 +24,34 @@ export default function LogoCloud() {
         <p className="text-center text-sm font-mono text-light-muted dark:text-white/40 uppercase tracking-widest mb-8">
           Empresas que confían en nosotros
         </p>
-        <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
-          {companies.map((company, idx) => (
+        <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10 opacity-70 grayscale transition-opacity duration-500">
+          {logoFiles.map((file, idx) => (
             <motion.div
               key={idx}
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
-              className="text-xl md:text-2xl font-bold font-serif text-light-fg dark:text-white/80"
+              className="h-12 md:h-14 w-32 md:w-40 flex items-center justify-center"
             >
-              {company}
+              <div className="relative w-full h-full grayscale">
+                {file.toLowerCase().endsWith(".svg") ? (
+                  <img
+                    src={`/logosClientes/${file}`}
+                    alt={`Logo de ${file.replace(/\.[^/.]+$/, "")}`}
+                    className="object-contain w-full h-full"
+                  />
+                ) : (
+                  <Image
+                    src={`/logosClientes/${file}`}
+                    alt={`Logo de ${file.replace(/\.[^/.]+$/, "")}`}
+                    fill
+                    sizes="(max-width: 768px) 128px, 160px"
+                    className="object-contain"
+                    priority={false}
+                  />
+                )}
+              </div>
             </motion.div>
           ))}
         </div>

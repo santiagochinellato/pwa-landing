@@ -31,7 +31,7 @@ export default function InvestmentSection() {
             size={16}
             className="text-light-primary dark:text-holographic"
           />
-          <span>ROI Positivo garantizado</span>
+          <span>Orientado a resultados medibles</span>
         </div>
       </div>
     </section>

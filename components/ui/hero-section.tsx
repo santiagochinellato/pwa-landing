@@ -95,7 +95,7 @@ export default function HeroSection() {
               </a>
 
               <Link
-                href="#process"
+                href="/trabajos"
                 className="inline-flex h-12 items-center justify-center rounded-full border border-primary/20 bg-transparent px-8 text-base font-medium text-muted-foreground hover:text-primary hover:border-primary/50 transition-all shadow-sm hover:bg-primary/5 whitespace-nowrap"
               >
                 {hero.ctaSecondary}

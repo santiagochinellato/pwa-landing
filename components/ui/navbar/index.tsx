@@ -60,11 +60,11 @@ export default function Navbar() {
         )}
       >
         <div className="flex items-center gap-2 relative z-50">
-          <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="h-[60px] md:h-[90px]">
+          <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="h-[60px] md:h-[75px]">
             <div
               role="img"
               aria-label={navbar.logoAlt}
-              className="w-(--logo-w-mobile) md:w-(--logo-w-desktop) h-[60px] md:h-[90px] transition-opacity hover:opacity-80 bg-(--primary)"
+              className="w-(--logo-w-mobile) md:w-(--logo-w-desktop) h-[60px] md:h-[75px] transition-opacity hover:opacity-80 bg-(--primary)"
               style={
                 {
                   "--logo-w-mobile": navbar.logoSize?.mobile || "250px",

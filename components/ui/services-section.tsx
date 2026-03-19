@@ -34,7 +34,7 @@ export default function ServicesSection() {
               </span>
             </div>
 
-            <div className="flex flex-col h-full">
+            <div className="flex flex-col h-full pt-12">
               <div className="flex flex-col md:flex-row items-start gap-4 md:gap-6 mb-6">
                 <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-light-primary/20 dark:bg-holographic/20 border-2 border-light-primary/30 dark:border-holographic/30 flex items-center justify-center text-light-primary dark:text-holographic group-hover:scale-110 transition-transform bg-white dark:bg-transparent shrink-0">
                   <Globe className="w-8 h-8 md:w-10 md:h-10" />

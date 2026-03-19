@@ -249,13 +249,13 @@
   "navbar": {
     "logoAlt": "MacizoDigital Logo",
     "menu": [
-      {"name": "PROYECTOS", "href": "#portfolio"},
-      {"name": "SERVICIOS", "href": "#services"},
-      {"name": "CÓMO TRABAJAMOS", "href": "#process"},
-      {"name": "RESULTADOS", "href": "#testimonials"},
-      {"name": "CONTACTO", "href": "#contact"}
+      {"name": "Home", "href": "/"},
+      {"name": "Por qué MacizoDigital", "href": "/nosotros"},
+      {"name": "Servicios", "href": "/servicios"},
+      {"name": "Trabajos", "href": "/trabajos"},
+      {"name": "Contacto", "href": "/contacto"}
     ],
-    "cta": "HABLEMOS",
+    "cta": "Hablemos",
     "themeLabel": "Tema",
     "whatsappLink": "https://wa.me/5492944227526",
     "logoSize": {
@@ -327,11 +327,10 @@
     "menuTitle": "Navegación",
     "socialTitle": "SEGUINOS",
     "menuLinks": [
-      {"name": "Casos de Éxito", "href": "#portfolio"},
-      {"name": "Qué Resolvemos", "href": "#services"},
-      {"name": "Cómo Trabajamos", "href": "#process"},
-      {"name": "Resultados", "href": "#testimonials"},
-      {"name": "Contacto", "href": "#contact"}
+      {"name": "Casos de Éxito", "href": "/trabajos"},
+      {"name": "Qué Resolvemos", "href": "/servicios"},
+      {"name": "Nosotros", "href": "/nosotros"},
+      {"name": "Contacto", "href": "/contacto"}
     ],
     "copyright": "© 2025 MacizoDigital. TODOS LOS DERECHOS RESERVADOS.",
     "hours": "LUN - VIE: 9:00 - 18:00 ART",

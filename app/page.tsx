@@ -1,17 +1,19 @@
+import type { Metadata } from "next";
 import HeroSection from "@/components/ui/hero-section";
-import siteContent from "@/data/site-content.json";
 import Navbar from "@/components/ui/navbar";
-import ProjectCard from "@/components/ui/project-card";
-import Footer from "@/components/ui/footer";
-import DifferentialsSection from "@/components/ui/differentials-section";
-import ServicesSection from "@/components/ui/services-section";
-import InteractiveProcessSection from "@/components/ui/interactive-process-section";
-import StackSection from "@/components/ui/stack-section";
+import ProjectsSection from "@/components/ui/projects-section";
+import WhyMacizoSection from "@/components/ui/why-macizo-section";
 import TestimonialsSection from "@/components/ui/testimonials-section";
 import FinalCTASection from "@/components/ui/final-cta-section";
+import Footer from "@/components/ui/footer";
 import LogoCloud from "@/components/ui/logo-cloud";
-import WhyMacizoSection from "@/components/ui/why-macizo-section";
-import InvestmentSection from "@/components/ui/investment-section";
+import DifferentialsSection from "@/components/ui/differentials-section";
+
+export const metadata: Metadata = {
+  title: "MacizoDigital | Desarrollo Web y SEO desde la Patagonia",
+  description:
+    "Cubrimos desarrollo web y SEO para que tu negocio consiga más clientes. Solidez, precisión y escala desde la Patagonia.",
+};
 
 export default function Home() {
   return (
@@ -21,46 +23,11 @@ export default function Home() {
     >
       <Navbar />
       <HeroSection />
-      <WhyMacizoSection />
-      <LogoCloud />
-      <DifferentialsSection />
-      {/* <InfiniteMarquee /> */}
-      <ServicesSection />
-      <InteractiveProcessSection />
-      <section
-        id="portfolio"
-        className="px-6 py-12 md:py-24 md:px-12 bg-transparent border-t border-light-border dark:border-white/5"
-      >
-        <div className="max-w-7xl mx-auto space-y-12">
-          <h2 className="text-3xl md:text-5xl font-bold mb-12 text-center text-light-fg dark:text-white text-balance leading-normal">
-            TRABAJOS{" "}
-            <span className="text-light-primary dark:text-holographic">
-              REALIZADOS
-            </span>
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {siteContent.projects.map((project, idx) => (
-              <ProjectCard
-                key={idx}
-                title={project.title}
-                category={project.category}
-                type={
-                  project.type as
-                    | "hotel"
-                    | "corporate"
-                    | "ecommerce"
-                    | "landing"
-                }
-                metrics={project.metrics}
-                imageUrl={project.imageUrl}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
-      <TestimonialsSection />
-      <StackSection />
-      {/* <InvestmentSection /> */}
+      <WhyMacizoSection variant="summary" />
+      <LogoCloud/>
+      <DifferentialsSection/>
+      <ProjectsSection limit={4} />
+      <TestimonialsSection limit={3} />
       <FinalCTASection />
       <Footer />
     </main>

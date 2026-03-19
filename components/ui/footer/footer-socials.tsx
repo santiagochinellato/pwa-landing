@@ -6,34 +6,34 @@ export default function FooterSocials() {
   const { footer } = siteContent;
 
   return (
-    <div className="space-y-4">
-      <h3 className="text-light-fg dark:text-white font-bold mb-6 tracking-widest text-sm">
+    <div className="flex flex-col">
+      <h3 className="text-light-fg dark:text-white font-medium mb-6 text-[12px] uppercase tracking-[0.08em]">
         {footer.socialTitle}
       </h3>
-      <div className="flex gap-4 text-light-muted dark:text-white/90">
+      <div className="flex gap-5 text-light-muted dark:text-white/70">
         <Link
           href={footer.socialLinks.linkedin}
           target="_blank"
           aria-label="LinkedIn"
-          className="hover:text-light-primary dark:hover:text-holographic transition-colors p-2"
+          className="hover:text-light-primary dark:hover:text-holographic transition-colors"
         >
-          <Linkedin size={24} />
+          <Linkedin size={20} strokeWidth={1.5} />
         </Link>
         <Link
           href={footer.socialLinks.instagram}
           target="_blank"
           aria-label="Instagram"
-          className="hover:text-light-primary dark:hover:text-holographic transition-colors p-2"
+          className="hover:text-light-primary dark:hover:text-holographic transition-colors"
         >
-          <Instagram size={24} />
+          <Instagram size={20} strokeWidth={1.5} />
         </Link>
         <Link
           href={footer.socialLinks.github}
           target="_blank"
           aria-label="GitHub"
-          className="hover:text-light-primary dark:hover:text-holographic transition-colors p-2"
+          className="hover:text-light-primary dark:hover:text-holographic transition-colors"
         >
-          <Github size={24} />
+          <Github size={20} strokeWidth={1.5} />
         </Link>
       </div>
     </div>
