@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import siteContent from "@/data/site-content.json";
 import {
   Clock,
@@ -51,6 +51,7 @@ interface StepWithIcon extends Omit<StepData, "icon"> {
 export default function InteractiveProcessSection() {
   const [activeStep, setActiveStep] = useState(0);
   const { process } = siteContent as { process: ProcessData };
+  const carouselItemRefs = useRef<Array<HTMLButtonElement | null>>([]);
 
   const steps: StepWithIcon[] = process.steps.map((step) => ({
     ...step,
@@ -58,6 +59,16 @@ export default function InteractiveProcessSection() {
   }));
 
   const currentStep = steps[activeStep];
+
+  useEffect(() => {
+    const el = carouselItemRefs.current[activeStep];
+    if (!el) return;
+    el.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+      inline: "center",
+    });
+  }, [activeStep]);
 
   return (
     <ProcessContent
@@ -68,6 +79,7 @@ export default function InteractiveProcessSection() {
       Icon={currentStep.icon}
       progress={0} // Not used in current design but kept for compatibility if needed
       process={process}
+      carouselItemRefs={carouselItemRefs}
     />
   );
 }
@@ -138,6 +150,7 @@ function ProcessContent({
   currentStep,
   Icon,
   process,
+  carouselItemRefs,
 }: {
   steps: StepWithIcon[];
   activeStep: number;
@@ -146,6 +159,7 @@ function ProcessContent({
   Icon: LucideIcon;
   progress: number;
   process: ProcessData;
+  carouselItemRefs: React.MutableRefObject<Array<HTMLButtonElement | null>>;
 }) {
   const currentColors = getStepColors(currentStep.color);
 
@@ -170,7 +184,7 @@ function ProcessContent({
               <span className="text-light-primary dark:text-holographic">
                 {process.titleHighlight}
               </span>
-              <span className="absolute -bottom-1 md:-bottom-2 left-0 w-full h-1 bg-gradient-to-r from-light-primary to-cyan-500 dark:from-holographic dark:to-cyan-400 rounded-full opacity-80" />
+              <span className="absolute -bottom-1 md:-bottom-2 left-0 w-full h-1 bg-gradient-to-r from-light-primary to-green-600 dark:from-holographic dark:to-green-400 rounded-full opacity-80" />
             </span>{" "}
             {process.titleSuffix}
           </h2>
@@ -180,9 +194,38 @@ function ProcessContent({
           </p>
         </div>
 
-        {/* Timeline Visual con Cards - SOLO MOBILE */}
-        <div className="mb-8 md:mb-16 lg:hidden">
-          <div className="flex justify-start gap-4 overflow-x-auto py-4 px-4 scrollbar-hide -mx-4 md:mx-0 snap-x snap-mandatory">
+        {/* Timeline Visual con Cards - SOLO MOBILE (Carousel) */}
+        <div className="mb-8 md:mb-16 lg:hidden relative">
+          <div className="flex items-center justify-between mb-2 px-4">
+            <button
+              type="button"
+              onClick={() => setActiveStep(Math.max(0, activeStep - 1))}
+              disabled={activeStep === 0}
+              aria-label="Paso anterior"
+              className="w-10 h-10 rounded-full border border-light-border dark:border-white/10 bg-light-surface/70 dark:bg-white/5 text-light-fg dark:text-white flex items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed transition-all active:scale-95"
+            >
+              <ArrowRight size={18} className="rotate-180" />
+            </button>
+
+            <div className="text-[11px] font-mono text-light-muted/70 dark:text-white/30 uppercase tracking-widest">
+              {String(activeStep + 1).padStart(2, "0")} /{" "}
+              {String(steps.length).padStart(2, "0")}
+            </div>
+
+            <button
+              type="button"
+              onClick={() =>
+                setActiveStep(Math.min(steps.length - 1, activeStep + 1))
+              }
+              disabled={activeStep === steps.length - 1}
+              aria-label="Paso siguiente"
+              className="w-10 h-10 rounded-full border border-light-border dark:border-white/10 bg-light-surface/70 dark:bg-white/5 text-light-fg dark:text-white flex items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed transition-all active:scale-95"
+            >
+              <ArrowRight size={18} />
+            </button>
+          </div>
+
+          <div className="flex justify-start md:justify-center gap-4 overflow-x-auto py-4 px-4 scrollbar-hide -mx-4 md:mx-0 snap-x snap-mandatory">
             {steps.map((step, idx) => {
               const StepIcon = step.icon;
               const isActive = idx === activeStep;
@@ -193,6 +236,9 @@ function ProcessContent({
                 <button
                   key={idx}
                   onClick={() => setActiveStep(idx)}
+                  ref={(el) => {
+                    carouselItemRefs.current[idx] = el;
+                  }}
                   className="flex flex-col items-center gap-3 min-w-[130px] group relative snap-center shrink-0"
                 >
                   {/* Círculo con número */}

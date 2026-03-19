@@ -10,7 +10,7 @@ export default function NavbarDesktop() {
   const pathname = usePathname();
 
   return (
-    <div className="hidden md:flex items-center gap-8 text-[14px] font-medium text-light-muted dark:text-white/70">
+    <div className="hidden min-[1081px]:flex items-center gap-8 text-[14px] font-medium text-light-muted dark:text-white/70">
       {navbar.menu.map((item) => {
         const isActive = pathname === item.href;
         

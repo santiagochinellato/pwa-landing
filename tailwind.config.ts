@@ -11,13 +11,13 @@ const config: Config = {
             colors: {
                 // Brand colors
                 "deep-void": "#030305",
-                "holographic": "#66FCF1",
-                "holographic-dim": "#45A29E",
+                "holographic": "#4ade80",
+                "holographic-dim": "#22c55e",
                 
                 // Light mode specific (Explicit classes requested)
                 "light-bg": "#f8fafc",
                 "light-fg": "#0f172a",
-                "light-primary": "#0f766e",
+                "light-primary": "#1a5c38",
                 "light-muted": "#64748b",
                 "light-surface": "#ffffff",
                 "light-border": "#e2e8f0",
@@ -35,7 +35,7 @@ const config: Config = {
                 warning: "var(--warning)",
             },
             backgroundImage: {
-                "holographic-gradient": "linear-gradient(135deg, #66FCF1 0%, #45A29E 100%)",
+                "holographic-gradient": "linear-gradient(135deg, #4ade80 0%, #22c55e 100%)",
             },
             fontFamily: {
                 sans: ["var(--font-inter)", "sans-serif"],

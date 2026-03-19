@@ -27,7 +27,7 @@ export default function NavbarMobileMenu({
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
           transition={{ duration: 0.2, ease: [0.4, 0, 0.2, 1] }}
-          className="fixed inset-0 top-[70px] z-40 bg-light-surface/95 dark:bg-deep-void/95 backdrop-blur-md md:hidden flex flex-col px-6 pb-8 pt-2"
+          className="fixed inset-0 top-[70px] z-40 bg-light-surface/95 dark:bg-deep-void/95 backdrop-blur-md min-[1081px]:hidden flex flex-col px-6 pb-8 pt-2"
         >
           <div className="flex flex-col">
             {navbar.menu.map((item, idx) => {

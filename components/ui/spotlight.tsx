@@ -62,7 +62,7 @@ export function Spotlight() {
         className="absolute inset-0 w-full h-full rounded-full blur-[80px] opacity-100 dark:opacity-0 transition-opacity duration-500"
         style={{
           background:
-            "radial-gradient(circle, rgba(20,184,166,0.4) 0%, rgba(6,182,212,0.2) 40%, transparent 70%)",
+            "radial-gradient(circle, rgba(26,92,56,0.4) 0%, rgba(34,197,94,0.2) 40%, transparent 70%)",
         }}
       />
       {/* Dark Mode Gradient (Holographic) */}
@@ -70,7 +70,7 @@ export function Spotlight() {
         className="absolute inset-0 w-full h-full rounded-full blur-[80px] opacity-0 dark:opacity-100 transition-opacity duration-500"
         style={{
           background:
-            "radial-gradient(circle, rgba(102,252,241,0.25) 0%, rgba(69,162,158,0.15) 40%, transparent 70%)",
+            "radial-gradient(circle, rgba(74,222,128,0.25) 0%, rgba(34,197,94,0.15) 40%, transparent 70%)",
         }}
       />
     </motion.div>

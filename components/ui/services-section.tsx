@@ -22,7 +22,7 @@ export default function ServicesSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8 mb-8">
           {/* Main Service - Featured - Updated Design */}
-          <div className="lg:col-span-2 p-6 md:p-10 rounded-2xl bg-gradient-to-br from-light-primary/10 via-light-surface to-light-surface dark:from-holographic/10 dark:via-white/5 dark:to-white/5 border-2 border-light-primary dark:border-holographic/50 hover:border-light-primary dark:hover:border-holographic transition-all duration-300 group relative overflow-hidden shadow-xl dark:shadow-[0_0_40px_rgba(102,252,241,0.15)] bg-white dark:bg-transparent">
+          <div className="lg:col-span-2 p-6 md:p-10 rounded-2xl bg-gradient-to-br from-light-primary/10 via-light-surface to-light-surface dark:from-holographic/10 dark:via-white/5 dark:to-white/5 border-2 border-light-primary dark:border-holographic/50 hover:border-light-primary dark:hover:border-holographic transition-all duration-300 group relative overflow-hidden shadow-xl dark:shadow-[0_0_40px_rgba(74,222,128,0.15)] bg-white dark:bg-transparent">
             {/* Badge */}
             <div className="absolute top-4 right-4 flex items-center gap-1 px-3 py-1 bg-light-primary/20 dark:bg-holographic/20 border border-light-primary/50 dark:border-holographic/50 rounded-full">
               <Star
@@ -68,7 +68,7 @@ export default function ServicesSection() {
                   href="https://wa.me/5492944227526"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group/btn w-full md:w-auto flex items-center justify-center gap-2 px-6 py-3 bg-light-primary dark:bg-holographic text-white dark:text-deep-void font-bold rounded-lg hover:opacity-90 transition-all hover:shadow-[0_0_20px_rgba(20,184,166,0.4)] dark:hover:shadow-[0_0_20px_rgba(102,252,241,0.4)]"
+                  className="group/btn w-full md:w-auto flex items-center justify-center gap-2 px-6 py-3 bg-light-primary dark:bg-holographic text-white dark:text-deep-void font-bold rounded-lg hover:opacity-90 transition-all hover:shadow-[0_0_20px_rgba(26,92,56,0.4)] dark:hover:shadow-[0_0_20px_rgba(74,222,128,0.4)]"
                 >
                   {services.mainService.cta}
                   <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />

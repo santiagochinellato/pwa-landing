@@ -49,7 +49,7 @@ export default function ProjectCard({
   return (
     <>
       {/* Mobile Version (Simple Card) */}
-      <div className="md:hidden rounded-2xl bg-light-surface dark:bg-white/5 border border-light-border dark:border-white/10 overflow-hidden">
+      <div className="min-[1081px]:hidden rounded-2xl bg-light-surface dark:bg-white/5 border border-light-border dark:border-white/10 overflow-hidden flex flex-col h-[520px] md:h-[560px]">
         <div
           className={`relative w-full ${featured ? "h-64" : "h-48"} bg-light-surface dark:bg-deep-void`}
         >
@@ -67,15 +67,17 @@ export default function ProjectCard({
             <h3 className="text-xl font-bold text-white">{title}</h3>
           </div>
         </div>
-        <div className="p-6">
-          <ul className="space-y-4">
+        <div className="p-6 flex-1 flex">
+          <ul className="space-y-4 w-full">
             {metrics.map((metric, i) => (
               <li
                 key={i}
                 className="flex items-start gap-3 text-light-muted dark:text-white/80 text-base"
               >
                 <CheckCircle2 className="w-5 h-5 text-light-primary dark:text-holographic shrink-0 mt-0.5" />
-                <span>{metric}</span>
+                <span className="overflow-hidden [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:2]">
+                  {metric}
+                </span>
               </li>
             ))}
           </ul>
@@ -84,7 +86,7 @@ export default function ProjectCard({
 
       {/* Desktop Version (Flip Card) */}
       <motion.div
-        className={`relative w-full hidden md:block group cursor-pointer ${
+        className={`relative w-full hidden min-[1081px]:block group cursor-pointer ${
           featured ? "h-full min-h-[520px]" : "h-[400px]"
         }`}
         onMouseEnter={() => setIsHovered(true)}

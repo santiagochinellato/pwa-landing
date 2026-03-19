@@ -54,7 +54,7 @@ export default function StackSection() {
               <span className="text-light-primary dark:text-holographic">
                 {stack.titleHighlight}
               </span>
-              <span className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-light-primary to-cyan-500 dark:from-holographic dark:to-cyan-400 rounded-full" />
+              <span className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-light-primary to-green-600 dark:from-holographic dark:to-green-400 rounded-full" />
             </span>
           </h1>
           <p className="text-l text-light-muted dark:text-white/90 max-w-2xl mx-auto font-light">
@@ -216,7 +216,7 @@ export default function StackSection() {
             </div>
 
             {/* CTA */}
-            <div className="mt-6 rounded-xl bg-gradient-to-r from-light-primary/10 to-cyan-50 dark:from-holographic/10 dark:to-cyan-900/10 border border-light-primary/30 dark:border-holographic/30 p-6 text-center shadow-lg dark:shadow-none">
+            <div className="mt-6 rounded-xl bg-gradient-to-r from-light-primary/10 to-green-50 dark:from-holographic/10 dark:to-green-900/10 border border-light-primary/30 dark:border-holographic/30 p-6 text-center shadow-lg dark:shadow-none">
               <p className="text-sm text-light-muted dark:text-white/90 mb-3 font-medium">
                 {stack.cta.text}
               </p>
@@ -224,12 +224,12 @@ export default function StackSection() {
                 href={siteContent.hero.whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full bg-light-primary dark:bg-holographic text-white dark:text-deep-void px-6 py-4 rounded-lg font-bold hover:bg-light-primary/90 dark:hover:bg-cyan-400 transition-all shadow-md hover:shadow-cyan-400/20 hover:scale-[1.02]"
+                className="block w-full bg-light-primary dark:bg-holographic text-white dark:text-deep-void px-6 py-4 rounded-lg font-bold hover:bg-light-primary/90 dark:hover:bg-green-400 transition-all shadow-md hover:shadow-green-400/20 hover:scale-[1.02]"
               >
                 {stack.cta.button}
               </a>
               <div className="mt-3 flex items-center justify-center gap-2 text-[10px] text-light-muted dark:text-white/60 font-mono uppercase tracking-widest">
-                <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
+                <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
                 Respuesta hoy garantizada
               </div>
             </div>
@@ -372,7 +372,7 @@ export default function StackSection() {
           })}
 
           {/* Mobile CTA */}
-          <div className="mt-6 rounded-xl bg-gradient-to-r from-light-primary/10 to-cyan-50 dark:from-holographic/10 dark:to-cyan-900/10 border border-light-primary/30 dark:border-holographic/30 p-6 text-center">
+          <div className="mt-6 rounded-xl bg-gradient-to-r from-light-primary/10 to-green-50 dark:from-holographic/10 dark:to-green-900/10 border border-light-primary/30 dark:border-holographic/30 p-6 text-center">
             <p className="text-sm text-light-muted dark:text-white/90 mb-3">
               ¿Querés una web con estas ventajas?
             </p>
@@ -380,7 +380,7 @@ export default function StackSection() {
               href="https://wa.me/5492944227526"
               target="_blank"
               rel="noopener noreferrer"
-              className="block w-full bg-light-primary dark:bg-holographic text-white dark:text-deep-void px-6 py-3 rounded-lg font-semibold hover:bg-light-primary/90 dark:hover:bg-white transition-colors"
+              className="block w-full bg-light-primary dark:bg-holographic text-white dark:text-deep-void px-6 py-3 rounded-lg font-semibold hover:bg-light-primary/90 dark:hover:bg-green-300 transition-colors"
             >
               Consulta gratuita
             </a>

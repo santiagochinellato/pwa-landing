@@ -10,7 +10,7 @@ export default function FinalCTASection() {
       className="py-16 md:py-32 px-4 md:px-12 relative overflow-hidden bg-transparent transition-colors duration-300"
     >
       {/* Background decoration */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_#14b8a6_0%,_transparent_70%)] dark:bg-[radial-gradient(circle_at_center,_#66FCF1_0%,_transparent_70%)] opacity-5 pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_#1a5c38_0%,_transparent_70%)] dark:bg-[radial-gradient(circle_at_center,_#4ade80_0%,_transparent_70%)] opacity-5 pointer-events-none" />
 
       <div className="max-w-5xl mx-auto text-center relative z-10">
         <div className="inline-flex items-center gap-2 px-4 py-2 bg-red-500/10 border border-red-500/20 rounded-full text-red-500 text-sm font-bold mb-6 animate-pulse">

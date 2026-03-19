@@ -4,20 +4,20 @@
 @theme {
   /* Brand colors */
   --color-deep-void: #030305;
-  --color-holographic: #66fcf1;
-  --color-holographic-dim: #1f2833;
+  --color-holographic: #4ade80;
+  --color-holographic-dim: #14532d;
 
   /* Light mode colors */
   --color-light-bg: #f8fafc;
   --color-light-fg: #0f172a;
-  --color-light-primary: #0f766e;
+  --color-light-primary: #1a5c38;
   --color-light-muted: #64748b;
   --color-light-surface: #ffffff;
   --color-light-border: #e2e8f0;
 
   /* Additional Palette Colors */
-  --color-primary-dim: #0d9488;
-  --color-accent: #06b6d4;
+  --color-primary-dim: #22c55e;
+  --color-accent: #22c55e;
   --color-success: #10b981;
   --color-warning: #f59e0b;
 
@@ -29,12 +29,12 @@
   /* Light Mode */
   --background: #f8fafc;
   --foreground: #0f172a;
-  --primary: #0f766e;
-  --primary-dim: #0d9488;
+  --primary: #1a5c38;
+  --primary-dim: #22c55e;
   --surface: #ffffff;
   --border: #e2e8f0;
   --muted: #64748b;
-  --accent: #06b6d4;
+  --accent: #22c55e;
   --success: #10b981;
   --warning: #f59e0b;
 }
@@ -43,12 +43,12 @@
   /* Dark Mode */
   --background: #030305;
   --foreground: #ffffff;
-  --primary: #66fcf1;
-  --primary-dim: #45a29e;
+  --primary: #4ade80;
+  --primary-dim: #22c55e;
   --surface: rgba(255, 255, 255, 0.05);
   --border: rgba(255, 255, 255, 0.1);
   --muted: rgba(255, 255, 255, 0.6);
-  --accent: #66fcf1;
+  --accent: #4ade80;
   --success: #10b981;
   --warning: #f59e0b;
 }

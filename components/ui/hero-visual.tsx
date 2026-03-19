@@ -44,17 +44,17 @@ export const AnimatedHeroVisual = () => {
 
   // Palette based on the reference image
   const colors = {
-    primary: "#66FCF1",
-    secondary: "#45A29E",
+    primary: "#4ade80",
+    secondary: "#22c55e",
     // Accent is brighter for edge highlights
-    accent: isDark ? "#A6FFFA" : "#3BB2B8",
+    accent: isDark ? "#86efac" : "#15803d",
     // Fills for glass panels (low opacity)
-    glassFill: isDark ? "rgba(102, 252, 241, 0.1)" : "rgba(69, 162, 158, 0.15)",
+    glassFill: isDark ? "rgba(74, 222, 128, 0.1)" : "rgba(26, 92, 56, 0.15)",
     glassFillHover: isDark
-      ? "rgba(102, 252, 241, 0.2)"
-      : "rgba(69, 162, 158, 0.25)",
+      ? "rgba(74, 222, 128, 0.2)"
+      : "rgba(26, 92, 56, 0.25)",
     // Grid lines
-    grid: isDark ? "rgba(102, 252, 241, 0.3)" : "rgba(69, 162, 158, 0.4)",
+    grid: isDark ? "rgba(74, 222, 128, 0.3)" : "rgba(26, 92, 56, 0.4)",
   };
 
   /**
