@@ -12,7 +12,8 @@ export default function LoadingScreen() {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
+    const raf = window.requestAnimationFrame(() => setMounted(true));
+    return () => window.cancelAnimationFrame(raf);
   }, []);
 
   if (!mounted) return null;
