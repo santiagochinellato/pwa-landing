@@ -50,12 +50,14 @@ export default function ProjectCard({
     <>
       {/* Mobile Version (Simple Card) */}
       <div className="md:hidden rounded-2xl bg-light-surface dark:bg-white/5 border border-light-border dark:border-white/10 overflow-hidden">
-        <div className={`relative w-full ${featured ? "h-64" : "h-48"}`}>
+        <div
+          className={`relative w-full ${featured ? "h-64" : "h-48"} bg-light-surface dark:bg-deep-void`}
+        >
           <Image
             src={imageUrl}
             alt={title}
             fill
-            className="object-cover"
+            className="object-contain"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-deep-void/80 to-transparent" />
           <div className="absolute bottom-4 left-4">
@@ -94,14 +96,17 @@ export default function ProjectCard({
         aria-label={`Proyecto: ${title}`}
       >
         {/* Background Image + minimal front copy */}
-        <div className="absolute inset-0 rounded-2xl overflow-hidden bg-deep-void border border-white/10">
+        <div className="absolute inset-0 rounded-2xl overflow-hidden bg-light-surface dark:bg-deep-void border border-white/10">
           <Image
             src={imageUrl}
             alt={title}
             fill
-            className="object-cover transition-all duration-700 group-hover:scale-102"
+            className="object-contain transition-all duration-700 group-hover:scale-102"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-deep-void/90 via-deep-void/20 to-transparent" />
+          <div
+            className="absolute inset-0 bg-gradient-to-t from-deep-void/60 via-deep-void/10 to-transparent
+             dark:from-deep-void/90 dark:via-deep-void/20 to-transparent"
+          />
 
           <div
             className={`absolute bottom-0 left-0 w-full p-8 transition-opacity duration-300 ${
@@ -124,7 +129,7 @@ export default function ProjectCard({
         {/* Overlay reveal */}
         <motion.div
           className={`absolute inset-0 rounded-2xl overflow-hidden border border-light-border/70 dark:border-white/10
-            bg-light-surface/90 dark:bg-deep-void/70 backdrop-blur-md shadow-md dark:shadow-none
+            bg-light-surface/96 dark:bg-deep-void/70 backdrop-blur-md shadow-md dark:shadow-none
             ${isHovered ? "pointer-events-auto" : "pointer-events-none"}`}
           initial={false}
           animate={{
@@ -136,7 +141,10 @@ export default function ProjectCard({
             ease: [0.22, 1, 0.36, 1],
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-b from-deep-void/30 to-light-bg/15 dark:to-deep-void/70 pointer-events-none" />
+          <div
+            className="absolute inset-0 bg-gradient-to-b from-deep-void/10 to-light-bg/35
+             dark:to-deep-void/70 pointer-events-none"
+          />
 
           <div className="relative p-8 flex flex-col h-full">
             <div className="flex justify-between items-start mb-6">
