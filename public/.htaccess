@@ -1,0 +1,33 @@
+<IfModule mod_deflate.c>
+  # Habilitar compresión Gzip
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json image/svg+xml
+</IfModule>
+
+<IfModule mod_expires.c>
+  # Habilitar Caché de navegador (PageSpeed Boost)
+  ExpiresActive On
+  ExpiresByType image/jpg "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType background/image "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType text/javascript "access plus 1 month"
+  ExpiresByType application/font-woff2 "access plus 1 year"
+</IfModule>
+
+# Prevenir mostrar indices del directorio si falta un index.html
+Options -Indexes
+
+# Al usar trailingSlash: true en Next, 
+# evitamos problemas forzando la resolución a index.html cuando un directorio no especifica su terminación
+DirectoryIndex index.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  # Si es una carpeta, forzar a / al final (trailing slash) para resolver index.html interno de forma limpia.
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^(.*[^/])$ /$1/ [L,R=301]
+</IfModule>

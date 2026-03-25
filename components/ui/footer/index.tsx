@@ -44,7 +44,7 @@ export default function Footer() {
           {/* Menús secundarios */}
           <div className="md:col-span-5 grid grid-cols-2 gap-8 pt-2 md:pt-0">
             <FooterLinks />
-            <FooterSocials />
+            {/* <FooterSocials /> */}
           </div>
         </div>
 

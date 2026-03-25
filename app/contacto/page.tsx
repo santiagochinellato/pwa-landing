@@ -39,8 +39,6 @@ const CHANNELS = [
 ] as const;
 
 export default function ContactoPage() {
-  const whatsappLink = siteContent.finalCta.whatsappLink;
-
   return (
     <>
       <Navbar />
@@ -159,7 +157,7 @@ export default function ContactoPage() {
                  dark:border-white/10 bg-light-surface/30 dark:bg-white/5
                  p-6 md:p-8"
             >
-              <ContactForm whatsappLink={whatsappLink} />
+              <ContactForm />
             </div>
           </div>
         </div>

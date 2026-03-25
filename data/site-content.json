@@ -415,7 +415,7 @@
     ],
     "copyright": "© 2025 MacizoDigital. TODOS LOS DERECHOS RESERVADOS.",
     "hours": "LUN - VIE: 9:00 - 18:00 ART",
-    "socialLinks": {
+    "_socialLinks": {
       "linkedin": "https://linkedin.com/company/macizo.digital",
       "instagram": "https://instagram.com/macizo.digital",
       "github": "https://github.com/macizo.digital"

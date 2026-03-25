@@ -1,57 +1,29 @@
 "use client";
 
-import { useMemo, useState } from "react";
-import type { FormEvent } from "react";
+import { useState } from "react";
 
-type ContactFormProps = {
-  whatsappLink: string;
-};
-
-export default function ContactForm({ whatsappLink }: ContactFormProps) {
-  const [nombre, setNombre] = useState("");
-  const [email, setEmail] = useState("");
-  const [telefono, setTelefono] = useState("");
-  const [mensaje, setMensaje] = useState("");
+export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const whatsappText = useMemo(() => {
-    const lines = [
-      `Nuevo mensaje desde MacizoDigital`,
-      `Nombre: ${nombre || "-"}`,
-      email ? `Email: ${email}` : "",
-      telefono ? `Teléfono: ${telefono}` : "",
-      `Mensaje: ${mensaje || "-"}`,
-    ].filter(Boolean);
-
-    return lines.join("\n");
-  }, [email, mensaje, nombre, telefono]);
-
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    if (isSubmitting) return;
-
-    setIsSubmitting(true);
-    try {
-      const separator = whatsappLink.includes("?") ? "&" : "?";
-      const url = `${whatsappLink}${separator}text=${encodeURIComponent(
-        whatsappText
-      )}`;
-      window.open(url, "_blank", "noopener,noreferrer");
-    } finally {
-      setIsSubmitting(false);
-    }
-  }
-
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <form
+      action="https://formsubmit.co/hola@macizodigital.com"
+      method="POST"
+      className="space-y-4"
+      onSubmit={() => setIsSubmitting(true)}
+    >
+      {/* Campos ocultos de configuración de FormSubmit */}
+      <input type="hidden" name="_subject" value="Nuevo Lead | Web MacizoDigital" />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_template" value="table" />
+
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <label className="space-y-2">
           <span className="block text-sm font-bold text-light-fg dark:text-white">
             Nombre
           </span>
           <input
-            value={nombre}
-            onChange={(e) => setNombre(e.target.value)}
+            name="nombre"
             required
             autoComplete="name"
             className="w-full rounded-xl border border-light-border/70 dark:border-white/10 bg-light-surface/40 dark:bg-white/5 px-4 py-3 text-light-fg dark:text-white placeholder:text-light-muted/70"
@@ -64,8 +36,7 @@ export default function ContactForm({ whatsappLink }: ContactFormProps) {
             Teléfono
           </span>
           <input
-            value={telefono}
-            onChange={(e) => setTelefono(e.target.value)}
+            name="telefono"
             type="tel"
             inputMode="tel"
             autoComplete="tel"
@@ -79,8 +50,8 @@ export default function ContactForm({ whatsappLink }: ContactFormProps) {
             Email
           </span>
           <input
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            name="email"
+            required
             type="email"
             autoComplete="email"
             className="w-full rounded-xl border border-light-border/70 dark:border-white/10 bg-light-surface/40 dark:bg-white/5 px-4 py-3 text-light-fg dark:text-white placeholder:text-light-muted/70"
@@ -94,8 +65,7 @@ export default function ContactForm({ whatsappLink }: ContactFormProps) {
           Mensaje
         </span>
         <textarea
-          value={mensaje}
-          onChange={(e) => setMensaje(e.target.value)}
+          name="mensaje"
           required
           rows={5}
           className="w-full rounded-xl border border-light-border/70 dark:border-white/10 bg-light-surface/40 dark:bg-white/5 px-4 py-3 text-light-fg dark:text-white placeholder:text-light-muted/70 resize-none"
@@ -106,9 +76,9 @@ export default function ContactForm({ whatsappLink }: ContactFormProps) {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="w-full rounded-full bg-primary hover:bg-primary/90 text-white dark:text-deep-void font-bold px-8 py-4 text-base transition-all hover:scale-[1.02] shadow-lg shadow-primary/20 disabled:opacity-60 disabled:hover:scale-100"
+        className="w-full rounded-full bg-primary hover:bg-primary/90 text-white dark:text-deep-void font-bold px-8 py-4 text-base transition-all hover:scale-[1.02] shadow-lg shadow-primary/20 disabled:opacity-60 disabled:hover:scale-100 mt-2"
       >
-        {isSubmitting ? "Abriendo WhatsApp..." : "Enviar por WhatsApp"}
+        {isSubmitting ? "Enviando..." : "Enviar Consulta"}
       </button>
     </form>
   );
