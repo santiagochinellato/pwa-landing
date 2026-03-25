@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 import HeroSection from "@/components/ui/hero-section";
 import Navbar from "@/components/ui/navbar";
-import ProjectsSection from "@/components/ui/projects-section";
-import WhyMacizoSection from "@/components/ui/why-macizo-section";
-import TestimonialsSection from "@/components/ui/testimonials-section";
-import FinalCTASection from "@/components/ui/final-cta-section";
-import Footer from "@/components/ui/footer";
-import LogoCloud from "@/components/ui/logo-cloud";
-import DifferentialsSection from "@/components/ui/differentials-section";
+import dynamic from "next/dynamic";
+
+const ProjectsSection = dynamic(() => import("@/components/ui/projects-section"));
+const WhyMacizoSection = dynamic(() => import("@/components/ui/why-macizo-section"));
+const TestimonialsSection = dynamic(() => import("@/components/ui/testimonials-section"));
+const FinalCTASection = dynamic(() => import("@/components/ui/final-cta-section"));
+const Footer = dynamic(() => import("@/components/ui/footer"));
+const LogoCloud = dynamic(() => import("@/components/ui/logo-cloud"));
+const DifferentialsSection = dynamic(() => import("@/components/ui/differentials-section"));
 
 export const metadata: Metadata = {
   title: "MacizoDigital | Desarrollo Web y SEO desde la Patagonia",
