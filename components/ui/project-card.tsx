@@ -59,7 +59,7 @@ export default function ProjectCard({
         >
           <Image
             src={imageUrl}
-            alt={title}
+            alt={`${title} — proyecto de desarrollo web en Bariloche por MacizoDigital`}
             fill
             className="object-contain"
           />
@@ -110,7 +110,7 @@ export default function ProjectCard({
         <div className="absolute inset-0 rounded-2xl overflow-hidden bg-light-surface dark:bg-deep-void border border-white/10">
           <Image
             src={imageUrl}
-            alt={title}
+           alt={`${title} — proyecto de desarrollo web en Bariloche por MacizoDigital`}
             fill
             className="object-contain transition-all duration-700 group-hover:scale-102"
           />

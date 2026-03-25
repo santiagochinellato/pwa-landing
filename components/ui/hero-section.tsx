@@ -65,7 +65,7 @@ export default function HeroSection() {
           </div>
 
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mx-auto max-w-[780px] text-muted-foreground text-base md:text-xl leading-relaxed text-center"
@@ -78,7 +78,7 @@ export default function HeroSection() {
           </motion.p>
 
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
             className="flex flex-col gap-6 justify-center lg:justify-start w-full"
@@ -137,7 +137,7 @@ export default function HeroSection() {
       {/* Value Props Stats (Below) */}
       {hero.valueProps && (
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={false}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
           className="relative z-20 grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6 pt-12 w-full border-t border-border/40 mt-12 max-w-7xl mx-auto"
@@ -152,9 +152,9 @@ export default function HeroSection() {
                 <div className="p-3 bg-primary/10 rounded-full text-primary dark:text-holographic mb-1 group-hover:scale-110 transition-transform">
                   <Icon className="w-8 h-8" />
                 </div>
-                <h3 className="font-bold text-sm md:text-base text-center text-foreground dark:text-white">
+                <p className="font-bold text-sm md:text-base text-center text-foreground dark:text-white">
                   {prop.label}
-                </h3>
+                </p>
                 <p className="text-xs md:text-sm text-muted-foreground dark:text-white/90 text-center">
                   {prop.detail}
                 </p>

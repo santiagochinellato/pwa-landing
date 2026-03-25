@@ -37,9 +37,9 @@ export default function FinalCTASection() {
             href={finalCta.whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full md:w-auto px-8 py-4 bg-[#25D366] text-white font-bold text-l rounded-full hover:bg-[#20bd5a] hover:scale-105 transition-all flex items-center justify-center gap-2 shadow-lg hover:shadow-green-500/30"
+            className="w-full md:w-auto px-8 py-4 bg-[#25D366] text-[#1a1a1a] font-bold text-l rounded-full hover:bg-[#20bd5a] hover:scale-105 transition-all flex items-center justify-center gap-2 shadow-lg hover:shadow-green-500/30"
           >
-            <MessageCircle size={24} className="fill-white" />{" "}
+            <MessageCircle size={24} className="fill-[#1a1a1a]" />{" "}
             {finalCta.whatsappButton}
           </a>
 

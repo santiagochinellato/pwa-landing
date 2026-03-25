@@ -4,18 +4,32 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const logoFiles = [
-  "KATZ.png",
+  "KATZ.webp",
   "btLogo.webp",
-  "LogoLabSarmiento.png",
+  "LogoLabSarmiento.webp",
   "interpracsysLogo.webp",
-  "logo.png",
+  "logo.webp",
   "cilsLogo.webp",
-  "Gnet-black.png",
-  "COL-CEMM.png",
+  "Gnet-black.webp",
+  "COL-CEMM.webp",
   "delvallelogo.webp",
-  "COL-CMM1.png",
+  "COL-CMM1.webp",
   "martinquero.svg",
 ];
+
+const logoClientNames: Record<string, string> = {
+  "KATZ.webp": "Laboratorios Katz",
+  "btLogo.webp": "Baritrekking",
+  "LogoLabSarmiento.webp": "Laboratorios Sarmiento",
+  "interpracsysLogo.webp": "InterPracsys",
+  "logo.webp": "Dibio",
+  "cilsLogo.webp": "Estudio Contable CILS",
+  "Gnet-black.webp": "G-Net",
+  "COL-CEMM.webp": "Colegio CEMM",
+  "delvallelogo.webp": "Del Valle Soluciones",
+  "COL-CMM1.webp": "Colegio CMM",
+  "martinquero.svg": "Martín Quero",
+};
 
 export default function LogoCloud() {
   return (
@@ -38,13 +52,13 @@ export default function LogoCloud() {
                 {file.toLowerCase().endsWith(".svg") ? (
                   <img
                     src={`/logosClientes/${file}`}
-                    alt={`Logo de ${file.replace(/\.[^/.]+$/, "")}`}
+                    alt={`Logo de ${logoClientNames[file] ?? file.replace(/\.[^/.]+$/, "")} — cliente de MacizoDigital en Bariloche`}
                     className="object-contain w-full h-full"
                   />
                 ) : (
                   <Image
                     src={`/logosClientes/${file}`}
-                    alt={`Logo de ${file.replace(/\.[^/.]+$/, "")}`}
+                    alt={`Logo de ${logoClientNames[file] ?? file.replace(/\.[^/.]+$/, "")} — cliente de MacizoDigital en Bariloche`}
                     fill
                     sizes="(max-width: 768px) 128px, 160px"
                     className="object-contain"

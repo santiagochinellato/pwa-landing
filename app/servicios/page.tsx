@@ -8,9 +8,9 @@ import InvestmentSection from "@/components/ui/investment-section";
 import DifferentialsSection from "@/components/ui/differentials-section";
 
 export const metadata: Metadata = {
-  title: "Servicios | MacizoDigital",
+  title: "Servicios de Desarrollo Web, SEO y Diseño en Bariloche | MacizoDigital",
   description:
-    "Qué hacemos, cómo trabajamos, stack tecnológico e inversión transparente. Desarrollo web y SEO desde la Patagonia.",
+    "Desarrollamos sitios web, tiendas online, SEO y sistemas de gestión para empresas en San Carlos de Bariloche y toda la Patagonia. Sin piezas sueltas, con estrategia y resultados medibles.",
 };
 
 export default function ServiciosPage() {

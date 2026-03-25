@@ -8,6 +8,7 @@ import { Spotlight } from "@/components/ui/spotlight";
 import { GlassLayer } from "@/components/ui/glass-layer";
 import { LazyMotion, domAnimation } from "framer-motion";
 import FloatingCTA from "@/components/ui/floating-cta";
+import UmamiAnalytics from "@/components/analytics/umami";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -86,6 +87,7 @@ export default function RootLayout({
         className={`${inter.variable} antialiased`}
         suppressHydrationWarning
       >
+        <UmamiAnalytics />
         <a
           href="#main-content"
           className="absolute opacity-0 pointer-events-none focus:opacity-100 focus:pointer-events-auto focus:z-[100] focus:p-4 focus:bg-background focus:text-foreground top-0 left-0"

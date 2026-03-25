@@ -4,9 +4,9 @@ import Footer from "@/components/ui/footer";
 import WhyMacizoSection from "@/components/ui/why-macizo-section";
 
 export const metadata: Metadata = {
-  title: "Nosotros | MacizoDigital",
+  title: "Agencia de Desarrollo Web en Bariloche, Patagonia | MacizoDigital",
   description:
-    "Manifiesto completo de MacizoDigital: filosofía, Patagonia y los 3 pilares que sostienen cada proyecto.",
+    "Somos MacizoDigital, la agencia de desarrollo web, SEO y diseño UX/UI con base en San Carlos de Bariloche. Construimos infraestructura digital sólida para empresas de la Patagonia y LATAM.",
 };
 
 export default function NosotrosPage() {

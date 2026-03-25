@@ -369,10 +369,10 @@
     "menuTitle": "Navegación",
     "socialTitle": "SEGUINOS",
     "menuLinks": [
-      {"name": "Casos de Éxito", "href": "/trabajos"},
-      {"name": "Qué Resolvemos", "href": "/servicios"},
-      {"name": "Nosotros", "href": "/nosotros"},
-      {"name": "Contacto", "href": "/contacto"}
+      {"name": "Casos de Éxito en Desarrollo Web", "href": "/trabajos"},
+      {"name": "Servicios de Desarrollo Web y SEO", "href": "/servicios"},
+      {"name": "Agencia Web en Bariloche", "href": "/nosotros"},
+      {"name": "Contactar a MacizoDigital", "href": "/contacto"}
     ],
     "copyright": "© 2025 MacizoDigital. TODOS LOS DERECHOS RESERVADOS.",
     "hours": "LUN - VIE: 9:00 - 18:00 ART",
@@ -399,7 +399,8 @@
       ],
       "design_explanation": "Apunta a profesionales, ejecutivos o empresas que buscan servicios de coaching. Es un diseño minimalista y centrado en la persona (marca personal). Destaca la propuesta de valor del profesional y facilita el agendamiento de sesiones o charlas.",
       "link": "https://martinquero.com/",
-      "imageUrl": "/projects/queroProyecto.webp"
+      "imageUrl": "/projects/queroProyecto.webp",
+      "imageAlt": "Sitio web de coaching ontológico para Martín Quero — diseño web en Bariloche por MacizoDigital"
     },
     {
       "title": "InterPracsys",
@@ -412,7 +413,8 @@
       ],
       "design_explanation": "Apunta a empresas medianas y grandes (B2B). El diseño es sobrio, netamente corporativo y estructurado. Busca transmitir la robustez y seguridad del software, evitando distracciones visuales y yendo directo a los beneficios técnicos y operativos.",
       "link": "https://interpracsys.com/",
-      "imageUrl": "/projects/interpracsys.webp"
+      "imageUrl": "/projects/interpracsys.webp",
+      "imageAlt": "Sitio web corporativo B2B para InterPracsys — desarrollo web profesional en Patagonia por MacizoDigital"
     },
     {
       "title": "Baritrekking",
@@ -425,7 +427,8 @@
       ],
       "design_explanation": "Apunta a turistas y aventureros. Es un diseño altamente visual, donde la fotografía de montaña es la protagonista. Transmite dinamismo y aventura, con una estructura pensada para que el usuario consulte rápidamente desde su celular mientras viaja.",
       "link": "https://baritrekking.com.ar/",
-      "imageUrl": "/projects/baritrekking.webp"
+      "imageUrl": "/projects/baritrekking.webp",
+      "imageAlt": "Diseño web para comunidad de trekking en Bariloche — Baritrekking, desarrollado por MacizoDigital"
     },
     {
       "title": "Estudio Contable CILS",
@@ -438,7 +441,8 @@
       ],
       "design_explanation": "Apunta a pymes, autónomos y empresas. El diseño es formal y limpio, utilizando una paleta de colores sobria para generar confianza, un valor fundamental en el rubro contable y financiero. Facilita el primer contacto.",
       "link": "https://estudiocils.com.ar/es/",
-      "imageUrl": "/projects/estudiosCils.webp"
+      "imageUrl": "/projects/estudiosCils.webp",
+      "imageAlt": "Sitio web para estudio contable CILS en Bariloche — diseño institucional por MacizoDigital"
     },
     {
       "title": "Laboratorios Dibio",
@@ -451,7 +455,8 @@
       ],
       "design_explanation": "Apunta a pacientes particulares y derivaciones médicas. Tiene un diseño 'higiénico' (basado en blancos y azules), priorizando la usabilidad por encima de la estética compleja. El objetivo es que cualquier persona encuentre rápido cómo prepararse para un estudio o ver sus resultados.",
       "link": "https://www.dibio.com.ar/es/",
-      "imageUrl": "/projects/dibio.webp"
+      "imageUrl": "/projects/dibio.webp",
+      "imageAlt": "Diseño web para laboratorio bioquímico Dibio en Patagonia — accesibilidad y UX por MacizoDigital"
     },
     {
       "title": "Gnet",
@@ -464,7 +469,8 @@
       ],
       "design_explanation": "Apunta a usuarios residenciales y comercios locales buscando conexión a internet. El diseño está puramente enfocado en la conversión (mostrar planes, velocidades y precios) y en derivar fácilmente a los clientes actuales a los canales de atención al cliente.",
       "link": "https://asociaciondevecinos.com/",
-      "imageUrl": "/projects/gnetproyecto.webp"
+      "imageUrl": "/projects/gnetproyecto.webp",
+      "imageAlt": "Sitio web para proveedor de internet G-Net en Patagonia — desarrollo web y SEO local por MacizoDigital"
     },
     {
       "title": "Laboratorios Katz",
@@ -477,7 +483,8 @@
       ],
       "design_explanation": "Apunta a la comunidad local que necesita análisis clínicos. Es un sitio muy directo, enfocado en resolver las dudas rápidas del paciente antes de ir al laboratorio. Su diseño es funcional y evita que el paciente tenga que llamar por teléfono para preguntas simples.",
       "link": "https://www.laboratorioskatz.com/es/",
-      "imageUrl": "/projects/katz.webp"
+      "imageUrl": "/projects/katz.webp",
+      "imageAlt": "Diseño web para Laboratorios Katz en Bariloche — navegación accesible para pacientes por MacizoDigital"
     },
     {
       "title": "Consultorios Morales",
@@ -490,7 +497,8 @@
       ],
       "design_explanation": "Apunta a pacientes que buscan atención médica ambulatoria. Su diseño es institucional y transmite seguridad y respaldo. Está estructurado para que el usuario filtre por especialidad médica y entienda rápidamente cómo es el proceso de admisión.",
       "link": "https://www.consultoriosmorales.com.ar/es/",
-      "imageUrl": "/projects/morales.webp"
+      "imageUrl": "/projects/morales.webp",
+      "imageAlt": "Sitio web para centro médico Consultorios Morales en Bariloche — diseño UX/UI por MacizoDigital"
     },
   
     {
@@ -504,7 +512,8 @@
       ],
       "design_explanation": "Apunta a empresas y particulares que necesitan infraestructura de redes. Tiene un diseño técnico, moderno y robusto. Prioriza la claridad técnica de los servicios ofrecidos, demostrando capacidad instalada y profesionalismo en telecomunicaciones.",
       "link": "https://delvallesoluciones.com/",
-      "imageUrl": "/projects/delvalle.webp"
+      "imageUrl": "/projects/delvalle.webp",
+      "imageAlt": "Sitio web para empresa de tecnología y redes Del Valle Soluciones en Patagonia — SEO local por MacizoDigital"
     }
   ]
 }
