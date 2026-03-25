@@ -3,7 +3,7 @@
     "titleLine1": "Tu negocio necesita más clientes.",
     "titleHighlight": "Tu web puede traértelos.",
     "subtitle": "Más clientes. Más ventas. Sin complicaciones.",
-    "description": "Creamos webs que trabajan por tu negocio: atraen visitas, generan confianza y convierten esas visitas en consultas y ventas. No solo diseño, estrategia: cada elemento pensado para que la gente te contacte o te compre.",
+    "description": "Creamos sitios que atraen visitas, generan confianza y las convierten en clientes. Cada elemento tiene un propósito: que la gente te llame, te escriba o te compre.",
     "subDescriptionStrong": "Una herramienta de ventas, no solo una página linda.",
     "valueProps": [
       {
@@ -13,8 +13,8 @@
       },
       {
         "icon": "Zap",
-        "label": "Lista en 2 semanas",
-        "detail": "Tu web funcionando rápido"
+        "label": "Sin demoras interminables",
+        "detail": "Plazos reales según tu proyecto"
       },
       {
         "icon": "Users",
@@ -34,8 +34,8 @@
       "description": "Tu competencia ya tiene web. La diferencia está en si esa web trabaja o solo existe. Hacemos sitios donde quien entra entiende qué hacés, confía en vos y te contacta.",
       "details": "Páginas web estratégicas • Tiendas online que venden • Páginas para campañas",
       "durationLabel": "Tu web funcionando en",
-      "durationValue": "2 semanas",
-      "durationSubtext": "En ese tiempo entendemos tu negocio, diseñamos la estrategia, programamos y nos aseguramos de que funcione para aumentar tus ventas.",
+      "durationValue": "el menor tiempo posible",
+      "durationSubtext": "En ese tiempo entendemos tu negocio, diseñamos la estrategia, programamos y nos aseguramos de que funcione para aumentar tus ventas. El plazo depende del proyecto, no de apurarnos.",
       "cta": "Quiero más clientes",
       "featuredBadge": "SOLUCIÓN COMPLETA"
     },
@@ -55,7 +55,7 @@
       "title": "Tu Partner Digital de Confianza",
       "badge": "ASESORAMIENTO CONTINUO",
       "description": "Creamos tu web + Pensamos tu estrategia + Te acompañamos en el crecimiento.",
-      "cta": "Solicitar diagnóstico"
+      "cta": "Hablemos de mi proyecto"
     },
     "finalCta": "¿No sabés por dónde empezar? Te hacemos un diagnóstico gratis de tu situación."
   },
@@ -211,10 +211,22 @@
       "button": "Cotizar mi proyecto"
     },
     "bottomStats": [
-      { "label": "Tiempo de carga", "value": "1.5 seg" },
-      { "label": "Rendimiento", "value": "95/100" },
-      { "label": "Tu web lista en", "value": "2 semanas" },
-      { "label": "Clientes satisfechos", "value": "100%" }
+      {
+        "label": "Tiempo de carga",
+        "value": "1.5 seg"
+      },
+      {
+        "label": "Rendimiento",
+        "value": "95/100"
+      },
+      {
+        "label": "Plazos",
+        "value": "Cumplidos"
+      },
+      {
+        "label": "Clientes satisfechos",
+        "value": "100%"
+      }
     ]
   },
   "testimonials": {
@@ -291,11 +303,26 @@
   "navbar": {
     "logoAlt": "MacizoDigital Logo",
     "menu": [
-      {"name": "Home", "href": "/"},
-      {"name": "Por qué MacizoDigital", "href": "/nosotros"},
-      {"name": "Servicios", "href": "/servicios"},
-      {"name": "Trabajos", "href": "/trabajos"},
-      {"name": "Contacto", "href": "/contacto"}
+      {
+        "name": "Home",
+        "href": "/"
+      },
+      {
+        "name": "Por qué MacizoDigital",
+        "href": "/nosotros"
+      },
+      {
+        "name": "Servicios",
+        "href": "/servicios"
+      },
+      {
+        "name": "Trabajos",
+        "href": "/trabajos"
+      },
+      {
+        "name": "Contacto",
+        "href": "/contacto"
+      }
     ],
     "cta": "Hablemos",
     "themeLabel": "Tema",
@@ -320,14 +347,14 @@
         "metricLabel": "Enfoque en tu negocio"
       },
       {
-        "title": "Asesoramiento + Ejecución",
+        "title": "Plazos que se cumplen, resultados que se miden",
         "benefits": [
-          "No somos solo programadores",
-          "Te guiamos en la estrategia comercial",
-          "Solución completa sin sorpresas"
+          "Fecha de entrega acordada desde el día uno",
+          "Métricas configuradas desde el lanzamiento",
+          "Sabés en todo momento en qué etapa estás"
         ],
-        "metric": "Completo",
-        "metricLabel": "Consultoría + Desarrollo"
+        "metric": "Predecible",
+        "metricLabel": "Sin sorpresas ni demoras"
       },
       {
         "title": "Sin límites geográficos",
@@ -345,8 +372,8 @@
     "badge": "[ INVERSIÓN TRANSPARENTE ]",
     "title": "UNA WEB SE PAGA",
     "titleHighlight": "CON LOS CLIENTES QUE TRAE",
-    "description": "Si tu web te trae 2 clientes nuevos por mes que antes no llegaban, ¿cuánto vale eso para tu negocio? No vendemos páginas web baratas. Vendemos herramientas que te traen ingresos. La inversión se paga sola cuando empezás a ver resultados.",
-    "cta": "Quiero saber más",
+    "description": "Si un cliente nuevo te deja $200.000 pesos y tu web trae 2 por mes, en 60 días ya recuperaste la inversión. El resto es ganancia pura. No vendemos páginas, vendemos una herramienta que se paga sola.",
+    "cta": "Quiero saber cuánto me costaría",
     "whatsappLink": "https://wa.me/5492944227526"
   },
   "finalCta": {
@@ -364,15 +391,27 @@
     "title": "¿Hablamos de",
     "titleHighlight": "tu negocio?",
     "email": "hola@macizodigital.com",
-    "phone": "+54 9 294 4...",
+    "phone": "+54 9 294 4227526",
     "address": "San Carlos de Bariloche, Argentina",
     "menuTitle": "Navegación",
     "socialTitle": "SEGUINOS",
     "menuLinks": [
-      {"name": "Casos de Éxito en Desarrollo Web", "href": "/trabajos"},
-      {"name": "Servicios de Desarrollo Web y SEO", "href": "/servicios"},
-      {"name": "Agencia Web en Bariloche", "href": "/nosotros"},
-      {"name": "Contactar a MacizoDigital", "href": "/contacto"}
+      {
+        "name": "Casos de Éxito en Desarrollo Web",
+        "href": "/trabajos"
+      },
+      {
+        "name": "Servicios de Desarrollo Web y SEO",
+        "href": "/servicios"
+      },
+      {
+        "name": "Agencia Web en Bariloche",
+        "href": "/nosotros"
+      },
+      {
+        "name": "Contactar a MacizoDigital",
+        "href": "/contacto"
+      }
     ],
     "copyright": "© 2025 MacizoDigital. TODOS LOS DERECHOS RESERVADOS.",
     "hours": "LUN - VIE: 9:00 - 18:00 ART",
@@ -500,7 +539,6 @@
       "imageUrl": "/projects/morales.webp",
       "imageAlt": "Sitio web para centro médico Consultorios Morales en Bariloche — diseño UX/UI por MacizoDigital"
     },
-  
     {
       "title": "Del Valle Soluciones",
       "category": "SOLUCIONES TECNOLÓGICAS",
