@@ -76,13 +76,27 @@ export const metadata: Metadata = {
   },
 };
 
+import { preconnect } from "react-dom";
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Optimizando DNS Lookup y handshakes (LCP/FCP)
+  preconnect("https://fonts.googleapis.com", { crossOrigin: "anonymous" });
+  preconnect("https://fonts.gstatic.com", { crossOrigin: "anonymous" });
+
   return (
     <html lang="es" suppressHydrationWarning>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body
         className={`${inter.variable} antialiased`}
         suppressHydrationWarning

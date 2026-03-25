@@ -35,12 +35,9 @@
     "typescript": "^5"
   },
   "browserslist": [
-    "chrome >= 100",
-    "safari >= 15",
-    "firefox >= 100",
-    "edge >= 100",
-    "last 2 major versions",
+    "> 0.5%",
+    "last 2 versions",
     "not dead",
-    "not ie 11"
+    "not op_mini all"
   ]
 }
