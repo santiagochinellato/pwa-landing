@@ -53,7 +53,13 @@ export default function ProjectCard({
   return (
     <>
       {/* Mobile Version (Simple Card) */}
-      <div className="min-[1081px]:hidden rounded-2xl bg-light-surface dark:bg-white/5 border border-light-border dark:border-white/10 overflow-hidden flex flex-col h-[520px] md:h-[560px]">
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={`Ver proyecto: ${title}`}
+        className="min-[1081px]:hidden rounded-2xl bg-light-surface dark:bg-white/5 border border-light-border dark:border-white/10 overflow-hidden flex flex-col h-[520px] md:h-[560px]"
+      >
         <div
           className={`relative w-full ${featured ? "h-64" : "h-48"} bg-light-surface dark:bg-deep-void`}
         >
@@ -91,7 +97,7 @@ export default function ProjectCard({
             ))}
           </ul>
         </div>
-      </div>
+      </a>
 
       {/* Desktop Version (Flip Card) */}
       <motion.div
