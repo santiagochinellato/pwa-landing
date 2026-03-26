@@ -2,9 +2,9 @@
   "hero": {
     "titleLine1": "Tu negocio necesita más clientes.",
     "titleHighlight": "Tu web puede traértelos.",
-    "subtitle": "Más clientes. Más ventas. Sin complicaciones.",
+    "subtitle": "Más clientes. Más ventas. Simple y directo.",
     "description": "Creamos sitios que atraen visitas, generan confianza y las convierten en clientes. Cada elemento tiene un propósito: que la gente te llame, te escriba o te compre.",
-    "subDescriptionStrong": "Una herramienta de ventas, no solo una página linda.",
+    "subDescriptionStrong": "Una herramienta de ventas con propósito real.",
     "valueProps": [
       {
         "icon": "Target",
@@ -34,7 +34,7 @@
       "description": "Tu competencia ya tiene web. La diferencia está en si esa web trabaja o solo existe. Hacemos sitios donde quien entra entiende qué hacés, confía en vos y te contacta.",
       "details": "Páginas web estratégicas • Tiendas online que venden • Páginas para campañas",
       "durationLabel": "Tu web funcionando en",
-      "durationValue": "el menor tiempo posible",
+      "durationValue": "El tiempo justo para hacerlo bien",
       "durationSubtext": "En ese tiempo entendemos tu negocio, diseñamos la estrategia, programamos y nos aseguramos de que funcione para aumentar tus ventas. El plazo depende del proyecto, no de apurarnos.",
       "cta": "Quiero más clientes",
       "featuredBadge": "SOLUCIÓN COMPLETA"
@@ -57,7 +57,7 @@
       "description": "Creamos tu web + Pensamos tu estrategia + Te acompañamos en el crecimiento.",
       "cta": "Hablemos de mi proyecto"
     },
-    "finalCta": "¿No sabés por dónde empezar? Te hacemos un diagnóstico gratis de tu situación."
+    "finalCta": "¿Querés saber por dónde empezar? Te hacemos un diagnóstico gratis de tu situación."
   },
   "process": {
     "badge": "[ ASÍ TRABAJAMOS PARA TRAERTE RESULTADOS ]",
@@ -134,9 +134,9 @@
   },
   "stack": {
     "badge": "[ TECNOLOGÍA QUE TE AYUDA A VENDER MÁS ]",
-    "title": "NO VENDEMOS SOLO",
-    "titleHighlight": "TECNOLOGÍA BONITA",
-    "description": "Usamos tecnología de punta porque te ayuda a vender más. Pero lo más importante es la estrategia: entendemos tu negocio y diseñamos para que te traiga ingresos.",
+    "title": "TECNOLOGÍA AL SERVICIO DE",
+    "titleHighlight": "TUS VENTAS",
+    "description": "Usamos tecnología de punta porque te ayuda a vender más. Lo más importante es la estrategia: entendemos tu negocio y diseñamos para que te traiga ingresos.",
     "benefits": [
       {
         "icon": "Target",
@@ -165,7 +165,7 @@
         "metric": "1.5 seg",
         "comparison": "Promedio mercado: 5s",
         "percentage": 100,
-        "description": "Si tu web tarda 5 segundos en cargar, 4 de cada 10 personas se van sin ver nada. La tuya va a cargar en 1.5 segundos porque nadie tiene paciencia.",
+        "description": "4 de cada 10 personas abandona una web que tarda 5 segundos. La tuya carga en 1.5 segundos: tus visitas se quedan y convierten.",
         "color": "from-yellow-500 to-orange-500"
       },
       {
@@ -195,7 +195,7 @@
         "metric": "Largo Plazo",
         "comparison": "Crecimiento Orgánico",
         "percentage": 90,
-        "description": "No te prometemos aparecer primero en Google mañana, pero sí armamos tu web para que Google la entienda y la muestre. Es la base para crecer con el tiempo, no un milagro instantáneo.",
+        "description": "Armamos tu web para que Google la entienda y la priorice. Es una base sólida para crecer con el tiempo: resultados reales, sostenibles.",
         "color": "from-cyan-500 to-blue-500"
       }
     ],
@@ -372,7 +372,7 @@
     "badge": "[ INVERSIÓN TRANSPARENTE ]",
     "title": "UNA WEB SE PAGA",
     "titleHighlight": "CON LOS CLIENTES QUE TRAE",
-    "description": "Si un cliente nuevo te deja $200.000 pesos y tu web trae 2 por mes, en 60 días ya recuperaste la inversión. El resto es ganancia pura. No vendemos páginas, vendemos una herramienta que se paga sola.",
+    "description": "Si un cliente nuevo te deja $200.000 pesos y tu web trae 2 por mes, en 60 días ya recuperaste la inversión. El resto es ganancia pura. Vendemos una herramienta que genera ingresos y se paga sola.",
     "cta": "Quiero saber cuánto me costaría",
     "whatsappLink": "https://wa.me/5492944227526"
   },
@@ -380,7 +380,7 @@
     "title": "¿Tu web actual",
     "titleHighlight": "te trae clientes?",
     "subtitle": "Si la respuesta es no, charlemos.",
-    "description": "No vendemos webs lindas. Vendemos herramientas que te traen ingresos. Primera consulta gratis: vemos tu web actual (o tu situación si no tenés), te decimos qué está mal y cómo mejorarla para que te traiga más clientes.",
+    "description": "Vendemos herramientas que te traen ingresos. Primera consulta gratis: analizamos tu web actual o tu situación, y te decimos exactamente cómo mejorarla para conseguir más clientes.",
     "whatsappButton": "Quiero una web que venda",
     "videoButton": "Agendar diagnóstico gratuito",
     "footerText": "Diagnóstico gratis • 🌎 Trabajamos con toda Argentina y LATAM • Primera consulta sin cargo",
@@ -413,7 +413,7 @@
         "href": "/contacto"
       }
     ],
-    "copyright": "© 2025 MacizoDigital. TODOS LOS DERECHOS RESERVADOS.",
+    "copyright": "© 2026 MacizoDigital. TODOS LOS DERECHOS RESERVADOS.",
     "hours": "LUN - VIE: 9:00 - 18:00 ART",
     "_socialLinks": {
       "linkedin": "https://linkedin.com/company/macizo.digital",
@@ -421,6 +421,144 @@
       "github": "https://github.com/macizo.digital"
     },
     "madeWith": "DESDE LA PATAGONIA PARA EL MUNDO"
+  },
+  "whyMacizo": {
+    "summary": {
+      "eyebrow": "Estudio de desarrollo web · Bariloche, Patagonia",
+      "titlePrefix": "Por qué",
+      "titleAccent": "Macizo",
+      "titleSuffix": "Digital",
+      "subtitle": "El nombre no es un accidente.",
+      "body1": "En Patagonia, un macizo es una formación rocosa que",
+      "body1Strong": "no cede",
+      "body1Rest": ". No se erosiona con el tiempo, no se mueve con el viento, no falla bajo presión. Es la base sobre la que se construye todo lo demás.",
+      "body2": "Eso es lo que hacemos con tu negocio en internet.",
+      "quoteMain": "No construimos páginas.",
+      "quoteAccent": "cimientos.",
+      "quotePre": "Construimos",
+      "ctaBridge": "Conocé la historia y filosofía detrás de la marca.",
+      "ctaButton": "Leer nuestro manifiesto",
+      "ctaHref": "/nosotros"
+    },
+    "hero": {
+      "eyebrow": "Estudio de desarrollo web · Bariloche, Patagonia",
+      "title": "Construimos lo que",
+      "titleAccent": "no se rompe.",
+      "tagline": "Maquetación sólida, estructura unificada.",
+      "scrollHint": "Scrolleá para conocernos"
+    },
+    "nombre": {
+      "title": "Por qué MacizoDigital",
+      "subtitleAccent": "El nombre no es un accidente.",
+      "body1": "En Patagonia, un macizo es una formación rocosa que",
+      "body1Strong": "no cede",
+      "body1Rest": ". No se erosiona con el tiempo, no se mueve con el viento, no falla bajo presión. Es la base sobre la que se construye todo lo demás.",
+      "body2": "Eso es lo que hacemos con tu negocio en internet.",
+      "quoteMain": "No construimos páginas.",
+      "quotePre": "Construimos",
+      "quoteAccent": "cimientos.",
+      "wordCards": [
+        {
+          "word": "MACIZO",
+          "origin": "Latín / Español geográfico",
+          "means": "Formación rocosa sólida, inamovible. Libre de fisuras."
+        },
+        {
+          "word": "DIGITAL",
+          "origin": "Inglés técnico universal",
+          "means": "Arena tecnológica. Infraestructura de datos y software."
+        }
+      ],
+      "body3Pre": "La diferencia real está en qué pasa seis meses después: si escala, si resiste el tráfico, si sigue funcionando cuando tu negocio crece.",
+      "body3Brand": "MacizoDigital",
+      "body3Mid": "nació con una convicción:",
+      "body3Accent1": "una web bien construida es el activo más rentable de tu negocio.",
+      "body3End": "Por eso",
+      "body3Accent2": "cada proyecto arranca desde los cimientos, con la estética al servicio de la estrategia.",
+      "body3Closing": "."
+    },
+    "visionMision": {
+      "eyebrow": "Visión y misión",
+      "vision": {
+        "label": "Visión",
+        "headline": "Ser el estudio de referencia en infraestructura digital desde la Patagonia para el mundo.",
+        "body": "Hacer webs es el medio. Construir la base digital sobre la que los negocios crecen sin límite geográfico es el objetivo."
+      },
+      "mision": {
+        "label": "Misión",
+        "headline": "Construir estructuras digitales que duren, que escalen y que no fallen.",
+        "body": "En un mercado saturado de soluciones rápidas y frágiles, entregamos cimientos sólidos. No páginas: infraestructuras que sostienen negocios."
+      }
+    },
+    "valores": {
+      "eyebrow": "Cómo somos",
+      "title": "Los valores que guían",
+      "titleAccent": "cada decisión.",
+      "items": [
+        {
+          "label": "Técnico",
+          "icon": "Code2",
+          "headline": "Usamos términos precisos porque el cliente lo merece.",
+          "body": "CSS Grid, API-first, Core Web Vitals. No simplificamos de más ni exhibimos conocimiento innecesario. Hablamos con claridad técnica.",
+          "not": "Claridad técnica que el cliente entiende y valora."
+        },
+        {
+          "label": "Confiable",
+          "icon": "Shield",
+          "headline": "Cada afirmación tiene respaldo técnico.",
+          "body": "Las promesas que hacemos son demostrables. No vendemos humo. Si decimos que carga en 1.5 segundos, medimos y mostramos el número.",
+          "not": "Promesas demostrables, resultados medibles."
+        },
+        {
+          "label": "Directo",
+          "icon": "Zap",
+          "headline": "Sin relleno. Cada frase tiene un propósito.",
+          "body": "Una palabra precisa vale más que tres imprecisas. La brevedad concentra la calidez, la hace más poderosa.",
+          "not": "Directo con calidez humana."
+        },
+        {
+          "label": "Local + Global",
+          "icon": "Globe",
+          "headline": "Orgullosos de ser patagónicos. Capaces de trabajar con cualquier cliente del mundo.",
+          "body": "Bariloche es una identidad. La misma rigurosidad con la que se construye en este lugar define cómo trabajamos.",
+          "not": "Identidad local, estándares globales."
+        }
+      ]
+    },
+    "principios": {
+      "eyebrow": "Filosofía de trabajo",
+      "title": "Los 3 principios que",
+      "titleAccent": "no negociamos.",
+      "items": [
+        {
+          "icon": "Code2",
+          "title": "Solidez",
+          "lead": "Lo que construimos no se rompe.",
+          "body": "Código limpio, arquitecturas sin deuda técnica. Lo que entregamos aguanta el tiempo, el tráfico y el crecimiento."
+        },
+        {
+          "icon": "Target",
+          "title": "Precisión",
+          "lead": "Los detalles son los que generan confianza.",
+          "body": "No decoramos: comunicamos. Cada elemento está donde está por una razón, y esa razón siempre es tu cliente."
+        },
+        {
+          "icon": "TrendingUp",
+          "title": "Escala",
+          "lead": "Pensamos en tu negocio de acá a dos años.",
+          "body": "Construimos para el lanzamiento y para lo que viene después. Si crecés, tu web crece con vos."
+        }
+      ]
+    },
+    "patagonia": {
+      "eyebrow": "Desde acá, para donde sea",
+      "titleLine1": "Desde la Patagonia,",
+      "titleAccent": "para cualquier lugar.",
+      "body": "Trabajamos desde Bariloche como una identidad. La misma geografía que inspiró el nombre define nuestra forma de trabajar:",
+      "bodyStrong": "sin apuros superficiales, con foco en lo que dura.",
+      "ctaButton": "Hablemos de tu proyecto",
+      "ctaHref": "https://wa.me/5492944227526"
+    }
   },
   "projectCard": {
     "hoverHint": "Ver caso de éxito",
